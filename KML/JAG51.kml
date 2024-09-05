@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--     Gerado pelo QLIKCGR01  -->
+<!--     	 DCMD EMS  	       -->
+<!--     Leonardo Tolentino    -->
+<Document xmlns='http://earth.google.com/kml/2.0'>
+
+<Style id='#ET'>
+<IconStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#EP'>
+<IconStyle>
+<color>ffff0000</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#BC'>
+<IconStyle>
+<color>800000ff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal5/icon50.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>FF000FFF</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>800000ff</color>
+<width>17</width>
+</LineStyle>
+<PolyStyle>
+<color>800000ff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#BCF'>
+<IconStyle>
+<color>800000ff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal5/icon50.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ff00ff00</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>800000ff</color>
+<width>17</width>
+</LineStyle>
+<PolyStyle>
+<color>800000ff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#RD'>
+<IconStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal2/icon1.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff00ff55</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ff00ff55</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#Chave_NA'>
+<IconStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff00ff55</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ff00ff55</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#Chave'>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#Chave1'>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ff0000ff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ff0000ff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#CFusivel'>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#CFusivel_NA'>
+<IconStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff00ff55</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ff00ff55</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#SE'>
+<IconStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/flag.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<name>JAG51</name>
+<Folder><name>subestacao</name><visibility>1</visibility>
+<Placemark><name>JAG</name><description>JAG</description><styleUrl>##SE</styleUrl>
+<Point><coordinates>-54.4314690233,-20.1033745686</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>trecho</name><visibility>1</visibility>
+<Folder><name>TP</name><visibility>1</visibility>
+<Placemark><name>5119761</name><description>Condutor: CA 1#4 Horizontal
+Comprimento: 0,00 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.419198884879,-20.053048090738,0 -54.41918524681,-20.053034798604,0</coordinates></LineString></Placemark>
+<Placemark><name>5136078</name><description>Condutor: CA 1#4 Horizontal
+Comprimento: 0,00 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.335668899876,-20.026133002895,0 -54.335655271698,-20.026119705323,0</coordinates></LineString></Placemark>
+<Placemark><name>5138998</name><description>Condutor: CA 1#4 Horizontal
+Comprimento: 0,00 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.384460418787,-19.965515898209,0 -54.384446790611,-19.965502604443,0</coordinates></LineString></Placemark>
+<Placemark><name>5140923</name><description>Condutor: CA 1#4 Horizontal
+Comprimento: 0,00 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.413805476168,-20.04221926609,0 -54.413791839429,-20.042205973679,0</coordinates></LineString></Placemark>
+<Placemark><name>5151009</name><description>Condutor: CA 1#4 Horizontal
+Comprimento: 0,00 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.383963053034,-19.965591269186,0 -54.383949424899,-19.965577975386,0</coordinates></LineString></Placemark>
+<Placemark><name>5151490</name><description>Condutor: CA 1#4 Horizontal
+Comprimento: 0,00 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.388590967995,-19.994243425242,0 -54.38857733726,-19.994230131517,0</coordinates></LineString></Placemark>
+<Placemark><name>5152869</name><description>Condutor: CA 1#4 Horizontal
+Comprimento: 0,00 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.392688845952,-19.996471427912,0 -54.392675214665,-19.996458134445,0</coordinates></LineString></Placemark></Folder></Folder>
+</Document>
