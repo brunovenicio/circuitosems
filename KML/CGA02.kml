@@ -1,0 +1,3332 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--     Gerado pelo QLIKCGR01  -->
+<!--     	 DCMD EMS  	       -->
+<!--     Leonardo Tolentino    -->
+<Document xmlns='http://earth.google.com/kml/2.0'>
+
+<Style id='#ET'>
+<IconStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#EP'>
+<IconStyle>
+<color>ffff0000</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#BC'>
+<IconStyle>
+<color>800000ff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal5/icon50.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>FF000FFF</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>800000ff</color>
+<width>17</width>
+</LineStyle>
+<PolyStyle>
+<color>800000ff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#BCF'>
+<IconStyle>
+<color>800000ff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal5/icon50.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ff00ff00</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>800000ff</color>
+<width>17</width>
+</LineStyle>
+<PolyStyle>
+<color>800000ff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#RD'>
+<IconStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal2/icon1.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff00ff55</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ff00ff55</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#Chave_NA'>
+<IconStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff00ff55</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ff00ff55</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#Chave'>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#Chave1'>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ff0000ff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ff0000ff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#CFusivel'>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#CFusivel_NA'>
+<IconStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff00ff55</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ff00ff55</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#SE'>
+<IconStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/flag.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#SIGFI'>
+<IconStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon41.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#Postes'>
+<IconStyle>
+<color>ffffffff</color>
+<scale>0.5</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon57.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.1</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>10</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<name>CGA02</name>
+<Folder><name>banco_capacitor</name><visibility>1</visibility>
+<Placemark><name>BD(693050)</name><description>Cod_SGM: -
+Ref: 
+Fases: TRI
+Capacidade: 600 kVAr
+Trecho: T2</description><visibility>0</visibility><styleUrl>##BC</styleUrl>
+<Point><coordinates>-54.624925888105,-20.480043093257</coordinates></Point></Placemark>
+<Placemark><name>BD(693070)</name><description>Cod_SGM: -
+Ref: 
+Fases: TRI
+Capacidade: 600 kVAr
+Trecho: T2</description><visibility>0</visibility><styleUrl>##BC</styleUrl>
+<Point><coordinates>-54.624380214031,-20.480206389846</coordinates></Point></Placemark>
+<Placemark><name>BD(702944)</name><description>Cod_SGM: -
+Ref: 
+Fases: TRI
+Capacidade: 0 kVAr
+Trecho: T3</description><visibility>0</visibility><styleUrl>##BC</styleUrl>
+<Point><coordinates>-54.620332947449,-20.471175959491</coordinates></Point></Placemark></Folder>
+<Folder><name>chave_faca</name><visibility>1</visibility>
+<Placemark><name>CF(29555606)</name><description>Cod_SGM: LCFA000664
+Ref: 
+Fases: TRI
+Estado Normal: NF
+Trecho: T1
+Clientes: 781</description><visibility>0</visibility><styleUrl>##Chave</styleUrl>
+<Point><coordinates>-54.630353878564,-20.488795664132</coordinates></Point></Placemark>
+<Placemark><name>CF(29555607)</name><description>Cod_SGM: LCFA000665
+Ref: 
+Fases: TRI
+Estado Normal: NF
+Trecho: T1
+Clientes: 976</description><visibility>0</visibility><styleUrl>##Chave</styleUrl>
+<Point><coordinates>-54.642111132066,-20.486319477143</coordinates></Point></Placemark>
+<Placemark><name>CF(33518965)</name><description>Cod_SGM: LCFA000745
+Ref: 
+Fases: TRI
+Estado Normal: NF
+Trecho: T1
+Clientes: 781</description><visibility>0</visibility><styleUrl>##Chave</styleUrl>
+<Point><coordinates>-54.626255884579,-20.485814932175</coordinates></Point></Placemark>
+<Placemark><name>CF(33518968)</name><description>Cod_SGM: LCFA000746
+Ref: 
+Fases: TRI
+Estado Normal: NF
+Trecho: T1
+Clientes: 781</description><visibility>0</visibility><styleUrl>##Chave</styleUrl>
+<Point><coordinates>-54.628285579019,-20.489729678997</coordinates></Point></Placemark>
+<Placemark><name>CF(681283)</name><description>Cod_SGM: CF000061
+Ref: 
+Fases: TRI
+Estado Normal: NF
+Trecho: T2
+Clientes: 2</description><visibility>0</visibility><styleUrl>##Chave</styleUrl>
+<Point><coordinates>-54.625524266376,-20.4783423866</coordinates></Point></Placemark>
+<Placemark><name>CF(6892)</name><description>Cod_SGM: CF000086
+Ref: R.MARINBAS-EM FRENTE CGA,99999
+Fases: TRI
+Estado Normal: NA
+Trecho: T1
+Clientes: 0</description><visibility>0</visibility><styleUrl>##Chave_NA</styleUrl>
+<Point><coordinates>-54.654199121688,-20.482713249395</coordinates></Point></Placemark>
+<Placemark><name>CF(689984)</name><description>Cod_SGM: CF000062
+Ref: 
+Fases: TRI
+Estado Normal: NF
+Trecho: T2
+Clientes: 11</description><visibility>0</visibility><styleUrl>##Chave</styleUrl>
+<Point><coordinates>-54.625439853923,-20.479555354428</coordinates></Point></Placemark>
+<Placemark><name>CF(690207)</name><description>Cod_SGM: CF000058
+Ref: 
+Fases: TRI
+Estado Normal: NF
+Trecho: T1
+Clientes: 976</description><visibility>0</visibility><styleUrl>##Chave</styleUrl>
+<Point><coordinates>-54.653965746548,-20.482154182506</coordinates></Point></Placemark>
+<Placemark><name>CF(692954)</name><description>Cod_SGM: CF000063
+Ref: Notes (Jean)-27/03/2013
+Fases: TRI
+Estado Normal: NF
+Trecho: T2
+Clientes: 567</description><visibility>0</visibility><styleUrl>##Chave</styleUrl>
+<Point><coordinates>-54.623991917906,-20.479864065935</coordinates></Point></Placemark>
+<Placemark><name>CF(693520)</name><description>Cod_SGM: CF000082
+Ref: 
+Fases: TRI
+Estado Normal: NA
+Trecho: T1
+Clientes: 0</description><visibility>0</visibility><styleUrl>##Chave_NA</styleUrl>
+<Point><coordinates>-54.653473912563,-20.481368570549</coordinates></Point></Placemark>
+<Placemark><name>CF(693529)</name><description>Cod_SGM: CF000170
+Ref: notes COD (Ary)-03/05/2011
+Fases: TRI
+Estado Normal: NA
+Trecho: T2
+Clientes: 0</description><visibility>0</visibility><styleUrl>##Chave_NA</styleUrl>
+<Point><coordinates>-54.625264975729,-20.480388715497</coordinates></Point></Placemark>
+<Placemark><name>CF(693979)</name><description>Cod_SGM: CF000064
+Ref: R JOAQUIM MANOEL DE CARVALHO/BERNADO F BAIS
+Fases: TRI
+Estado Normal: NF
+Trecho: T2
+Clientes: 403</description><visibility>0</visibility><styleUrl>##Chave</styleUrl>
+<Point><coordinates>-54.621764171713,-20.475135293115</coordinates></Point></Placemark></Folder>
+<Folder><name>chave_fusivel</name><visibility>1</visibility>
+<Placemark><name>FU(31346202)</name><description>Cod_SGM: LFU001628
+Ref: 
+Lamina: Nao
+Religadora: Nao
+Fases: TRI
+Estado Normal: NF
+Trecho: T3
+Clientes: 23</description><visibility>0</visibility><styleUrl>##CFusivel</styleUrl>
+<Point><coordinates>-54.619302573843,-20.47044844703</coordinates></Point></Placemark>
+<Placemark><name>FU(37568206)</name><description>Cod_SGM: LFU002209
+Ref: 
+Lamina: Nao
+Religadora: Nao
+Fases: TRI
+Estado Normal: NF
+Trecho: T3
+Clientes: 1</description><visibility>0</visibility><styleUrl>##CFusivel</styleUrl>
+<Point><coordinates>-54.620771740173,-20.471529004746</coordinates></Point></Placemark>
+<Placemark><name>FU(6878)</name><description>Cod_SGM: BF000140
+Ref: 
+Lamina: Nao
+Religadora: Nao
+Fases: TRI
+Estado Normal: NF
+Trecho: T3
+Clientes: 58</description><visibility>0</visibility><styleUrl>##CFusivel</styleUrl>
+<Point><coordinates>-54.618988914672,-20.470400801897</coordinates></Point></Placemark>
+<Placemark><name>FU(689764)</name><description>Cod_SGM: BF000138
+Ref: 
+Lamina: Nao
+Religadora: Nao
+Fases: TRI
+Estado Normal: NF
+Trecho: T3
+Clientes: 61</description><visibility>0</visibility><styleUrl>##CFusivel</styleUrl>
+<Point><coordinates>-54.623541290416,-20.478672583677</coordinates></Point></Placemark>
+<Placemark><name>FU(693332)</name><description>Cod_SGM: BF000139
+Ref: 
+Lamina: Nao
+Religadora: Nao
+Fases: TRI
+Estado Normal: NF
+Trecho: T3
+Clientes: 121</description><visibility>0</visibility><styleUrl>##CFusivel</styleUrl>
+<Point><coordinates>-54.618842631925,-20.472664669717</coordinates></Point></Placemark>
+<Placemark><name>FU(703612)</name><description>Cod_SGM: BF000141
+Ref: 
+Lamina: Nao
+Religadora: Nao
+Fases: TRI
+Estado Normal: NF
+Trecho: T3
+Clientes: 20</description><visibility>0</visibility><styleUrl>##CFusivel</styleUrl>
+<Point><coordinates>-54.619817009873,-20.472562801163</coordinates></Point></Placemark></Folder>
+<Folder><name>entrada_primaria</name><visibility>1</visibility>
+<Placemark><name>TD(12575) (ENTT122845)</name><description>Cod_SGM: EP000032
+Ref: 
+Pot: 225 kVA
+Fases: TRI
+Patrimonio: ENTT122845
+Trecho: TP
+Clientes: 1</description><visibility>0</visibility><styleUrl>##EP</styleUrl>
+<Point><coordinates>-54.618437137008,-20.470222745038</coordinates></Point></Placemark>
+<Placemark><name>TD(30091) (ENTT200623)</name><description>Cod_SGM: EP000034
+Ref: 
+Pot: 225 kVA
+Fases: TRI
+Patrimonio: ENTT200623
+Trecho: TP
+Clientes: 1</description><visibility>0</visibility><styleUrl>##EP</styleUrl>
+<Point><coordinates>-54.620550432231,-20.470531920463</coordinates></Point></Placemark>
+<Placemark><name>TD(46134736) ()</name><description>Cod_SGM: LTD004367
+Ref: 
+Pot: 225 kVA
+Fases: TRI
+Patrimonio: 
+Trecho: TP
+Clientes: 1</description><visibility>0</visibility><styleUrl>##EP</styleUrl>
+<Point><coordinates>-54.620742993631,-20.471528972128</coordinates></Point></Placemark>
+<Placemark><name>TD(682374) ()</name><description>Cod_SGM: EP000021
+Ref: 
+Pot: 500 kVA
+Fases: TRI
+Patrimonio: 
+Trecho: TP
+Clientes: 2</description><visibility>0</visibility><styleUrl>##EP</styleUrl>
+<Point><coordinates>-54.625521693967,-20.478216920697</coordinates></Point></Placemark>
+<Placemark><name>TD(696541) (ENTT202248)</name><description>Cod_SGM: EP000023
+Ref: 
+Pot: 75 kVA
+Fases: TRI
+Patrimonio: ENTT202248
+Trecho: TP
+Clientes: 11</description><visibility>0</visibility><styleUrl>##EP</styleUrl>
+<Point><coordinates>-54.625553504716,-20.479580387594</coordinates></Point></Placemark>
+<Placemark><name>TD(742594) (ENTT204670)</name><description>Cod_SGM: EP000036
+Ref: 
+Pot: 150 kVA
+Fases: TRI
+Patrimonio: ENTT204670
+Trecho: TP
+Clientes: 1</description><visibility>0</visibility><styleUrl>##EP</styleUrl>
+<Point><coordinates>-54.625479583334,-20.478904362503</coordinates></Point></Placemark>
+<Placemark><name>TD(90058072) (ENTT201649)</name><description>Cod_SGM: LTD007813
+Ref: 
+Pot: 500 kVA
+Fases: TRI
+Patrimonio: ENTT201649
+Trecho: TP
+Clientes: 0</description><visibility>0</visibility><styleUrl>##EP</styleUrl>
+<Point><coordinates>-54.625506297574,-20.478158825976</coordinates></Point></Placemark>
+<Placemark><name>TD(91552374) (ENTT202242)</name><description>Cod_SGM: LTD008423
+Ref: 
+Pot: 225 kVA
+Fases: TRI
+Patrimonio: ENTT202242
+Trecho: TP
+Clientes: 0</description><visibility>0</visibility><styleUrl>##EP</styleUrl>
+<Point><coordinates>-54.625566448198,-20.479517713809</coordinates></Point></Placemark>
+<Placemark><name>TD(91552375) (ENTT202240)</name><description>Cod_SGM: LTD008430
+Ref: 
+Pot: 1500 kVA
+Fases: TRI
+Patrimonio: ENTT202240
+Trecho: TP
+Clientes: 0</description><visibility>0</visibility><styleUrl>##EP</styleUrl>
+<Point><coordinates>-54.625576944929,-20.479464578666</coordinates></Point></Placemark>
+<Placemark><name>TD(91552376) (ENTT202238)</name><description>Cod_SGM: LTD008433
+Ref: 
+Pot: 1500 kVA
+Fases: TRI
+Patrimonio: ENTT202238
+Trecho: TP
+Clientes: 0</description><visibility>0</visibility><styleUrl>##EP</styleUrl>
+<Point><coordinates>-54.625588899725,-20.479403878019</coordinates></Point></Placemark>
+<Placemark><name>TD(91552377) (ENTT202241)</name><description>Cod_SGM: LTD008436
+Ref: 
+Pot: 112,5 kVA
+Fases: TRI
+Patrimonio: ENTT202241
+Trecho: TP
+Clientes: 0</description><visibility>0</visibility><styleUrl>##EP</styleUrl>
+<Point><coordinates>-54.625599300628,-20.479350741562</coordinates></Point></Placemark>
+<Placemark><name>TD(91552378) (ENTT202247)</name><description>Cod_SGM: LTD008440
+Ref: 
+Pot: 1500 kVA
+Fases: TRI
+Patrimonio: ENTT202247
+Trecho: TP
+Clientes: 0</description><visibility>0</visibility><styleUrl>##EP</styleUrl>
+<Point><coordinates>-54.625609489056,-20.479298956741</coordinates></Point></Placemark>
+<Placemark><name>TD(91552379) (ENTT202237)</name><description>Cod_SGM: LTD008444
+Ref: 
+Pot: 150 kVA
+Fases: TRI
+Patrimonio: ENTT202237
+Trecho: TP
+Clientes: 0</description><visibility>0</visibility><styleUrl>##EP</styleUrl>
+<Point><coordinates>-54.62561947196,-20.479248072136</coordinates></Point></Placemark>
+<Placemark><name>TD(91552380) (ENTT202239)</name><description>Cod_SGM: LTD008447
+Ref: 
+Pot: 1500 kVA
+Fases: TRI
+Patrimonio: ENTT202239
+Trecho: TP
+Clientes: 0</description><visibility>0</visibility><styleUrl>##EP</styleUrl>
+<Point><coordinates>-54.625629454856,-20.47919718753</coordinates></Point></Placemark></Folder>
+<Folder><name>postes</name><visibility>1</visibility>
+<Placemark><name>10028085</name><description>ID: 10028085
+Cod_SGM: PT609429
+Tipo: DT11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.620550432231,-20.470531920463</coordinates></Point></Placemark>
+<Placemark><name>10100340</name><description>ID: 10100340
+Cod_SGM: PT623621
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.648397962798,-20.48237793503</coordinates></Point></Placemark>
+<Placemark><name>10100341</name><description>ID: 10100341
+Cod_SGM: PT623622
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.650041925114,-20.48246801569</coordinates></Point></Placemark>
+<Placemark><name>10100342</name><description>ID: 10100342
+Cod_SGM: PT623623
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.650426050816,-20.482491095445</coordinates></Point></Placemark>
+<Placemark><name>10267552</name><description>ID: 10267552
+Cod_SGM: PT691529
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625521693967,-20.478216920697</coordinates></Point></Placemark>
+<Placemark><name>10332986</name><description>ID: 10332986
+Cod_SGM: PT721477
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624925983914,-20.480043094568</coordinates></Point></Placemark>
+<Placemark><name>10332994</name><description>ID: 10332994
+Cod_SGM: PT721478
+Tipo: RC12/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625361410537,-20.479863930064</coordinates></Point></Placemark>
+<Placemark><name>10572695</name><description>ID: 10572695
+Cod_SGM: PT840761
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624382217673,-20.480206959081</coordinates></Point></Placemark>
+<Placemark><name>10572703</name><description>ID: 10572703
+Cod_SGM: PT840762
+Tipo: RC11/1200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624272554779,-20.480787730976</coordinates></Point></Placemark>
+<Placemark><name>10661892</name><description>ID: 10661892
+Cod_SGM: PT888852
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619629412055,-20.472505235527</coordinates></Point></Placemark>
+<Placemark><name>10661893</name><description>ID: 10661893
+Cod_SGM: PT888853
+Tipo: RC13/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623793608749,-20.477434554153</coordinates></Point></Placemark>
+<Placemark><name>10661894</name><description>ID: 10661894
+Cod_SGM: PT888854
+Tipo: RC12/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623746269333,-20.477683412943</coordinates></Point></Placemark>
+<Placemark><name>10661895</name><description>ID: 10661895
+Cod_SGM: PT888855
+Tipo: RC13/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623347807869,-20.479711487455</coordinates></Point></Placemark>
+<Placemark><name>10661896</name><description>ID: 10661896
+Cod_SGM: PT888856
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623407705454,-20.479412682797</coordinates></Point></Placemark>
+<Placemark><name>10661897</name><description>ID: 10661897
+Cod_SGM: PT888857
+Tipo: RC11/1200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624419297724,-20.479946039798</coordinates></Point></Placemark>
+<Placemark><name>10661898</name><description>ID: 10661898
+Cod_SGM: PT888858
+Tipo: RC13/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625314723401,-20.480126524335</coordinates></Point></Placemark>
+<Placemark><name>10661899</name><description>ID: 10661899
+Cod_SGM: PT888859
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625553504716,-20.479580387594</coordinates></Point></Placemark>
+<Placemark><name>10736933</name><description>ID: 10736933
+Cod_SGM: PT922784
+Tipo: RC11/1500</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.654471990123,-20.482937820825</coordinates></Point></Placemark>
+<Placemark><name>10736934</name><description>ID: 10736934
+Cod_SGM: PT922785
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.654190242234,-20.482799279682</coordinates></Point></Placemark>
+<Placemark><name>10736942</name><description>ID: 10736942
+Cod_SGM: PT922786
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.654153155073,-20.48242130664</coordinates></Point></Placemark>
+<Placemark><name>10736943</name><description>ID: 10736943
+Cod_SGM: PT922787
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625276460246,-20.480694638089</coordinates></Point></Placemark>
+<Placemark><name>10736951</name><description>ID: 10736951
+Cod_SGM: PT922788
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.62520314337,-20.481087175023</coordinates></Point></Placemark>
+<Placemark><name>10736952</name><description>ID: 10736952
+Cod_SGM: PT922789
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.62512683026,-20.481512450823</coordinates></Point></Placemark>
+<Placemark><name>10736953</name><description>ID: 10736953
+Cod_SGM: PT922790
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625074188551,-20.481806930657</coordinates></Point></Placemark>
+<Placemark><name>10736954</name><description>ID: 10736954
+Cod_SGM: PT922791
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624994239289,-20.482231795352</coordinates></Point></Placemark>
+<Placemark><name>10736956</name><description>ID: 10736956
+Cod_SGM: PT922793
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624887336097,-20.482844933767</coordinates></Point></Placemark>
+<Placemark><name>10736957</name><description>ID: 10736957
+Cod_SGM: PT922794
+Tipo: RC11/1200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624901292409,-20.483033857626</coordinates></Point></Placemark>
+<Placemark><name>10736958</name><description>ID: 10736958
+Cod_SGM: PT922795
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.62500685138,-20.483323097012</coordinates></Point></Placemark>
+<Placemark><name>10736959</name><description>ID: 10736959
+Cod_SGM: PT922796
+Tipo: RC12/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625162192976,-20.483640469518</coordinates></Point></Placemark>
+<Placemark><name>10736960</name><description>ID: 10736960
+Cod_SGM: PT922797
+Tipo: RC12/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625319974674,-20.483967447412</coordinates></Point></Placemark>
+<Placemark><name>10736961</name><description>ID: 10736961
+Cod_SGM: PT922798
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625517869827,-20.484377962262</coordinates></Point></Placemark>
+<Placemark><name>10736962</name><description>ID: 10736962
+Cod_SGM: PT922799
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625674436424,-20.484709257853</coordinates></Point></Placemark>
+<Placemark><name>10736963</name><description>ID: 10736963
+Cod_SGM: PT922800
+Tipo: RC12/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625870050494,-20.485118657595</coordinates></Point></Placemark>
+<Placemark><name>10736964</name><description>ID: 10736964
+Cod_SGM: PT922801
+Tipo: RC12/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.626059217393,-20.48541779952</coordinates></Point></Placemark>
+<Placemark><name>10736965</name><description>ID: 10736965
+Cod_SGM: PT922802
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.626262083004,-20.485829375102</coordinates></Point></Placemark>
+<Placemark><name>10736966</name><description>ID: 10736966
+Cod_SGM: PT922803
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.626489042451,-20.486282006605</coordinates></Point></Placemark>
+<Placemark><name>10736967</name><description>ID: 10736967
+Cod_SGM: PT922804
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.626663843166,-20.486642989676</coordinates></Point></Placemark>
+<Placemark><name>10736968</name><description>ID: 10736968
+Cod_SGM: PT922805
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.626868466937,-20.487052602152</coordinates></Point></Placemark>
+<Placemark><name>10736969</name><description>ID: 10736969
+Cod_SGM: PT922806
+Tipo: RC12/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.627060030778,-20.487439098967</coordinates></Point></Placemark>
+<Placemark><name>10736970</name><description>ID: 10736970
+Cod_SGM: PT922807
+Tipo: RC12/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.627224546112,-20.487764903504</coordinates></Point></Placemark>
+<Placemark><name>10736971</name><description>ID: 10736971
+Cod_SGM: PT922808
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.627385779397,-20.488092288517</coordinates></Point></Placemark>
+<Placemark><name>10736972</name><description>ID: 10736972
+Cod_SGM: PT922809
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.627590006751,-20.488502978625</coordinates></Point></Placemark>
+<Placemark><name>10736973</name><description>ID: 10736973
+Cod_SGM: PT922810
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.627752911976,-20.488827677173</coordinates></Point></Placemark>
+<Placemark><name>10736974</name><description>ID: 10736974
+Cod_SGM: PT922811
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.627940609851,-20.489204096853</coordinates></Point></Placemark>
+<Placemark><name>10736975</name><description>ID: 10736975
+Cod_SGM: PT922812
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.628148700208,-20.489625495055</coordinates></Point></Placemark>
+<Placemark><name>10736976</name><description>ID: 10736976
+Cod_SGM: PT922813
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.628354076958,-20.490024009359</coordinates></Point></Placemark>
+<Placemark><name>10736977</name><description>ID: 10736977
+Cod_SGM: PT922814
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.627995473669,-20.489855027776</coordinates></Point></Placemark>
+<Placemark><name>10736978</name><description>ID: 10736978
+Cod_SGM: PT922815
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.628297247654,-20.489724962109</coordinates></Point></Placemark>
+<Placemark><name>10736979</name><description>ID: 10736979
+Cod_SGM: PT922816
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.62866036369,-20.489569455924</coordinates></Point></Placemark>
+<Placemark><name>10736980</name><description>ID: 10736980
+Cod_SGM: PT922817
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.628983314556,-20.489408343198</coordinates></Point></Placemark>
+<Placemark><name>10736981</name><description>ID: 10736981
+Cod_SGM: PT922818
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.629333294311,-20.489253197819</coordinates></Point></Placemark>
+<Placemark><name>10736982</name><description>ID: 10736982
+Cod_SGM: PT922819
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.629670967482,-20.489100592676</coordinates></Point></Placemark>
+<Placemark><name>10736983</name><description>ID: 10736983
+Cod_SGM: PT922820
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.630018894949,-20.488941715335</coordinates></Point></Placemark>
+<Placemark><name>10736984</name><description>ID: 10736984
+Cod_SGM: PT922821
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.630361985228,-20.488785751184</coordinates></Point></Placemark>
+<Placemark><name>10736985</name><description>ID: 10736985
+Cod_SGM: PT922822
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.63070932547,-20.488633817648</coordinates></Point></Placemark>
+<Placemark><name>10736986</name><description>ID: 10736986
+Cod_SGM: PT922823
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.631056145695,-20.488478264133</coordinates></Point></Placemark>
+<Placemark><name>10736987</name><description>ID: 10736987
+Cod_SGM: PT922824
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.631415587714,-20.488318276664</coordinates></Point></Placemark>
+<Placemark><name>10736988</name><description>ID: 10736988
+Cod_SGM: PT922825
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.631762880161,-20.488163089265</coordinates></Point></Placemark>
+<Placemark><name>10736989</name><description>ID: 10736989
+Cod_SGM: PT922826
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.632131225886,-20.487997351973</coordinates></Point></Placemark>
+<Placemark><name>10736990</name><description>ID: 10736990
+Cod_SGM: PT922827
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.632415377554,-20.487872365958</coordinates></Point></Placemark>
+<Placemark><name>10736991</name><description>ID: 10736991
+Cod_SGM: PT922828
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.632742627911,-20.487724127261</coordinates></Point></Placemark>
+<Placemark><name>10736992</name><description>ID: 10736992
+Cod_SGM: PT922829
+Tipo: RC13/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.633049369659,-20.487588340947</coordinates></Point></Placemark>
+<Placemark><name>10736993</name><description>ID: 10736993
+Cod_SGM: PT922830
+Tipo: RC13/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.63371679848,-20.487342245125</coordinates></Point></Placemark>
+<Placemark><name>10737001</name><description>ID: 10737001
+Cod_SGM: PT922831
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.634121287236,-20.488074610233</coordinates></Point></Placemark>
+<Placemark><name>10737002</name><description>ID: 10737002
+Cod_SGM: PT922832
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.634280936057,-20.488350134422</coordinates></Point></Placemark>
+<Placemark><name>10738478</name><description>ID: 10738478
+Cod_SGM: PT923968
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.63815802576,-20.489107126964</coordinates></Point></Placemark>
+<Placemark><name>10738479</name><description>ID: 10738479
+Cod_SGM: PT923969
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.63835160189,-20.488970242483</coordinates></Point></Placemark>
+<Placemark><name>10738480</name><description>ID: 10738480
+Cod_SGM: PT923970
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.638660429654,-20.488748234621</coordinates></Point></Placemark>
+<Placemark><name>10738481</name><description>ID: 10738481
+Cod_SGM: PT923971
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.638914729528,-20.488569823308</coordinates></Point></Placemark>
+<Placemark><name>10738482</name><description>ID: 10738482
+Cod_SGM: PT923972
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.639182068523,-20.488378494935</coordinates></Point></Placemark>
+<Placemark><name>10738483</name><description>ID: 10738483
+Cod_SGM: PT923973
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.639477589955,-20.488161632303</coordinates></Point></Placemark>
+<Placemark><name>10738484</name><description>ID: 10738484
+Cod_SGM: PT923974
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.639727478163,-20.487989571171</coordinates></Point></Placemark>
+<Placemark><name>10738485</name><description>ID: 10738485
+Cod_SGM: PT923975
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.640074206959,-20.487745499981</coordinates></Point></Placemark>
+<Placemark><name>10738486</name><description>ID: 10738486
+Cod_SGM: PT923976
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.640613815485,-20.487365885714</coordinates></Point></Placemark>
+<Placemark><name>10738487</name><description>ID: 10738487
+Cod_SGM: PT923977
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.640981678643,-20.48709952386</coordinates></Point></Placemark>
+<Placemark><name>10738488</name><description>ID: 10738488
+Cod_SGM: PT923978
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.641219675807,-20.486946533315</coordinates></Point></Placemark>
+<Placemark><name>10738489</name><description>ID: 10738489
+Cod_SGM: PT923979
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.641560323696,-20.48670499489</coordinates></Point></Placemark>
+<Placemark><name>10738490</name><description>ID: 10738490
+Cod_SGM: PT923980
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.641825818471,-20.48652104169</coordinates></Point></Placemark>
+<Placemark><name>10738491</name><description>ID: 10738491
+Cod_SGM: PT923981
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.642127019524,-20.486308314714</coordinates></Point></Placemark>
+<Placemark><name>10738492</name><description>ID: 10738492
+Cod_SGM: PT923982
+Tipo: RC13/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.642383148079,-20.486122607832</coordinates></Point></Placemark>
+<Placemark><name>10738493</name><description>ID: 10738493
+Cod_SGM: PT923983
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.642721552258,-20.485877153262</coordinates></Point></Placemark>
+<Placemark><name>10738494</name><description>ID: 10738494
+Cod_SGM: PT923984
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.643193200563,-20.485535256791</coordinates></Point></Placemark>
+<Placemark><name>10738495</name><description>ID: 10738495
+Cod_SGM: PT923985
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.643414816864,-20.485375267613</coordinates></Point></Placemark>
+<Placemark><name>10738496</name><description>ID: 10738496
+Cod_SGM: PT923986
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.643775467993,-20.485122436913</coordinates></Point></Placemark>
+<Placemark><name>10738497</name><description>ID: 10738497
+Cod_SGM: PT923987
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.644288709948,-20.484767556086</coordinates></Point></Placemark>
+<Placemark><name>10738498</name><description>ID: 10738498
+Cod_SGM: PT923988
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.644565677313,-20.484578696783</coordinates></Point></Placemark>
+<Placemark><name>10738499</name><description>ID: 10738499
+Cod_SGM: PT923989
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.645355257426,-20.484031873684</coordinates></Point></Placemark>
+<Placemark><name>10738500</name><description>ID: 10738500
+Cod_SGM: PT923990
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.64497231028,-20.484295422701</coordinates></Point></Placemark>
+<Placemark><name>10738501</name><description>ID: 10738501
+Cod_SGM: PT923991
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.645638415596,-20.483832801769</coordinates></Point></Placemark>
+<Placemark><name>10738502</name><description>ID: 10738502
+Cod_SGM: PT923992
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.646571702602,-20.483181453188</coordinates></Point></Placemark>
+<Placemark><name>10738503</name><description>ID: 10738503
+Cod_SGM: PT923993
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.645951205944,-20.483613541902</coordinates></Point></Placemark>
+<Placemark><name>10738504</name><description>ID: 10738504
+Cod_SGM: PT923994
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.646801755077,-20.483140142464</coordinates></Point></Placemark>
+<Placemark><name>10738505</name><description>ID: 10738505
+Cod_SGM: PT923995
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.647205989364,-20.48292564151</coordinates></Point></Placemark>
+<Placemark><name>10738506</name><description>ID: 10738506
+Cod_SGM: PT923996
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.647533879598,-20.482752818701</coordinates></Point></Placemark>
+<Placemark><name>10738507</name><description>ID: 10738507
+Cod_SGM: PT923997
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.647906053148,-20.482554226473</coordinates></Point></Placemark>
+<Placemark><name>10738508</name><description>ID: 10738508
+Cod_SGM: PT923998
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.648145830544,-20.482365308309</coordinates></Point></Placemark>
+<Placemark><name>10738509</name><description>ID: 10738509
+Cod_SGM: PT923999
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.651173306694,-20.482550423662</coordinates></Point></Placemark>
+<Placemark><name>10738510</name><description>ID: 10738510
+Cod_SGM: PT924000
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.651487781236,-20.482578609029</coordinates></Point></Placemark>
+<Placemark><name>10738511</name><description>ID: 10738511
+Cod_SGM: PT924001
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.651840755992,-20.482608398275</coordinates></Point></Placemark>
+<Placemark><name>10738512</name><description>ID: 10738512
+Cod_SGM: PT924002
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.652354644413,-20.482650025619</coordinates></Point></Placemark>
+<Placemark><name>10738513</name><description>ID: 10738513
+Cod_SGM: PT924003
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.652752969184,-20.482678439646</coordinates></Point></Placemark>
+<Placemark><name>10738514</name><description>ID: 10738514
+Cod_SGM: PT924004
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.653174206743,-20.482712580787</coordinates></Point></Placemark>
+<Placemark><name>10738515</name><description>ID: 10738515
+Cod_SGM: PT924005
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.653675945624,-20.482759187358</coordinates></Point></Placemark>
+<Placemark><name>10756370</name><description>ID: 10756370
+Cod_SGM: PT932725
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.644053070782,-20.484929704107</coordinates></Point></Placemark>
+<Placemark><name>10758271</name><description>ID: 10758271
+Cod_SGM: PT934180
+Tipo: RC13/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625421964134,-20.479553393985</coordinates></Point></Placemark>
+<Placemark><name>10758980</name><description>ID: 10758980
+Cod_SGM: PT934727
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.635757990473,-20.485447233813</coordinates></Point></Placemark>
+<Placemark><name>10758996</name><description>ID: 10758996
+Cod_SGM: PT934740
+Tipo: RC11/1500</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.634249404074,-20.488169188415</coordinates></Point></Placemark>
+<Placemark><name>10767183</name><description>ID: 10767183
+Cod_SGM: PT937578
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.620832485245,-20.471591604</coordinates></Point></Placemark>
+<Placemark><name>10870472</name><description>ID: 10870472
+Cod_SGM: PT1021864
+Tipo: DT11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625541160082,-20.478913241626</coordinates></Point></Placemark>
+<Placemark><name>10902435</name><description>ID: 10902435
+Cod_SGM: PT1049045
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623449834012,-20.478724700754</coordinates></Point></Placemark>
+<Placemark><name>10945019</name><description>ID: 10945019
+Cod_SGM: PT1081560
+Tipo: DT12/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625479583334,-20.478904362503</coordinates></Point></Placemark>
+<Placemark><name>132859110</name><description>ID: 132859110
+Cod_SGM: POSTE040568
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624949551404,-20.482488908231</coordinates></Point></Placemark>
+<Placemark><name>132927870</name><description>ID: 132927870
+Cod_SGM: POSTE045001
+Tipo: DT11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.642546923298,-20.486003825446</coordinates></Point></Placemark>
+<Placemark><name>132927915</name><description>ID: 132927915
+Cod_SGM: POSTE044997
+Tipo: DT11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.64291904968,-20.485733994945</coordinates></Point></Placemark>
+<Placemark><name>133281794</name><description>ID: 133281794
+Cod_SGM: POSTE045444
+Tipo: DT11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.643573114602,-20.485263634045</coordinates></Point></Placemark>
+<Placemark><name>133287877</name><description>ID: 133287877
+Cod_SGM: POSTE045548
+Tipo: DT11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.644750589553,-20.484449904207</coordinates></Point></Placemark>
+<Placemark><name>133287896</name><description>ID: 133287896
+Cod_SGM: POSTE044989
+Tipo: DT11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.645150321257,-20.484172947577</coordinates></Point></Placemark>
+<Placemark><name>133292308</name><description>ID: 133292308
+Cod_SGM: POSTE044982
+Tipo: DT11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.645799896863,-20.48371958359</coordinates></Point></Placemark>
+<Placemark><name>133347761</name><description>ID: 133347761
+Cod_SGM: POSTE045521
+Tipo: DT11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.64642874307,-20.483280474693</coordinates></Point></Placemark>
+<Placemark><name>133347770</name><description>ID: 133347770
+Cod_SGM: POSTE045252
+Tipo: DT11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.647002133956,-20.483033771594</coordinates></Point></Placemark>
+<Placemark><name>133351357</name><description>ID: 133351357
+Cod_SGM: POSTE045534
+Tipo: DT11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.646121469095,-20.483496288497</coordinates></Point></Placemark>
+<Placemark><name>133351369</name><description>ID: 133351369
+Cod_SGM: POSTE045381
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.646274634016,-20.483387923753</coordinates></Point></Placemark>
+<Placemark><name>135368760</name><description>ID: 135368760
+Cod_SGM: POSTE052933
+Tipo: DT11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.620785827427,-20.471528926832</coordinates></Point></Placemark>
+<Placemark><name>195695544</name><description>ID: 195695544
+Cod_SGM: POSTE052937
+Tipo: DT11/1500</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.620742993631,-20.471528972128</coordinates></Point></Placemark>
+<Placemark><name>215662069</name><description>ID: 215662069
+Cod_SGM: POSTE097980
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625566448198,-20.479517713809</coordinates></Point></Placemark>
+<Placemark><name>215662070</name><description>ID: 215662070
+Cod_SGM: POSTE097978
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625576944929,-20.479464578666</coordinates></Point></Placemark>
+<Placemark><name>215662071</name><description>ID: 215662071
+Cod_SGM: POSTE097976
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625588899725,-20.479403878019</coordinates></Point></Placemark>
+<Placemark><name>215662072</name><description>ID: 215662072
+Cod_SGM: POSTE097974
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625599300628,-20.479350741562</coordinates></Point></Placemark>
+<Placemark><name>215662073</name><description>ID: 215662073
+Cod_SGM: POSTE097971
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625609489056,-20.479298956741</coordinates></Point></Placemark>
+<Placemark><name>215662074</name><description>ID: 215662074
+Cod_SGM: POSTE097969
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.62561947196,-20.479248072136</coordinates></Point></Placemark>
+<Placemark><name>215662075</name><description>ID: 215662075
+Cod_SGM: POSTE097967
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625629454856,-20.47919718753</coordinates></Point></Placemark>
+<Placemark><name>218193633</name><description>ID: 218193633
+Cod_SGM: POSTE097007
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625506297574,-20.478158825976</coordinates></Point></Placemark>
+<Placemark><name>7873494</name><description>ID: 7873494
+Cod_SGM: PT083163
+Tipo: RC11/1500</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.654179791181,-20.482679936811</coordinates></Point></Placemark>
+<Placemark><name>7896394</name><description>ID: 7896394
+Cod_SGM: PT090401
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.639164730764,-20.488240275363</coordinates></Point></Placemark>
+<Placemark><name>7896478</name><description>ID: 7896478
+Cod_SGM: PT090476
+Tipo: RC10/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.637446534241,-20.488082251785</coordinates></Point></Placemark>
+<Placemark><name>7905563</name><description>ID: 7905563
+Cod_SGM: PT090833
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.637250799408,-20.487834774661</coordinates></Point></Placemark>
+<Placemark><name>7905842</name><description>ID: 7905842
+Cod_SGM: PT091022
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.637047177303,-20.487576714785</coordinates></Point></Placemark>
+<Placemark><name>7906898</name><description>ID: 7906898
+Cod_SGM: PT091798
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.638296746533,-20.489147845282</coordinates></Point></Placemark>
+<Placemark><name>7907995</name><description>ID: 7907995
+Cod_SGM: PT092606
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.638080139244,-20.488873896855</coordinates></Point></Placemark>
+<Placemark><name>7908589</name><description>ID: 7908589
+Cod_SGM: PT092995
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.637652201575,-20.488338262151</coordinates></Point></Placemark>
+<Placemark><name>7909202</name><description>ID: 7909202
+Cod_SGM: PT093417
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.637862946744,-20.488600662678</coordinates></Point></Placemark>
+<Placemark><name>7918233</name><description>ID: 7918233
+Cod_SGM: PT093706
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.635885213827,-20.486112515678</coordinates></Point></Placemark>
+<Placemark><name>7918302</name><description>ID: 7918302
+Cod_SGM: PT093761
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.634394113086,-20.487894471772</coordinates></Point></Placemark>
+<Placemark><name>7918509</name><description>ID: 7918509
+Cod_SGM: PT093897
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.635515432018,-20.485841264358</coordinates></Point></Placemark>
+<Placemark><name>7919298</name><description>ID: 7919298
+Cod_SGM: PT094442
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.636592108299,-20.486998446641</coordinates></Point></Placemark>
+<Placemark><name>7919368</name><description>ID: 7919368
+Cod_SGM: PT094490
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.635656679159,-20.485823231443</coordinates></Point></Placemark>
+<Placemark><name>7919380</name><description>ID: 7919380
+Cod_SGM: PT094494
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.635670275523,-20.485561536979</coordinates></Point></Placemark>
+<Placemark><name>7919695</name><description>ID: 7919695
+Cod_SGM: PT094689
+Tipo: RC10/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.635160065946,-20.486485884296</coordinates></Point></Placemark>
+<Placemark><name>7919929</name><description>ID: 7919929
+Cod_SGM: PT094846
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.636810470042,-20.48727639377</coordinates></Point></Placemark>
+<Placemark><name>7920122</name><description>ID: 7920122
+Cod_SGM: PT094990
+Tipo: RC10/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.63232598318,-20.487883608271</coordinates></Point></Placemark>
+<Placemark><name>7920243</name><description>ID: 7920243
+Cod_SGM: PT095069
+Tipo: RC10/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.635335233868,-20.486162005032</coordinates></Point></Placemark>
+<Placemark><name>7920330</name><description>ID: 7920330
+Cod_SGM: PT095113
+Tipo: RC11/1500</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.634207013442,-20.488239950129</coordinates></Point></Placemark>
+<Placemark><name>7920546</name><description>ID: 7920546
+Cod_SGM: PT095259
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.636349548124,-20.48669244662</coordinates></Point></Placemark>
+<Placemark><name>7920592</name><description>ID: 7920592
+Cod_SGM: PT095292
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.635381435406,-20.485524009399</coordinates></Point></Placemark>
+<Placemark><name>7920681</name><description>ID: 7920681
+Cod_SGM: PT095352
+Tipo: RC13/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.633767039249,-20.487459330958</coordinates></Point></Placemark>
+<Placemark><name>7921070</name><description>ID: 7921070
+Cod_SGM: PT095651
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.634958955616,-20.486851581444</coordinates></Point></Placemark>
+<Placemark><name>7921175</name><description>ID: 7921175
+Cod_SGM: PT095731
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.633910010242,-20.487709975231</coordinates></Point></Placemark>
+<Placemark><name>7921564</name><description>ID: 7921564
+Cod_SGM: PT096026
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.636113569861,-20.486394753581</coordinates></Point></Placemark>
+<Placemark><name>7921613</name><description>ID: 7921613
+Cod_SGM: PT096068
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.63457885272,-20.487552844006</coordinates></Point></Placemark>
+<Placemark><name>7922215</name><description>ID: 7922215
+Cod_SGM: PT096467
+Tipo: RC10/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.634774121979,-20.487193208499</coordinates></Point></Placemark>
+<Placemark><name>7927890</name><description>ID: 7927890
+Cod_SGM: PT097191
+Tipo: DT10/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625116793235,-20.480844975449</coordinates></Point></Placemark>
+<Placemark><name>7927922</name><description>ID: 7927922
+Cod_SGM: PT097216
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.62516007743,-20.480087745982</coordinates></Point></Placemark>
+<Placemark><name>7939791</name><description>ID: 7939791
+Cod_SGM: PT099640
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624263027507,-20.480697026876</coordinates></Point></Placemark>
+<Placemark><name>7939993</name><description>ID: 7939993
+Cod_SGM: PT099770
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.621054200158,-20.474321151259</coordinates></Point></Placemark>
+<Placemark><name>7940124</name><description>ID: 7940124
+Cod_SGM: PT099866
+Tipo: RC10/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623060726073,-20.478945311553</coordinates></Point></Placemark>
+<Placemark><name>7940286</name><description>ID: 7940286
+Cod_SGM: PT099968
+Tipo: DT10/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.62429542863,-20.479924929679</coordinates></Point></Placemark>
+<Placemark><name>7940308</name><description>ID: 7940308
+Cod_SGM: PT099990
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624315437126,-20.480560754716</coordinates></Point></Placemark>
+<Placemark><name>7940361</name><description>ID: 7940361
+Cod_SGM: PT100027
+Tipo: RC11/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.621213622138,-20.474503398857</coordinates></Point></Placemark>
+<Placemark><name>7940460</name><description>ID: 7940460
+Cod_SGM: PT100076
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.620877570258,-20.471750070798</coordinates></Point></Placemark>
+<Placemark><name>7940584</name><description>ID: 7940584
+Cod_SGM: PT100136
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.620894761839,-20.474139986953</coordinates></Point></Placemark>
+<Placemark><name>7940760</name><description>ID: 7940760
+Cod_SGM: PT100269
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.620564704169,-20.473763327258</coordinates></Point></Placemark>
+<Placemark><name>7940775</name><description>ID: 7940775
+Cod_SGM: PT100284
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.620623681468,-20.471946071153</coordinates></Point></Placemark>
+<Placemark><name>7940821</name><description>ID: 7940821
+Cod_SGM: PT100316
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625261988507,-20.48041468186</coordinates></Point></Placemark>
+<Placemark><name>7940866</name><description>ID: 7940866
+Cod_SGM: PT100346
+Tipo: DT11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623948970579,-20.480642610715</coordinates></Point></Placemark>
+<Placemark><name>7940989</name><description>ID: 7940989
+Cod_SGM: PT100420
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.622225727023,-20.475659951881</coordinates></Point></Placemark>
+<Placemark><name>7941073</name><description>ID: 7941073
+Cod_SGM: PT100483
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625317077279,-20.480876070322</coordinates></Point></Placemark>
+<Placemark><name>7941245</name><description>ID: 7941245
+Cod_SGM: PT100587
+Tipo: RC12/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623220667873,-20.476780866506</coordinates></Point></Placemark>
+<Placemark><name>7941470</name><description>ID: 7941470
+Cod_SGM: PT100746
+Tipo: RC12/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.622827034274,-20.476337870467</coordinates></Point></Placemark>
+<Placemark><name>7941646</name><description>ID: 7941646
+Cod_SGM: PT100878
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623661967694,-20.478129528953</coordinates></Point></Placemark>
+<Placemark><name>7941679</name><description>ID: 7941679
+Cod_SGM: PT100898
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.622809951412,-20.479087807309</coordinates></Point></Placemark>
+<Placemark><name>7941765</name><description>ID: 7941765
+Cod_SGM: PT100957
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.621978762081,-20.475375367066</coordinates></Point></Placemark>
+<Placemark><name>7942120</name><description>ID: 7942120
+Cod_SGM: PT101194
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625094406493,-20.479068953761</coordinates></Point></Placemark>
+<Placemark><name>7942169</name><description>ID: 7942169
+Cod_SGM: PT101235
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624015607514,-20.479868995592</coordinates></Point></Placemark>
+<Placemark><name>7942207</name><description>ID: 7942207
+Cod_SGM: PT101258
+Tipo: RC12/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623033692849,-20.476570520248</coordinates></Point></Placemark>
+<Placemark><name>7942413</name><description>ID: 7942413
+Cod_SGM: PT101408
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623560044071,-20.478662004039</coordinates></Point></Placemark>
+<Placemark><name>7942438</name><description>ID: 7942438
+Cod_SGM: PT101426
+Tipo: RC11/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.622594534491,-20.476078317659</coordinates></Point></Placemark>
+<Placemark><name>7942457</name><description>ID: 7942457
+Cod_SGM: PT101431
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.622560982749,-20.479231230419</coordinates></Point></Placemark>
+<Placemark><name>7942606</name><description>ID: 7942606
+Cod_SGM: PT101531
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624771768811,-20.478999431689</coordinates></Point></Placemark>
+<Placemark><name>7942791</name><description>ID: 7942791
+Cod_SGM: PT101653
+Tipo: RC11/1200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.621748532679,-20.47511169051</coordinates></Point></Placemark>
+<Placemark><name>7942916</name><description>ID: 7942916
+Cod_SGM: PT101736
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624477193534,-20.480735175677</coordinates></Point></Placemark>
+<Placemark><name>7943077</name><description>ID: 7943077
+Cod_SGM: PT101863
+Tipo: RC11/200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.621343292056,-20.474651375264</coordinates></Point></Placemark>
+<Placemark><name>7943101</name><description>ID: 7943101
+Cod_SGM: PT101879
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624809040874,-20.48079182098</coordinates></Point></Placemark>
+<Placemark><name>7943141</name><description>ID: 7943141
+Cod_SGM: PT101921
+Tipo: RC13/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623705945838,-20.479809311424</coordinates></Point></Placemark>
+<Placemark><name>7943160</name><description>ID: 7943160
+Cod_SGM: PT101940
+Tipo: RC12/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623657798574,-20.477280535196</coordinates></Point></Placemark>
+<Placemark><name>7943241</name><description>ID: 7943241
+Cod_SGM: PT102007
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.622379902078,-20.475834631636</coordinates></Point></Placemark>
+<Placemark><name>7943427</name><description>ID: 7943427
+Cod_SGM: PT102115
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623335753988,-20.478789782589</coordinates></Point></Placemark>
+<Placemark><name>7943610</name><description>ID: 7943610
+Cod_SGM: PT102248
+Tipo: DT10/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624611573892,-20.479986778508</coordinates></Point></Placemark>
+<Placemark><name>7943811</name><description>ID: 7943811
+Cod_SGM: PT102386
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619505906675,-20.470485910384</coordinates></Point></Placemark>
+<Placemark><name>7952739</name><description>ID: 7952739
+Cod_SGM: PT102602
+Tipo: RC10/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619099526515,-20.471044550686</coordinates></Point></Placemark>
+<Placemark><name>7952743</name><description>ID: 7952743
+Cod_SGM: PT102606
+Tipo: RC7/200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619065502701,-20.472945135162</coordinates></Point></Placemark>
+<Placemark><name>7952769</name><description>ID: 7952769
+Cod_SGM: PT102634
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.618081204362,-20.472745975</coordinates></Point></Placemark>
+<Placemark><name>7953710</name><description>ID: 7953710
+Cod_SGM: PT103157
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.61914158185,-20.470815487615</coordinates></Point></Placemark>
+<Placemark><name>7953731</name><description>ID: 7953731
+Cod_SGM: PT103171
+Tipo: DT11/200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619176802812,-20.4706194719</coordinates></Point></Placemark>
+<Placemark><name>7953974</name><description>ID: 7953974
+Cod_SGM: PT103347
+Tipo: DT11/200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619235249989,-20.470358937254</coordinates></Point></Placemark>
+<Placemark><name>7954001</name><description>ID: 7954001
+Cod_SGM: PT103367
+Tipo: RC11/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619279193943,-20.470113013395</coordinates></Point></Placemark>
+<Placemark><name>7954018</name><description>ID: 7954018
+Cod_SGM: PT103377
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619288231331,-20.470446444372</coordinates></Point></Placemark>
+<Placemark><name>7954178</name><description>ID: 7954178
+Cod_SGM: PT103511
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.620742090818,-20.47146945027</coordinates></Point></Placemark>
+<Placemark><name>7954187</name><description>ID: 7954187
+Cod_SGM: PT103513
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.620750415947,-20.473974380775</coordinates></Point></Placemark>
+<Placemark><name>7954195</name><description>ID: 7954195
+Cod_SGM: PT103521
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.620124331838,-20.473257647894</coordinates></Point></Placemark>
+<Placemark><name>7954314</name><description>ID: 7954314
+Cod_SGM: PT103599
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.617805117585,-20.472691257296</coordinates></Point></Placemark>
+<Placemark><name>7954477</name><description>ID: 7954477
+Cod_SGM: PT103700
+Tipo: RC11/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.62026553158,-20.473422127744</coordinates></Point></Placemark>
+<Placemark><name>7954530</name><description>ID: 7954530
+Cod_SGM: PT103732
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.620349068674,-20.472156145231</coordinates></Point></Placemark>
+<Placemark><name>7954564</name><description>ID: 7954564
+Cod_SGM: PT103752
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.618838929392,-20.472681054024</coordinates></Point></Placemark>
+<Placemark><name>7954600</name><description>ID: 7954600
+Cod_SGM: PT103781
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.618903920812,-20.472418803336</coordinates></Point></Placemark>
+<Placemark><name>7954877</name><description>ID: 7954877
+Cod_SGM: PT103923
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.620417609882,-20.473595786841</coordinates></Point></Placemark>
+<Placemark><name>7954930</name><description>ID: 7954930
+Cod_SGM: PT103954
+Tipo: RC11/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.618937959112,-20.471895876053</coordinates></Point></Placemark>
+<Placemark><name>7954944</name><description>ID: 7954944
+Cod_SGM: PT103967
+Tipo: RC11/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.618952382665,-20.472203102724</coordinates></Point></Placemark>
+<Placemark><name>7954958</name><description>ID: 7954958
+Cod_SGM: PT103974
+Tipo: RC11/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.618973861507,-20.471717840007</coordinates></Point></Placemark>
+<Placemark><name>7955237</name><description>ID: 7955237
+Cod_SGM: PT104128
+Tipo: RC10/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619999684679,-20.473026480535</coordinates></Point></Placemark>
+<Placemark><name>7955246</name><description>ID: 7955246
+Cod_SGM: PT1225347
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619011092075,-20.470404266531</coordinates></Point></Placemark>
+<Placemark><name>7955247</name><description>ID: 7955247
+Cod_SGM: PT104138
+Tipo: RC10/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.618969977364,-20.472925764906</coordinates></Point></Placemark>
+<Placemark><name>7955272</name><description>ID: 7955272
+Cod_SGM: PT104148
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619017795766,-20.471491240944</coordinates></Point></Placemark>
+<Placemark><name>7955759</name><description>ID: 7955759
+Cod_SGM: PT104487
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.620074542026,-20.470583825636</coordinates></Point></Placemark>
+<Placemark><name>7955788</name><description>ID: 7955788
+Cod_SGM: PT104517
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.620100075988,-20.472345258481</coordinates></Point></Placemark>
+<Placemark><name>7955831</name><description>ID: 7955831
+Cod_SGM: PT104553
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.618654799704,-20.472858231367</coordinates></Point></Placemark>
+<Placemark><name>7955859</name><description>ID: 7955859
+Cod_SGM: PT1225348
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.618715890954,-20.470358950928</coordinates></Point></Placemark>
+<Placemark><name>7956073</name><description>ID: 7956073
+Cod_SGM: PT104683
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619595767934,-20.472735678235</coordinates></Point></Placemark>
+<Placemark><name>7956079</name><description>ID: 7956079
+Cod_SGM: PT1188345
+Tipo: RC11/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.61960538975,-20.472459845227</coordinates></Point></Placemark>
+<Placemark><name>7956195</name><description>ID: 7956195
+Cod_SGM: PT104760
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.618755961736,-20.472934569722</coordinates></Point></Placemark>
+<Placemark><name>7956363</name><description>ID: 7956363
+Cod_SGM: PT104883
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619762497881,-20.472754579276</coordinates></Point></Placemark>
+<Placemark><name>7956409</name><description>ID: 7956409
+Cod_SGM: PT104914
+Tipo: RC10/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.618781515009,-20.472098447046</coordinates></Point></Placemark>
+<Placemark><name>7956720</name><description>ID: 7956720
+Cod_SGM: PT105125
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.6184257958,-20.470305667921</coordinates></Point></Placemark>
+<Placemark><name>7956742</name><description>ID: 7956742
+Cod_SGM: PT105140
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.618387472029,-20.47280715647</coordinates></Point></Placemark>
+<Placemark><name>7965542</name><description>ID: 7965542
+Cod_SGM: PT105261
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619825153497,-20.472556681895</coordinates></Point></Placemark>
+<Placemark><name>7965624</name><description>ID: 7965624
+Cod_SGM: PT105319
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.618456232031,-20.472040075897</coordinates></Point></Placemark>
+<Placemark><name>7965858</name><description>ID: 7965858
+Cod_SGM: PT105445
+Tipo: RC11/1200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619289695766,-20.472990921975</coordinates></Point></Placemark>
+<Placemark><name>8089945</name><description>ID: 8089945
+Cod_SGM: PT136809
+Tipo: RC10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619061080461,-20.471257047528</coordinates></Point></Placemark>
+<Placemark><name>8104160</name><description>ID: 8104160
+Cod_SGM: PT137998
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619792617906,-20.470534991342</coordinates></Point></Placemark>
+<Placemark><name>8104757</name><description>ID: 8104757
+Cod_SGM: PT138137
+Tipo: RC11/200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.621534735913,-20.474869911448</coordinates></Point></Placemark>
+<Placemark><name>8104953</name><description>ID: 8104953
+Cod_SGM: PT138180
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623476970703,-20.477069189822</coordinates></Point></Placemark>
+<Placemark><name>8105710</name><description>ID: 8105710
+Cod_SGM: PT138318
+Tipo: RC11/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.624715874608,-20.48000292493</coordinates></Point></Placemark>
+<Placemark><name>8105809</name><description>ID: 8105809
+Cod_SGM: PT138333
+Tipo: RC11/400</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625967545657,-20.485191149761</coordinates></Point></Placemark>
+<Placemark><name>8257166</name><description>ID: 8257166
+Cod_SGM: PT176608
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.653466883653,-20.481351859559</coordinates></Point></Placemark>
+<Placemark><name>8266241</name><description>ID: 8266241
+Cod_SGM: PT176928
+Tipo: RC11/1200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.653381350604,-20.481386734799</coordinates></Point></Placemark>
+<Placemark><name>8266247</name><description>ID: 8266247
+Cod_SGM: PT176934
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.65432552925,-20.482700328241</coordinates></Point></Placemark>
+<Placemark><name>8266248</name><description>ID: 8266248
+Cod_SGM: PT176935
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.653978205543,-20.482141527674</coordinates></Point></Placemark>
+<Placemark><name>8266249</name><description>ID: 8266249
+Cod_SGM: PT176936
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.653797354041,-20.481846588</coordinates></Point></Placemark>
+<Placemark><name>8266250</name><description>ID: 8266250
+Cod_SGM: PT176937
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.653658064516,-20.481635470461</coordinates></Point></Placemark>
+<Placemark><name>8266251</name><description>ID: 8266251
+Cod_SGM: PT176938
+Tipo: RC11/200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.653533516051,-20.481633335516</coordinates></Point></Placemark>
+<Placemark><name>8266252</name><description>ID: 8266252
+Cod_SGM: PT176939
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.653676218215,-20.481859489773</coordinates></Point></Placemark>
+<Placemark><name>8266254</name><description>ID: 8266254
+Cod_SGM: PT176941
+Tipo: RC11/200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.653816639482,-20.482078117861</coordinates></Point></Placemark>
+<Placemark><name>8266255</name><description>ID: 8266255
+Cod_SGM: PT176942
+Tipo: RC11/200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.65399676562,-20.482376659903</coordinates></Point></Placemark>
+<Placemark><name>8266261</name><description>ID: 8266261
+Cod_SGM: PT176948
+Tipo: RC11/1500</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.654463710638,-20.482826905594</coordinates></Point></Placemark>
+<Placemark><name>8449566</name><description>ID: 8449566
+Cod_SGM: PT224626
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625579424303,-20.478687285285</coordinates></Point></Placemark>
+<Placemark><name>8449567</name><description>ID: 8449567
+Cod_SGM: PT224627
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625518686099,-20.479047214656</coordinates></Point></Placemark>
+<Placemark><name>8449568</name><description>ID: 8449568
+Cod_SGM: PT224628
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625464305665,-20.47931783107</coordinates></Point></Placemark>
+<Placemark><name>8449569</name><description>ID: 8449569
+Cod_SGM: PT224629
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625555981464,-20.479164305761</coordinates></Point></Placemark>
+<Placemark><name>8449570</name><description>ID: 8449570
+Cod_SGM: PT224630
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625410063138,-20.47913133615</coordinates></Point></Placemark>
+<Placemark><name>8520029</name><description>ID: 8520029
+Cod_SGM: PT241072
+Tipo: RC11/1200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.649652216377,-20.482446575278</coordinates></Point></Placemark>
+<Placemark><name>8520244</name><description>ID: 8520244
+Cod_SGM: PT241239
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.650824110728,-20.482530527362</coordinates></Point></Placemark>
+<Placemark><name>8520818</name><description>ID: 8520818
+Cod_SGM: PT241685
+Tipo: DT11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.61855007352,-20.470436324208</coordinates></Point></Placemark>
+<Placemark><name>8522810</name><description>ID: 8522810
+Cod_SGM: PT243116
+Tipo: DT10/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619255540652,-20.470553004889</coordinates></Point></Placemark>
+<Placemark><name>8522811</name><description>ID: 8522811
+Cod_SGM: PT243117
+Tipo: DT10/150</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.618981353313,-20.470505810503</coordinates></Point></Placemark>
+<Placemark><name>8535234</name><description>ID: 8535234
+Cod_SGM: PT245889
+Tipo: RC11/800</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.648704646807,-20.482401594947</coordinates></Point></Placemark>
+<Placemark><name>8535247</name><description>ID: 8535247
+Cod_SGM: PT245903
+Tipo: RC11/200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.649039150552,-20.482410821232</coordinates></Point></Placemark>
+<Placemark><name>8535248</name><description>ID: 8535248
+Cod_SGM: PT245904
+Tipo: RC11/200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.649297133981,-20.482429395661</coordinates></Point></Placemark>
+<Placemark><name>8556107</name><description>ID: 8556107
+Cod_SGM: PT250707
+Tipo: RC10/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.619071583335,-20.472147485155</coordinates></Point></Placemark>
+<Placemark><name>8794304</name><description>ID: 8794304
+Cod_SGM: PT307967
+Tipo: RC10/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.618437137008,-20.470222745038</coordinates></Point></Placemark>
+<Placemark><name>9431377</name><description>ID: 9431377
+Cod_SGM: PT463120
+Tipo: RC12/1200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.653507259101,-20.481393945257</coordinates></Point></Placemark>
+<Placemark><name>9456620</name><description>ID: 9456620
+Cod_SGM: PT468853
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.625524014711,-20.478364958882</coordinates></Point></Placemark>
+<Placemark><name>9621097</name><description>ID: 9621097
+Cod_SGM: PT512074
+Tipo: RC11/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623454000159,-20.479181960791</coordinates></Point></Placemark>
+<Placemark><name>9874962</name><description>ID: 9874962
+Cod_SGM: PT576539
+Tipo: DT10,5/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.652119155302,-20.482607919625</coordinates></Point></Placemark>
+<Placemark><name>9909192</name><description>ID: 9909192
+Cod_SGM: PT583127
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.633569867324,-20.487031224193</coordinates></Point></Placemark>
+<Placemark><name>9978458</name><description>ID: 9978458
+Cod_SGM: PT598428
+Tipo: RC11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.623613113765,-20.478395795366</coordinates></Point></Placemark>
+<Placemark><name>9992107</name><description>ID: 9992107
+Cod_SGM: PT601976
+Tipo: RC11/1200</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.65298787256,-20.482702385735</coordinates></Point></Placemark></Folder>
+<Folder><name>religador</name><visibility>1</visibility>
+<Placemark><name>RD(720272)</name><description>Nome: TV ESSO
+Cod_SGM: RL000008
+Ref: 
+Fases: TRI
+Estado Normal: NF
+Trecho: T2
+Clientes: 781</description><styleUrl>##Chave1</styleUrl>
+<Point><coordinates>-54.624890592687,-20.482826375943</coordinates></Point></Placemark></Folder>
+<Folder><name>subestacao</name><visibility>1</visibility>
+<Placemark><name>CGA</name><description>CGA</description><styleUrl>##SE</styleUrl>
+<Point><coordinates>-54.654597079,-20.4814594892</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>transformador</name><visibility>1</visibility>
+<Placemark><name>TD(24336) (ENTF001248)</name><description>Cod_SGM: ET000362
+Ref: R CORONEL QUITO / R MIGUEL COUTO
+Pot: 112,5 kVA
+Fases: TRI
+Patrimonio: ENTF001248
+Trecho: T3
+Clientes: 57</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.618715890954,-20.470358950928</coordinates></Point></Placemark>
+<Placemark><name>TD(24337) ()</name><description>Cod_SGM: ET000369
+Ref: AV JOAQUIM MANOEL DE CARVALHO / R SHOEI ARAKAKI
+Pot: 112,5 kVA
+Fases: TRI
+Patrimonio: 
+Trecho: T3
+Clientes: 84</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.62026553158,-20.473422127744</coordinates></Point></Placemark>
+<Placemark><name>TD(47488) (ENTF029931)</name><description>Cod_SGM: ET000365
+Ref: R MANOEL DE CARVALHO / R MIGUEL COUTO
+Pot: 45 kVA
+Fases: TRI
+Patrimonio: ENTF029931
+Trecho: T3
+Clientes: 1</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.618456232031,-20.472040075897</coordinates></Point></Placemark>
+<Placemark><name>TD(5110) (ENTF029228)</name><description>Cod_SGM: ET000367
+Ref: AVJOAQUIM MANOEL DE CARVALHO / R ARNALDO SERRA
+Pot: 112,5 kVA
+Fases: TRI
+Patrimonio: ENTF029228
+Trecho: T3
+Clientes: 42</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.61960538975,-20.472459845227</coordinates></Point></Placemark>
+<Placemark><name>TD(5136) (ENTF020134)</name><description>Cod_SGM: ET000363
+Ref: R MIGUEL COUTO / R CALARGE
+Pot: 75 kVA
+Fases: TRI
+Patrimonio: ENTF020134
+Trecho: T3
+Clientes: 39</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.618973861507,-20.471717840007</coordinates></Point></Placemark>
+<Placemark><name>TD(5212) (ENTF027928)</name><description>Cod_SGM: ET000368
+Ref: R JOAQUIM M DE CARVALHO / R BERNARDO F BAIS
+Pot: 75 kVA
+Fases: TRI
+Patrimonio: ENTF027928
+Trecho: T3
+Clientes: 117</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.621213622138,-20.474503398857</coordinates></Point></Placemark>
+<Placemark><name>TD(5217) (ENTF009183)</name><description>Cod_SGM: ET000371
+Ref: R JOAQUIM M DE CARVALHO / R STA AMELIA
+Pot: 112,5 kVA
+Fases: TRI
+Patrimonio: ENTF009183
+Trecho: T3
+Clientes: 102</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.622594534491,-20.476078317659</coordinates></Point></Placemark>
+<Placemark><name>TD(5227) (ENTF021733)</name><description>Cod_SGM: ET000373
+Ref: R PARAPUA / R MEDIANA
+Pot: 75 kVA
+Fases: TRI
+Patrimonio: ENTF021733
+Trecho: T3
+Clientes: 78</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.624715874608,-20.48000292493</coordinates></Point></Placemark>
+<Placemark><name>TD(58478) (ENTF032032)</name><description>Cod_SGM: ET000372
+Ref: AV NOROESTE - R ALIANCA
+Pot: 15 kVA
+Fases: TRI
+Patrimonio: ENTF032032
+Trecho: T3
+Clientes: 1</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.623454000159,-20.479181960791</coordinates></Point></Placemark>
+<Placemark><name>TD(6031) (ENTF018157)</name><description>Cod_SGM: ET000364
+Ref: R CORONEL QUITO / AV NOROESTE
+Pot: 75 kVA
+Fases: TRI
+Patrimonio: ENTF018157
+Trecho: T3
+Clientes: 22</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.619792617906,-20.470534991342</coordinates></Point></Placemark>
+<Placemark><name>TD(6210) (ENTF017930)</name><description>Cod_SGM: ET000374
+Ref: R SIQUEIRA CAMPOS / R MEDIANA
+Pot: 45 kVA
+Fases: TRI
+Patrimonio: ENTF017930
+Trecho: T3
+Clientes: 41</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.623948970579,-20.480642610715</coordinates></Point></Placemark>
+<Placemark><name>TD(702530) (ENTF040879)</name><description>Cod_SGM: ET000370
+Ref: 
+Pot: 45 kVA
+Fases: TRI
+Patrimonio: ENTF040879
+Trecho: T3
+Clientes: 19</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.618387971953,-20.472805808787</coordinates></Point></Placemark>
+<Placemark><name>TD(703611) (ENTF030554)</name><description>Cod_SGM: ET000366
+Ref: 
+Pot: 45 kVA
+Fases: TRI
+Patrimonio: ENTF030554
+Trecho: T3
+Clientes: 19</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.620742089426,-20.471469540553</coordinates></Point></Placemark>
+<Placemark><name>TD(711676) (ENTF028225)</name><description>Cod_SGM: ET000358
+Ref: 
+Pot: 45 kVA
+Fases: TRI
+Patrimonio: ENTF028225
+Trecho: T3
+Clientes: 72</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.635886373278,-20.486111899347</coordinates></Point></Placemark>
+<Placemark><name>TD(714583) ()</name><description>Cod_SGM: ET000359
+Ref: 
+Pot: 75 kVA
+Fases: TRI
+Patrimonio: 
+Trecho: T3
+Clientes: 63</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.634394113086,-20.487894471772</coordinates></Point></Placemark>
+<Placemark><name>TD(727701) (ENTF064102)</name><description>Cod_SGM: ET000360
+Ref: 
+Pot: 112,5 kVA
+Fases: TRI
+Patrimonio: ENTF064102
+Trecho: T3
+Clientes: 60</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.639164730764,-20.488240275363</coordinates></Point></Placemark>
+<Placemark><name>TD(9243) (ENTF040757)</name><description>Cod_SGM: ET000375
+Ref: RUA JACEGUAI / RUA JAPAO - MARCOS ROBERTO
+Pot: 75 kVA
+Fases: TRI
+Patrimonio: ENTF040757
+Trecho: T3
+Clientes: 81</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.624771768811,-20.478999431689</coordinates></Point></Placemark>
+<Placemark><name>TD(9624) (ENTF025204)</name><description>Cod_SGM: ET000361
+Ref: R ALIANCA / AV NOROESTE
+Pot: 45 kVA
+Fases: TRI
+Patrimonio: ENTF025204
+Trecho: T3
+Clientes: 61</description><visibility>0</visibility><styleUrl>##ET</styleUrl>
+<Point><coordinates>-54.622560982749,-20.479231230419</coordinates></Point></Placemark></Folder>
+<Folder><name>trecho</name><visibility>1</visibility>
+<Folder><name>T1</name><visibility>1</visibility>
+<Placemark><name>131768065</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,037 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.641825349067,-20.486520403187,0 -54.642111132066,-20.486319477143,0</coordinates></LineString></Placemark>
+<Placemark><name>132927863</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,021 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.642546923298,-20.486003825446,0 -54.642383148079,-20.486122607832,0</coordinates></LineString></Placemark>
+<Placemark><name>132927908</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,026 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.64291904968,-20.485733994945,0 -54.642721552258,-20.485877153262,0</coordinates></LineString></Placemark>
+<Placemark><name>133281787</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,020 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.643414816864,-20.485375267613,0 -54.643573114602,-20.485263634045,0</coordinates></LineString></Placemark>
+<Placemark><name>133287870</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,024 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.644565677313,-20.484578696783,0 -54.644750589553,-20.484449904207,0</coordinates></LineString></Placemark>
+<Placemark><name>133287889</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,023 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.64497231028,-20.484295422701,0 -54.645150321257,-20.484172947577,0</coordinates></LineString></Placemark>
+<Placemark><name>133292301</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,021 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.645638415596,-20.483832801769,0 -54.645799896863,-20.48371958359,0</coordinates></LineString></Placemark>
+<Placemark><name>133347754</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,020 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.646274634016,-20.483387923753,0 -54.64642874307,-20.483280474693,0</coordinates></LineString></Placemark>
+<Placemark><name>133347763</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,024 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.646801755077,-20.483140142464,0 -54.647002133956,-20.483033771594,0</coordinates></LineString></Placemark>
+<Placemark><name>133351350</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,022 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.645951205944,-20.483613541902,0 -54.646120620566,-20.483495373952,0</coordinates></LineString></Placemark>
+<Placemark><name>133351362</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,020 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.646120620566,-20.483495373952,0 -54.646274634016,-20.483387923753,0</coordinates></LineString></Placemark>
+<Placemark><name>133848992</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,048 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.626255884579,-20.485814932175,0 -54.626059217393,-20.48541779952,0</coordinates></LineString></Placemark>
+<Placemark><name>133849728</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,001 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.628297247654,-20.489724962109,0 -54.628285579019,-20.489729678997,0</coordinates></LineString></Placemark>
+<Placemark><name>22865715</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,039 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.647205989364,-20.48292564151,0 -54.647533414311,-20.482751909356,0</coordinates></LineString></Placemark>
+<Placemark><name>2380986</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,028 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.653676218215,-20.481859489773,0 -54.653816639482,-20.482078117861,0</coordinates></LineString></Placemark>
+<Placemark><name>24813928</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,039 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.625161227913,-20.483640907829,0 -54.625319974674,-20.483967447412,0</coordinates></LineString></Placemark>
+<Placemark><name>24813935</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,040 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.625516422922,-20.484378574589,0 -54.625674436424,-20.484709257853,0</coordinates></LineString></Placemark>
+<Placemark><name>24813949</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,049 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.625674436424,-20.484709257853,0 -54.625870050494,-20.485118657595,0</coordinates></LineString></Placemark>
+<Placemark><name>24813956</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,026 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.625929457885,-20.485212572405,0 -54.626059217393,-20.48541779952,0</coordinates></LineString></Placemark>
+<Placemark><name>24813963</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,047 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.626868562751,-20.487052603462,0 -54.627060030778,-20.487439098967,0</coordinates></LineString></Placemark>
+<Placemark><name>24813970</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,055 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.626262855065,-20.485829024449,0 -54.626487402514,-20.486282706602,0</coordinates></LineString></Placemark>
+<Placemark><name>24813977</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,043 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.626487402514,-20.486282706602,0 -54.626665483107,-20.486642289678,0</coordinates></LineString></Placemark>
+<Placemark><name>24813984</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,050 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.626665483107,-20.486642289678,0 -54.626868562751,-20.487052603462,0</coordinates></LineString></Placemark>
+<Placemark><name>24813991</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,039 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.627222713144,-20.48776569117,0 -54.627385489176,-20.488092465155,0</coordinates></LineString></Placemark>
+<Placemark><name>24813998</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,050 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.627385489176,-20.488092465155,0 -54.627590006751,-20.488502978625,0</coordinates></LineString></Placemark>
+<Placemark><name>24814005</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,039 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.627590006751,-20.488502978625,0 -54.627751946885,-20.488828115495,0</coordinates></LineString></Placemark>
+<Placemark><name>24814012</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,046 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.627751946885,-20.488828115495,0 -54.627939451738,-20.489204622841,0</coordinates></LineString></Placemark>
+<Placemark><name>24814019</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,051 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.627939451738,-20.489204622841,0 -54.628149176504,-20.489625682171,0</coordinates></LineString></Placemark>
+<Placemark><name>24814026</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,040 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.631415865447,-20.488318912576,0 -54.631762880161,-20.488163089265,0</coordinates></LineString></Placemark>
+<Placemark><name>24814033</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,041 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.631056981665,-20.488479991302,0 -54.631415865447,-20.488318912576,0</coordinates></LineString></Placemark>
+<Placemark><name>24814047</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,040 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.630710255863,-20.488635636411,0 -54.631056981665,-20.488479991302,0</coordinates></LineString></Placemark>
+<Placemark><name>24814068</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,035 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.632743091732,-20.487725126923,0 -54.633049369659,-20.487588340947,0</coordinates></LineString></Placemark>
+<Placemark><name>24814075</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,037 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.632415099818,-20.487871730047,0 -54.632743091732,-20.487725126923,0</coordinates></LineString></Placemark>
+<Placemark><name>24814082</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,008 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.632337420288,-20.48790643039,0 -54.632415099818,-20.487871730047,0</coordinates></LineString></Placemark>
+<Placemark><name>24814089</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,023 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.632131689703,-20.487998351636,0 -54.632337420288,-20.48790643039,0</coordinates></LineString></Placemark>
+<Placemark><name>24814096</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,046 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.633911072512,-20.487709447893,0 -54.634121287236,-20.488074610233,0</coordinates></LineString></Placemark>
+<Placemark><name>24814103</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,033 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.634249404074,-20.488169188415,0 -54.634394113086,-20.487894471772,0</coordinates></LineString></Placemark>
+<Placemark><name>24814110</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,045 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.634962666037,-20.486853347766,0 -54.635162729337,-20.486487184831,0</coordinates></LineString></Placemark>
+<Placemark><name>24814117</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,042 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.634776500706,-20.487194324556,0 -54.634962666037,-20.486853347766,0</coordinates></LineString></Placemark>
+<Placemark><name>24814124</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,044 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.63458027885,-20.487553585869,0 -54.634776500706,-20.487194324556,0</coordinates></LineString></Placemark>
+<Placemark><name>24814131</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,040 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.635339228949,-20.486163955831,0 -54.635515432018,-20.485841264358,0</coordinates></LineString></Placemark>
+<Placemark><name>24814138</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,040 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.635162729337,-20.486487184831,0 -54.635339228949,-20.486163955831,0</coordinates></LineString></Placemark>
+<Placemark><name>24817828</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,041 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.636112310442,-20.486395639462,0 -54.636348870507,-20.486692888909,0</coordinates></LineString></Placemark>
+<Placemark><name>24817835</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,039 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.635886373278,-20.486111899347,0 -54.636112310442,-20.486395639462,0</coordinates></LineString></Placemark>
+<Placemark><name>24817842</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,042 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.636348870507,-20.486692888909,0 -54.636592108299,-20.486998446641,0</coordinates></LineString></Placemark>
+<Placemark><name>24817849</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,037 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.637862171923,-20.488601193952,0 -54.638078977011,-20.488874693769,0</coordinates></LineString></Placemark>
+<Placemark><name>24817856</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,025 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.638078977011,-20.488874693769,0 -54.638224986672,-20.489058913177,0</coordinates></LineString></Placemark>
+<Placemark><name>24817863</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,040 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.638350943632,-20.488969420795,0 -54.638660993481,-20.48874896472,0</coordinates></LineString></Placemark>
+<Placemark><name>24817870</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,035 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.638914071267,-20.488569001621,0 -54.639182068523,-20.488378494935,0</coordinates></LineString></Placemark>
+<Placemark><name>24817877</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,033 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.638660993481,-20.48874896472,0 -54.638914071267,-20.488569001621,0</coordinates></LineString></Placemark>
+<Placemark><name>24817884</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,030 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.64098872933,-20.487108469443,0 -54.641219488323,-20.486946259856,0</coordinates></LineString></Placemark>
+<Placemark><name>24817891</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,045 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.639730298697,-20.487993131366,0 -54.640077216363,-20.487749243347,0</coordinates></LineString></Placemark>
+<Placemark><name>24817898</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,032 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.639482196407,-20.48816747438,0 -54.639730298697,-20.487993131366,0</coordinates></LineString></Placemark>
+<Placemark><name>24817905</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,002 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.642111132066,-20.486319477143,0 -54.642127019524,-20.486308314714,0</coordinates></LineString></Placemark>
+<Placemark><name>24817912</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,034 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.641561169449,-20.486706090026,0 -54.641825349067,-20.486520403187,0</coordinates></LineString></Placemark>
+<Placemark><name>24817919</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,044 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.641219488323,-20.486946259856,0 -54.641561169449,-20.486706090026,0</coordinates></LineString></Placemark>
+<Placemark><name>24817926</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,048 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.640616917948,-20.487369810942,0 -54.64098872933,-20.487108469443,0</coordinates></LineString></Placemark>
+<Placemark><name>24817933</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,070 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.640077216363,-20.487749243347,0 -54.640616917948,-20.487369810942,0</coordinates></LineString></Placemark>
+<Placemark><name>24817940</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,026 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.643573114602,-20.485263634045,0 -54.643775467993,-20.485122436913,0</coordinates></LineString></Placemark>
+<Placemark><name>24817947</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,029 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.643193200563,-20.485535256791,0 -54.643414816864,-20.485375267613,0</coordinates></LineString></Placemark>
+<Placemark><name>24817954</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,036 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.64291904968,-20.485733994945,0 -54.643193200563,-20.485535256791,0</coordinates></LineString></Placemark>
+<Placemark><name>24817961</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,023 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.642546923298,-20.486003825446,0 -54.642721552258,-20.485877153262,0</coordinates></LineString></Placemark>
+<Placemark><name>24817968</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,028 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.644750589553,-20.484449904207,0 -54.64497231028,-20.484295422701,0</coordinates></LineString></Placemark>
+<Placemark><name>24817975</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,035 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.644288709948,-20.484767556086,0 -54.644565677313,-20.484578696783,0</coordinates></LineString></Placemark>
+<Placemark><name>24817982</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,030 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.644053070782,-20.484929704107,0 -54.644288709948,-20.484767556086,0</coordinates></LineString></Placemark>
+<Placemark><name>24817989</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,035 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.643775467993,-20.485122436913,0 -54.644053070782,-20.484929704107,0</coordinates></LineString></Placemark>
+<Placemark><name>24817996</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,018 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.64642874307,-20.483280474693,0 -54.646571702602,-20.483181453188,0</coordinates></LineString></Placemark>
+<Placemark><name>24818003</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,026 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.645150321257,-20.484172947577,0 -54.645355257426,-20.484031873684,0</coordinates></LineString></Placemark>
+<Placemark><name>24818010</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,036 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.645355257426,-20.484031873684,0 -54.645638415596,-20.483832801769,0</coordinates></LineString></Placemark>
+<Placemark><name>24818017</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,019 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.645799896863,-20.48371958359,0 -54.645951205944,-20.483613541902,0</coordinates></LineString></Placemark>
+<Placemark><name>24818031</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,032 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.651488001735,-20.482576715625,0 -54.651173306694,-20.482550423662,0</coordinates></LineString></Placemark>
+<Placemark><name>24818038</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,036 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.651840981986,-20.482606143728,0 -54.651488001735,-20.482576715625,0</coordinates></LineString></Placemark>
+<Placemark><name>24818045</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,028 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.652117202076,-20.482629204992,0 -54.651840981986,-20.482606143728,0</coordinates></LineString></Placemark>
+<Placemark><name>24818052</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,041 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.652752625402,-20.48268213747,0 -54.65235475672,-20.482648943487,0</coordinates></LineString></Placemark>
+<Placemark><name>24818059</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,019 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.653173752044,-20.48271727046,0 -54.652987882179,-20.482701753735,0</coordinates></LineString></Placemark>
+<Placemark><name>24818066</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,024 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.65235475672,-20.482648943487,0 -54.652117202076,-20.482629204992,0</coordinates></LineString></Placemark>
+<Placemark><name>24818073</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,024 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.652987882179,-20.482701753735,0 -54.652752625402,-20.48268213747,0</coordinates></LineString></Placemark>
+<Placemark><name>24818080</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,032 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.648397053114,-20.482387314322,0 -54.64870761312,-20.482414458295,0</coordinates></LineString></Placemark>
+<Placemark><name>24818087</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,036 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.649296310529,-20.482439408259,0 -54.649646581192,-20.482464198575,0</coordinates></LineString></Placemark>
+<Placemark><name>24818094</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,041 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.650425689096,-20.48249596697,0 -54.650824577876,-20.482525025133,0</coordinates></LineString></Placemark>
+<Placemark><name>24818101</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,036 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.650824577876,-20.482525025133,0 -54.651173306694,-20.482550423662,0</coordinates></LineString></Placemark>
+<Placemark><name>24818108</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,053 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.654188704455,-20.482812172412,0 -54.653675945624,-20.482759187358,0</coordinates></LineString></Placemark>
+<Placemark><name>24818115</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,035 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.654138561055,-20.482429417418,0 -54.654313158127,-20.482707204809,0</coordinates></LineString></Placemark>
+<Placemark><name>24818122</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,016 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.654313158127,-20.482707204809,0 -54.654392314829,-20.482833255537,0</coordinates></LineString></Placemark>
+<Placemark><name>24859076</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,039 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.629333573424,-20.48925374345,0 -54.629671617361,-20.489101956097,0</coordinates></LineString></Placemark>
+<Placemark><name>24859083</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,038 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.630020661295,-20.488945261274,0 -54.630353878564,-20.488795664132,0</coordinates></LineString></Placemark>
+<Placemark><name>24859090</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,040 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.629671617361,-20.489101956097,0 -54.630020661295,-20.488945261274,0</coordinates></LineString></Placemark>
+<Placemark><name>24963386</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,031 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.65349436504,-20.481403704441,0 -54.65364771615,-20.481647973189,0</coordinates></LineString></Placemark>
+<Placemark><name>24963393</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,026 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.65364771615,-20.481647973189,0 -54.653779455756,-20.481857724438,0</coordinates></LineString></Placemark>
+<Placemark><name>24963400</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,038 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.653779455756,-20.481857724438,0 -54.653965746548,-20.482154182506,0</coordinates></LineString></Placemark>
+<Placemark><name>24980613</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,002 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.653506536918,-20.481384724462,0 -54.653483607715,-20.481386401229,0</coordinates></LineString></Placemark>
+<Placemark><name>3286087</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,010 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.653381350604,-20.481386734799,0 -54.653483607715,-20.481386401229,0</coordinates></LineString></Placemark>
+<Placemark><name>3708048</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,014 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.654392314829,-20.482833255537,0 -54.654461273892,-20.482943003981,0</coordinates></LineString></Placemark>
+<Placemark><name>3708092</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,002 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.624890592687,-20.482826375943,0 -54.624887336097,-20.482844933767,0</coordinates></LineString></Placemark>
+<Placemark><name>3708100</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,020 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.624887336097,-20.482844933767,0 -54.624901292409,-20.483033857626,0</coordinates></LineString></Placemark>
+<Placemark><name>3708107</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,033 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.624901292409,-20.483033857626,0 -54.62500685138,-20.483323097012,0</coordinates></LineString></Placemark>
+<Placemark><name>3708114</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,038 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.62500685138,-20.483323097012,0 -54.625161227913,-20.483640907829,0</coordinates></LineString></Placemark>
+<Placemark><name>3708122</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,049 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.625319974674,-20.483967447412,0 -54.625516422922,-20.484378574589,0</coordinates></LineString></Placemark>
+<Placemark><name>3708130</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,012 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.625870050494,-20.485118657595,0 -54.625929457885,-20.485212572405,0</coordinates></LineString></Placemark>
+<Placemark><name>3708137</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,001 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.626255884579,-20.485814932175,0 -54.626262855065,-20.485829024449,0</coordinates></LineString></Placemark>
+<Placemark><name>3708145</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,032 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.628217204383,-20.489757460866,0 -54.628354076958,-20.490024009359,0</coordinates></LineString></Placemark>
+<Placemark><name>3708152</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,039 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.627060030778,-20.487439098967,0 -54.627222713144,-20.48776569117,0</coordinates></LineString></Placemark>
+<Placemark><name>3708159</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,025 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.628217204383,-20.489757460866,0 -54.627995473669,-20.489855027776,0</coordinates></LineString></Placemark>
+<Placemark><name>3708166</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,016 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.628149176504,-20.489625682171,0 -54.628217204383,-20.489757460866,0</coordinates></LineString></Placemark>
+<Placemark><name>3708173</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,007 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.628285579019,-20.489729678997,0 -54.628217204383,-20.489757460866,0</coordinates></LineString></Placemark>
+<Placemark><name>3708180</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,041 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.630353878564,-20.488795664132,0 -54.630710255863,-20.488635636411,0</coordinates></LineString></Placemark>
+<Placemark><name>3708188</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,041 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.628297247654,-20.489724962109,0 -54.628659905448,-20.489568095118,0</coordinates></LineString></Placemark>
+<Placemark><name>3708195</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,037 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.628659905448,-20.489568095118,0 -54.628982888247,-20.489411136765,0</coordinates></LineString></Placemark>
+<Placemark><name>3708202</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,042 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.631762880161,-20.488163089265,0 -54.632131689703,-20.487998351636,0</coordinates></LineString></Placemark>
+<Placemark><name>3708209</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,001 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.633706681197,-20.487345809618,0 -54.63371679848,-20.487342245125,0</coordinates></LineString></Placemark>
+<Placemark><name>3708217</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,037 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.633706681197,-20.487345809618,0 -54.633569867324,-20.487031224193,0</coordinates></LineString></Placemark>
+<Placemark><name>3708224</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,073 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.633049369659,-20.487588340947,0 -54.633706681197,-20.487345809618,0</coordinates></LineString></Placemark>
+<Placemark><name>3708231</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,014 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.633706681197,-20.487345809618,0 -54.633767039249,-20.487459330958,0</coordinates></LineString></Placemark>
+<Placemark><name>3708238</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,031 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.633767039249,-20.487459330958,0 -54.633911072512,-20.487709447893,0</coordinates></LineString></Placemark>
+<Placemark><name>3708246</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,014 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.634214461826,-20.488235446197,0 -54.634280936057,-20.488350134422,0</coordinates></LineString></Placemark>
+<Placemark><name>3708253</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,008 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.634214461826,-20.488235446197,0 -54.634249404074,-20.488169188415,0</coordinates></LineString></Placemark>
+<Placemark><name>3708260</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,020 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.634121287236,-20.488074610233,0 -54.634214461826,-20.488235446197,0</coordinates></LineString></Placemark>
+<Placemark><name>3708267</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,042 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.634394113086,-20.487894471772,0 -54.63458027885,-20.487553585869,0</coordinates></LineString></Placemark>
+<Placemark><name>3708275</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,021 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.635574374532,-20.48573469665,0 -54.635670275523,-20.485561536979,0</coordinates></LineString></Placemark>
+<Placemark><name>3711062</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,030 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.635574374532,-20.48573469665,0 -54.635381435406,-20.485524009399,0</coordinates></LineString></Placemark>
+<Placemark><name>3711070</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,013 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.635515432018,-20.485841264358,0 -54.635574374532,-20.48573469665,0</coordinates></LineString></Placemark>
+<Placemark><name>3711077</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,013 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.635574374532,-20.48573469665,0 -54.635656679159,-20.485823231443,0</coordinates></LineString></Placemark>
+<Placemark><name>3711084</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,039 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.635656679159,-20.485823231443,0 -54.635886373278,-20.486111899347,0</coordinates></LineString></Placemark>
+<Placemark><name>3711091</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,012 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.638224986672,-20.489058913177,0 -54.638296746533,-20.489147845282,0</coordinates></LineString></Placemark>
+<Placemark><name>3711098</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,008 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.638224986672,-20.489058913177,0 -54.63815802576,-20.489107126964,0</coordinates></LineString></Placemark>
+<Placemark><name>3711105</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,036 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.637653172175,-20.488337462632,0 -54.637862171923,-20.488601193952,0</coordinates></LineString></Placemark>
+<Placemark><name>3711112</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,016 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.638224986672,-20.489058913177,0 -54.638350943632,-20.488969420795,0</coordinates></LineString></Placemark>
+<Placemark><name>3711120</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,039 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.639182068523,-20.488378494935,0 -54.639482196407,-20.48816747438,0</coordinates></LineString></Placemark>
+<Placemark><name>3711128</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,033 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.642127019524,-20.486308314714,0 -54.642383148079,-20.486122607832,0</coordinates></LineString></Placemark>
+<Placemark><name>3711136</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,024 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.646571702602,-20.483181453188,0 -54.646801755077,-20.483140142464,0</coordinates></LineString></Placemark>
+<Placemark><name>3711143</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,044 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.647533414311,-20.482751909356,0 -54.647906053148,-20.482554226473,0</coordinates></LineString></Placemark>
+<Placemark><name>3711151</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,032 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.647906053148,-20.482554226473,0 -54.648145830544,-20.482365308309,0</coordinates></LineString></Placemark>
+<Placemark><name>3711165</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,052 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.653675945624,-20.482759187358,0 -54.653173752044,-20.48271727046,0</coordinates></LineString></Placemark>
+<Placemark><name>3711173</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,026 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.648145830544,-20.482365308309,0 -54.648397053114,-20.482387314322,0</coordinates></LineString></Placemark>
+<Placemark><name>3711180</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,034 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.64870761312,-20.482414458295,0 -54.649039471322,-20.482421210539,0</coordinates></LineString></Placemark>
+<Placemark><name>3711187</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,026 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.649039471322,-20.482421210539,0 -54.649296310529,-20.482439408259,0</coordinates></LineString></Placemark>
+<Placemark><name>3711194</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,041 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.649646581192,-20.482464198575,0 -54.650041925114,-20.48246801569,0</coordinates></LineString></Placemark>
+<Placemark><name>3711201</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,040 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.650041925114,-20.48246801569,0 -54.650425689096,-20.48249596697,0</coordinates></LineString></Placemark>
+<Placemark><name>3711215</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,021 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.654392314829,-20.482833255537,0 -54.654188704455,-20.482812172412,0</coordinates></LineString></Placemark>
+<Placemark><name>3711223</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,007 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.654463785215,-20.482840903766,0 -54.654392314829,-20.482833255537,0</coordinates></LineString></Placemark>
+<Placemark><name>3711237</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,038 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.65399676562,-20.482376659903,0 -54.654179791181,-20.482679936811,0</coordinates></LineString></Placemark>
+<Placemark><name>3711251</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,035 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.653965746548,-20.482154182506,0 -54.654138561055,-20.482429417418,0</coordinates></LineString></Placemark>
+<Placemark><name>3711287</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,002 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.653483607715,-20.481386401229,0 -54.653473912563,-20.481368570549,0</coordinates></LineString></Placemark>
+<Placemark><name>3729038</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,015 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.635670275523,-20.485561536979,0 -54.635757990473,-20.485447233813,0</coordinates></LineString></Placemark>
+<Placemark><name>3729059</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,040 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.628982888247,-20.489411136765,0 -54.629333573424,-20.48925374345,0</coordinates></LineString></Placemark>
+<Placemark><name>3777122</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,002 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.653483607715,-20.481386401229,0 -54.65349436504,-20.481403704441,0</coordinates></LineString></Placemark>
+<Placemark><name>3778136</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,031 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.653534583718,-20.481632446905,0 -54.653381350604,-20.481386734799,0</coordinates></LineString></Placemark>
+<Placemark><name>3781947</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,029 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.653789166143,-20.481364342872,0 -54.653506536918,-20.481384724462,0</coordinates></LineString></Placemark>
+<Placemark><name>3799299</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,015 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.639182068523,-20.488378494935,0 -54.639164730764,-20.488240275363,0</coordinates></LineString></Placemark>
+<Placemark><name>4049941</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,024 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.647002133956,-20.483033771594,0 -54.647205989364,-20.48292564151,0</coordinates></LineString></Placemark>
+<Placemark><name>4214687</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,038 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.636592108299,-20.486998446641,0 -54.636810470042,-20.48727639377,0</coordinates></LineString></Placemark>
+<Placemark><name>4228757</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,029 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.653676218215,-20.481859489773,0 -54.653534583718,-20.481632446905,0</coordinates></LineString></Placemark>
+<Placemark><name>4228764</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,038 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.653816639482,-20.482078117861,0 -54.65399676562,-20.482376659903,0</coordinates></LineString></Placemark>
+<Placemark><name>4229196</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,004 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.654179791181,-20.482679936811,0 -54.654199121688,-20.482713249395,0</coordinates></LineString></Placemark>
+<Placemark><name>4371485</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,041 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.636810470042,-20.48727639377,0 -54.637047177303,-20.487576714785,0</coordinates></LineString></Placemark>
+<Placemark><name>4371492</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,035 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.637047177303,-20.487576714785,0 -54.637250799408,-20.487834774661,0</coordinates></LineString></Placemark>
+<Placemark><name>4371499</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,034 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.637250799408,-20.487834774661,0 -54.637446534241,-20.488082251785,0</coordinates></LineString></Placemark>
+<Placemark><name>4450280</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,035 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.637446534241,-20.488082251785,0 -54.637653172175,-20.488337462632,0</coordinates></LineString></Placemark></Folder>
+<Folder><name>T2</name><visibility>1</visibility>
+<Placemark><name>23229552</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,040 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.621976822307,-20.475376875647,0 -54.622226017224,-20.475659775249,0</coordinates></LineString></Placemark>
+<Placemark><name>23229559</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,025 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.622226017224,-20.475659775249,0 -54.622379902078,-20.475834631636,0</coordinates></LineString></Placemark>
+<Placemark><name>23229566</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,035 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.622379902078,-20.475834631636,0 -54.622594534491,-20.476078317659,0</coordinates></LineString></Placemark>
+<Placemark><name>23229573</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,031 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.621343292056,-20.474651375264,0 -54.621534735913,-20.474869911448,0</coordinates></LineString></Placemark>
+<Placemark><name>23229580</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,024 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.620417707079,-20.47359569787,0 -54.620564704169,-20.473763327258,0</coordinates></LineString></Placemark>
+<Placemark><name>23229587</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,030 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.620564704169,-20.473763327258,0 -54.620750028551,-20.473974646375,0</coordinates></LineString></Placemark>
+<Placemark><name>23229601</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,023 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.620750028551,-20.473974646375,0 -54.620894859036,-20.474139897982,0</coordinates></LineString></Placemark>
+<Placemark><name>23229608</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,026 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.620894859036,-20.474139897982,0 -54.621054005763,-20.474321329202,0</coordinates></LineString></Placemark>
+<Placemark><name>23229615</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,026 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.621054005763,-20.474321329202,0 -54.621213622138,-20.474503398857,0</coordinates></LineString></Placemark>
+<Placemark><name>2348582</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,030 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.623220667873,-20.476780866506,0 -54.623033692849,-20.476570520248,0</coordinates></LineString></Placemark>
+<Placemark><name>2356832</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,034 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.621764171713,-20.475135293115,0 -54.621976822307,-20.475376875647,0</coordinates></LineString></Placemark>
+<Placemark><name>2356840</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,021 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.621213622138,-20.474503398857,0 -54.621343292056,-20.474651375264,0</coordinates></LineString></Placemark>
+<Placemark><name>2356847</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,024 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.62026553158,-20.473422127744,0 -54.620417707079,-20.47359569787,0</coordinates></LineString></Placemark>
+<Placemark><name>2356855</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,013 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.61970531647,-20.472647328684,0 -54.619762497881,-20.472754579276,0</coordinates></LineString></Placemark>
+<Placemark><name>2365669</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,016 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.62516007743,-20.480087745982,0 -54.625314723401,-20.480126524335,0</coordinates></LineString></Placemark>
+<Placemark><name>23833756</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,033 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625409752083,-20.479132867044,0 -54.625094916119,-20.47906697407,0</coordinates></LineString></Placemark>
+<Placemark><name>23833763</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,034 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625094916119,-20.47906697407,0 -54.624771768811,-20.478999431689,0</coordinates></LineString></Placemark>
+<Placemark><name>23833770</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,026 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625466026046,-20.479318125509,0 -54.625421964134,-20.479553393985,0</coordinates></LineString></Placemark>
+<Placemark><name>23833777</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,034 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625421964134,-20.479553393985,0 -54.625363800195,-20.479864323961,0</coordinates></LineString></Placemark>
+<Placemark><name>23833784</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,029 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625363800195,-20.479864323961,0 -54.625314723401,-20.480126524335,0</coordinates></LineString></Placemark>
+<Placemark><name>24053866</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,022 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.624925888105,-20.480043093257,0 -54.624715874608,-20.48000292493,0</coordinates></LineString></Placemark>
+<Placemark><name>2465637</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,007 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625244802499,-20.480864877445,0 -54.625317077279,-20.480876070322,0</coordinates></LineString></Placemark>
+<Placemark><name>24692142</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,032 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.618387971953,-20.472805808787,0 -54.618081204362,-20.472745975,0</coordinates></LineString></Placemark>
+<Placemark><name>24692149</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,023 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.619065402717,-20.472945404699,0 -54.619289695766,-20.472990921975,0</coordinates></LineString></Placemark>
+<Placemark><name>24692163</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,010 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.61896987738,-20.472926034443,0 -54.619065402717,-20.472945404699,0</coordinates></LineString></Placemark>
+<Placemark><name>24699261</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,042 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.61959689808,-20.472736957963,0 -54.619289695766,-20.472990921975,0</coordinates></LineString></Placemark>
+<Placemark><name>24701957</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,033 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.622826452479,-20.476338314016,0 -54.623033692849,-20.476570520248,0</coordinates></LineString></Placemark>
+<Placemark><name>24701964</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,022 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.623659156564,-20.477279470148,0 -54.623793608749,-20.477434554153,0</coordinates></LineString></Placemark>
+<Placemark><name>24701971</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,028 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.623746269333,-20.477683412943,0 -54.623793608749,-20.477434554153,0</coordinates></LineString></Placemark>
+<Placemark><name>24701978</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,050 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.62366139424,-20.478129430802,0 -54.623746269333,-20.477683412943,0</coordinates></LineString></Placemark>
+<Placemark><name>24701985</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,029 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.623610819944,-20.478395402758,0 -54.62366139424,-20.478129430802,0</coordinates></LineString></Placemark>
+<Placemark><name>24701992</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,033 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.623407705454,-20.479412682797,0 -54.623347807869,-20.479711487455,0</coordinates></LineString></Placemark>
+<Placemark><name>24701999</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,011 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.624612397375,-20.479983087359,0 -54.624715874608,-20.48000292493,0</coordinates></LineString></Placemark>
+<Placemark><name>24702006</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,035 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625355030274,-20.479861314314,0 -54.625413589974,-20.479549577029,0</coordinates></LineString></Placemark>
+<Placemark><name>24813907</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,033 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625125587515,-20.481512253216,0 -54.625071894674,-20.481806538064,0</coordinates></LineString></Placemark>
+<Placemark><name>24813914</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,047 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625071894674,-20.481806538064,0 -54.624994239289,-20.482231795352,0</coordinates></LineString></Placemark>
+<Placemark><name>24818144</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,029 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.624380214031,-20.480206389846,0 -54.624427610833,-20.479947598396,0</coordinates></LineString></Placemark>
+<Placemark><name>24818151</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,039 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.624315245507,-20.480560752094,0 -54.624380214031,-20.480206389846,0</coordinates></LineString></Placemark>
+<Placemark><name>24818158</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,019 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.62447740045,-20.480734185178,0 -54.624289405474,-20.480701632085,0</coordinates></LineString></Placemark>
+<Placemark><name>24818165</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,035 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.624809043655,-20.480791640412,0 -54.62447740045,-20.480734185178,0</coordinates></LineString></Placemark>
+<Placemark><name>24836300</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,014 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.624295948005,-20.479922318004,0 -54.624427610833,-20.479947598396,0</coordinates></LineString></Placemark>
+<Placemark><name>24836307</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,029 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.624015708887,-20.479868635768,0 -54.624295948005,-20.479922318004,0</coordinates></LineString></Placemark>
+<Placemark><name>24853501</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,036 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625579424303,-20.478687285285,0 -54.625524014711,-20.478364958882,0</coordinates></LineString></Placemark>
+<Placemark><name>2496527</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,009 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625497249775,-20.479151131008,0 -54.625409752083,-20.479132867044,0</coordinates></LineString></Placemark>
+<Placemark><name>2496535</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,011 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625497249775,-20.479151131008,0 -54.625518686099,-20.479047214656,0</coordinates></LineString></Placemark>
+<Placemark><name>2496542</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,006 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625497249775,-20.479151131008,0 -54.625555981464,-20.479164305761,0</coordinates></LineString></Placemark>
+<Placemark><name>2496549</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,018 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625497249775,-20.479151131008,0 -54.625466026046,-20.479318125509,0</coordinates></LineString></Placemark>
+<Placemark><name>2546803</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,023 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.620124331838,-20.473257647894,0 -54.62026553158,-20.473422127744,0</coordinates></LineString></Placemark>
+<Placemark><name>2546811</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,028 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.619999684679,-20.473026480535,0 -54.620124331838,-20.473257647894,0</coordinates></LineString></Placemark>
+<Placemark><name>2546818</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,038 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.619762497881,-20.472754579276,0 -54.619999684679,-20.473026480535,0</coordinates></LineString></Placemark>
+<Placemark><name>2575157</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,036 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.624289405474,-20.480701632085,0 -54.623948970579,-20.480642610715,0</coordinates></LineString></Placemark>
+<Placemark><name>2575492</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,024 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.62516007743,-20.480087745982,0 -54.624925888105,-20.480043093257,0</coordinates></LineString></Placemark>
+<Placemark><name>3369173</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,002 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.623541290416,-20.478672583677,0 -54.623560044071,-20.478662004039,0</coordinates></LineString></Placemark>
+<Placemark><name>3369181</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,058 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.623560044071,-20.478662004039,0 -54.623454000159,-20.479181960791,0</coordinates></LineString></Placemark>
+<Placemark><name>3669489</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,028 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.618654799704,-20.472858231367,0 -54.618387971953,-20.472805808787,0</coordinates></LineString></Placemark>
+<Placemark><name>3669496</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,014 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.618654799704,-20.472858231367,0 -54.61878742407,-20.472889037115,0</coordinates></LineString></Placemark>
+<Placemark><name>3669503</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,019 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.61878742407,-20.472889037115,0 -54.61896987738,-20.472926034443,0</coordinates></LineString></Placemark>
+<Placemark><name>3669510</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,006 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.61878742407,-20.472889037115,0 -54.618755961736,-20.472934569722,0</coordinates></LineString></Placemark>
+<Placemark><name>3669517</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,025 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.61878742407,-20.472889037115,0 -54.618842631925,-20.472664669717,0</coordinates></LineString></Placemark>
+<Placemark><name>3671342</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,029 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625314723401,-20.480126524335,0 -54.625264975729,-20.480388715497,0</coordinates></LineString></Placemark>
+<Placemark><name>3671405</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,017 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.619629510645,-20.472505056273,0 -54.61970531647,-20.472647328684,0</coordinates></LineString></Placemark>
+<Placemark><name>3671412</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,014 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.61970531647,-20.472647328684,0 -54.619817009873,-20.472562801163,0</coordinates></LineString></Placemark>
+<Placemark><name>3671419</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,015 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.61970531647,-20.472647328684,0 -54.61959689808,-20.472736957963,0</coordinates></LineString></Placemark>
+<Placemark><name>3671710</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,037 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.621764171713,-20.475135293115,0 -54.621534735913,-20.474869911448,0</coordinates></LineString></Placemark>
+<Placemark><name>3673150</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,005 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.61960538975,-20.472459845227,0 -54.619629510645,-20.472505056273,0</coordinates></LineString></Placemark>
+<Placemark><name>3673157</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,037 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.622594534491,-20.476078317659,0 -54.622826452479,-20.476338314016,0</coordinates></LineString></Placemark>
+<Placemark><name>3673164</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,030 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.623476970703,-20.477069189822,0 -54.623659156564,-20.477279470148,0</coordinates></LineString></Placemark>
+<Placemark><name>3673171</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,030 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.623560044071,-20.478662004039,0 -54.623610819944,-20.478395402758,0</coordinates></LineString></Placemark>
+<Placemark><name>3673179</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,026 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.623454000159,-20.479181960791,0 -54.623407705454,-20.479412682797,0</coordinates></LineString></Placemark>
+<Placemark><name>3673186</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,038 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.623347807869,-20.479711487455,0 -54.623705945838,-20.479809311424,0</coordinates></LineString></Placemark>
+<Placemark><name>3673194</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,019 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.624427610833,-20.479947598396,0 -54.624612397375,-20.479983087359,0</coordinates></LineString></Placemark>
+<Placemark><name>3673201</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,029 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625314723401,-20.480126524335,0 -54.625355030274,-20.479861314314,0</coordinates></LineString></Placemark>
+<Placemark><name>3673208</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,012 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625439853923,-20.479555354428,0 -54.625553504716,-20.479580387594,0</coordinates></LineString></Placemark>
+<Placemark><name>3673222</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,002 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625413589974,-20.479549577029,0 -54.625439853923,-20.479555354428,0</coordinates></LineString></Placemark>
+<Placemark><name>3708077</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,025 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625244802499,-20.480864877445,0 -54.62520314337,-20.481087175023,0</coordinates></LineString></Placemark>
+<Placemark><name>3708085</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,047 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.62520314337,-20.481087175023,0 -54.625125587515,-20.481512253216,0</coordinates></LineString></Placemark>
+<Placemark><name>3711308</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,037 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.624890592687,-20.482826375943,0 -54.624949551404,-20.482488908231,0</coordinates></LineString></Placemark>
+<Placemark><name>3711315</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,019 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625276460246,-20.480694638089,0 -54.625244802499,-20.480864877445,0</coordinates></LineString></Placemark>
+<Placemark><name>3711322</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,015 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.624289405474,-20.480701632085,0 -54.624315245507,-20.480560752094,0</coordinates></LineString></Placemark>
+<Placemark><name>3711329</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,032 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625116793235,-20.480844975449,0 -54.624809043655,-20.480791640412,0</coordinates></LineString></Placemark>
+<Placemark><name>3711336</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,009 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.624289405474,-20.480701632085,0 -54.624272363161,-20.480787728354,0</coordinates></LineString></Placemark>
+<Placemark><name>3711343</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,030 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.623705945838,-20.479809311424,0 -54.623991917906,-20.479864065935,0</coordinates></LineString></Placemark>
+<Placemark><name>3719922</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,002 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.623991917906,-20.479864065935,0 -54.624015708887,-20.479868635768,0</coordinates></LineString></Placemark>
+<Placemark><name>3719929</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,013 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625116793235,-20.480844975449,0 -54.625244802499,-20.480864877445,0</coordinates></LineString></Placemark>
+<Placemark><name>3728098</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,025 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.62554125589,-20.478913242937,0 -54.625579424303,-20.478687285285,0</coordinates></LineString></Placemark>
+<Placemark><name>3728105</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,013 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625521693967,-20.478216920697,0 -54.625524266376,-20.4783423866,0</coordinates></LineString></Placemark>
+<Placemark><name>4002471</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,028 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.624994239289,-20.482231795352,0 -54.624949551404,-20.482488908231,0</coordinates></LineString></Placemark>
+<Placemark><name>4002478</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,029 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.617805117585,-20.472691257296,0 -54.618081204362,-20.472745975,0</coordinates></LineString></Placemark>
+<Placemark><name>4075132</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,015 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625518686099,-20.479047214656,0 -54.62554125589,-20.478913242937,0</coordinates></LineString></Placemark>
+<Placemark><name>4125423</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,002 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.625524014711,-20.478364958882,0 -54.625524266376,-20.4783423866,0</coordinates></LineString></Placemark>
+<Placemark><name>4305589</name><description>Condutor: P 3#185 Compacto
+Comprimento: 0,041 m
+Fases: ABC
+Trecho: T2</description><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style>
+<LineString><coordinates>-54.623476970703,-20.477069189822,0 -54.623220667873,-20.476780866506,0</coordinates></LineString></Placemark></Folder>
+<Folder><name>T3</name><visibility>1</visibility>
+<Placemark><name>132473412</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,001 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619288335491,-20.470445903984,0 -54.619302573843,-20.47044844703,0</coordinates></LineString></Placemark>
+<Placemark><name>135368780</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,008 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.620832004836,-20.471591687721,0 -54.620786305051,-20.471529023678,0</coordinates></LineString></Placemark>
+<Placemark><name>23102328</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,030 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.622810701178,-20.479088901208,0 -54.623061192591,-20.478946130665,0</coordinates></LineString></Placemark>
+<Placemark><name>23102335</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,013 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.623335659571,-20.478789690994,0 -54.623449835403,-20.47872461047,0</coordinates></LineString></Placemark>
+<Placemark><name>23102342</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,033 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.623061192591,-20.478946130665,0 -54.623335659571,-20.478789690994,0</coordinates></LineString></Placemark>
+<Placemark><name>23102349</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,011 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.623449835403,-20.47872461047,0 -54.623541290416,-20.478672583677,0</coordinates></LineString></Placemark>
+<Placemark><name>23188434</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,021 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619302573843,-20.47044844703,0 -54.61950621776,-20.470484379503,0</coordinates></LineString></Placemark>
+<Placemark><name>23188441</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,030 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.61950621776,-20.470484379503,0 -54.619792617906,-20.470534991342,0</coordinates></LineString></Placemark>
+<Placemark><name>23229622</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,022 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619176898615,-20.470619473213,0 -54.619141294442,-20.470815483675,0</coordinates></LineString></Placemark>
+<Placemark><name>23229629</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,025 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619141294442,-20.470815483675,0 -54.619099718121,-20.471044553313,0</coordinates></LineString></Placemark>
+<Placemark><name>23229636</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,023 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619099718121,-20.471044553313,0 -54.61906118323,-20.471256597424,0</coordinates></LineString></Placemark>
+<Placemark><name>2343666</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,007 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619219244432,-20.470433669046,0 -54.619288335491,-20.470445903984,0</coordinates></LineString></Placemark>
+<Placemark><name>2345380</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,021 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619219244432,-20.470433669046,0 -54.619011092075,-20.470404266531,0</coordinates></LineString></Placemark>
+<Placemark><name>2356862</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,020 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.618973861507,-20.471717840007,0 -54.618937959112,-20.471895876053,0</coordinates></LineString></Placemark>
+<Placemark><name>2356870</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,026 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619017795766,-20.471491240944,0 -54.61906118323,-20.471256597424,0</coordinates></LineString></Placemark>
+<Placemark><name>2356877</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,008 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619191353587,-20.470539663226,0 -54.619176898615,-20.470619473213,0</coordinates></LineString></Placemark>
+<Placemark><name>23935851</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,022 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.618981353313,-20.470505810503,0 -54.619191353587,-20.470539663226,0</coordinates></LineString></Placemark>
+<Placemark><name>24158953</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,050 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.620074542026,-20.470583825636,0 -54.620550432231,-20.470531920463,0</coordinates></LineString></Placemark>
+<Placemark><name>24875968</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,033 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.62010073408,-20.472346080224,0 -54.620348786833,-20.472155780159,0</coordinates></LineString></Placemark>
+<Placemark><name>24875975</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,036 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.620348786833,-20.472155780159,0 -54.620623021981,-20.471945339696,0</coordinates></LineString></Placemark>
+<Placemark><name>24875982</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,008 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.620786305051,-20.471529023678,0 -54.620742089426,-20.471469540553,0</coordinates></LineString></Placemark>
+<Placemark><name>24875989</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,018 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.620877570258,-20.471750070798,0 -54.620832004836,-20.471591687721,0</coordinates></LineString></Placemark>
+<Placemark><name>24875996</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,034 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.620623021981,-20.471945339696,0 -54.620877570258,-20.471750070798,0</coordinates></LineString></Placemark>
+<Placemark><name>24899414</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,027 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.618901342473,-20.472418226169,0 -54.618842631925,-20.472664669717,0</coordinates></LineString></Placemark>
+<Placemark><name>2527350</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,027 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619235249989,-20.470358937254,0 -54.619279193943,-20.470113013395,0</coordinates></LineString></Placemark>
+<Placemark><name>2527357</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,008 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619219244432,-20.470433669046,0 -54.619235249989,-20.470358937254,0</coordinates></LineString></Placemark>
+<Placemark><name>2529612</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,006 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619191353587,-20.470539663226,0 -54.619255540652,-20.470553004889,0</coordinates></LineString></Placemark>
+<Placemark><name>2529619</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,045 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.61855007352,-20.470436324208,0 -54.618981353313,-20.470505810503,0</coordinates></LineString></Placemark>
+<Placemark><name>2529627</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,012 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619191353587,-20.470539663226,0 -54.619219244432,-20.470433669046,0</coordinates></LineString></Placemark>
+<Placemark><name>2542580</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,008 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.618951777006,-20.472130581415,0 -54.618952382665,-20.472203102724,0</coordinates></LineString></Placemark>
+<Placemark><name>2542609</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,018 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.618951777006,-20.472130581415,0 -54.618781515009,-20.472098447046,0</coordinates></LineString></Placemark>
+<Placemark><name>2546340</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,026 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.618937959112,-20.471895876053,0 -54.618951777006,-20.472130581415,0</coordinates></LineString></Placemark>
+<Placemark><name>2552148</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,025 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.618973861507,-20.471717840007,0 -54.619017795766,-20.471491240944,0</coordinates></LineString></Placemark>
+<Placemark><name>2712172</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,030 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.618715890954,-20.470358950928,0 -54.6184257958,-20.470305667921,0</coordinates></LineString></Placemark>
+<Placemark><name>3275896</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,034 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.618781515009,-20.472098447046,0 -54.618456232031,-20.472040075897,0</coordinates></LineString></Placemark>
+<Placemark><name>3529071</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,029 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619792617906,-20.470534991342,0 -54.620074542026,-20.470583825636,0</coordinates></LineString></Placemark>
+<Placemark><name>3669334</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,012 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.618951777006,-20.472130581415,0 -54.619071184796,-20.47214847302,0</coordinates></LineString></Placemark>
+<Placemark><name>3728112</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,002 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619011092075,-20.470404266531,0 -54.618988914672,-20.470400801897,0</coordinates></LineString></Placemark>
+<Placemark><name>3734159</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,038 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.619817009873,-20.472562801163,0 -54.62010073408,-20.472346080224,0</coordinates></LineString></Placemark>
+<Placemark><name>3746684</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,024 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.618952382665,-20.472203102724,0 -54.618901342473,-20.472418226169,0</coordinates></LineString></Placemark>
+<Placemark><name>4082989</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,028 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.618988914672,-20.470400801897,0 -54.618715890954,-20.470358950928,0</coordinates></LineString></Placemark>
+<Placemark><name>4133152</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,030 m
+Fases: ABC
+Trecho: T3</description><Style><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.622560982749,-20.479231230419,0 -54.622810701178,-20.479088901208,0</coordinates></LineString></Placemark></Folder>
+<Folder><name>TP</name><visibility>1</visibility>
+<Placemark><name>135368769</name><description>Condutor: P 3#185(9,5) Compacto
+Comprimento: 0,003 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.620771740173,-20.471529004746,0 -54.620742993631,-20.471528972128,0</coordinates></LineString></Placemark>
+<Placemark><name>195692905</name><description>Condutor: P 3#185(9,5) Compacto
+Comprimento: 0,001 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.620786305051,-20.471529023678,0 -54.620771740173,-20.471529004746,0</coordinates></LineString></Placemark>
+<Placemark><name>215662078</name><description>Condutor: CA 3#185 Horizontal
+Comprimento: 0,005 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.62561947196,-20.479248072136,0 -54.625629454856,-20.47919718753,0</coordinates></LineString></Placemark>
+<Placemark><name>215662092</name><description>Condutor: CA 3#185 Horizontal
+Comprimento: 0,007 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.625553504716,-20.479580387594,0 -54.625566448198,-20.479517713809,0</coordinates></LineString></Placemark>
+<Placemark><name>215662093</name><description>Condutor: CA 3#185 Horizontal
+Comprimento: 0,005 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.625566448198,-20.479517713809,0 -54.625576944929,-20.479464578666,0</coordinates></LineString></Placemark>
+<Placemark><name>215662094</name><description>Condutor: CA 3#185 Horizontal
+Comprimento: 0,006 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.625576944929,-20.479464578666,0 -54.625588899725,-20.479403878019,0</coordinates></LineString></Placemark>
+<Placemark><name>215662095</name><description>Condutor: CA 3#185 Horizontal
+Comprimento: 0,005 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.625588899725,-20.479403878019,0 -54.625599300628,-20.479350741562,0</coordinates></LineString></Placemark>
+<Placemark><name>215662096</name><description>Condutor: CA 3#185 Horizontal
+Comprimento: 0,005 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.625599300628,-20.479350741562,0 -54.625609489056,-20.479298956741,0</coordinates></LineString></Placemark>
+<Placemark><name>215662097</name><description>Condutor: CA 3#185 Horizontal
+Comprimento: 0,005 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.625609489056,-20.479298956741,0 -54.62561947196,-20.479248072136,0</coordinates></LineString></Placemark>
+<Placemark><name>218193624</name><description>Condutor: CA 3#50 Horizontal
+Comprimento: 0,006 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.625521693967,-20.478216920697,0 -54.625506297574,-20.478158825976,0</coordinates></LineString></Placemark>
+<Placemark><name>2710694</name><description>Condutor: CA 3#2 Horizontal
+Comprimento: 0,009 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.6184257958,-20.470305667921,0 -54.618437137008,-20.470222745038,0</coordinates></LineString></Placemark>
+<Placemark><name>4075125</name><description>Condutor: P 3#50 Compacto
+Comprimento: 0,006 m
+Fases: ABC
+Trecho: TP</description><Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString><coordinates>-54.62554125589,-20.478913242937,0 -54.625479583334,-20.478904362503,0</coordinates></LineString></Placemark></Folder></Folder>
+</Document>
