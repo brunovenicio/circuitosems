@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--     Gerado pelo QLIKCGR01  -->
+<!--     	 DCMD EMS  	       -->
+<!--     Leonardo Tolentino    -->
+<Document xmlns='http://earth.google.com/kml/2.0'>
+
+<Style id='#ET'>
+<IconStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#EP'>
+<IconStyle>
+<color>ffff0000</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#BC'>
+<IconStyle>
+<color>800000ff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal5/icon50.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>FF000FFF</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>800000ff</color>
+<width>17</width>
+</LineStyle>
+<PolyStyle>
+<color>800000ff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#BCF'>
+<IconStyle>
+<color>800000ff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal5/icon50.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ff00ff00</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>800000ff</color>
+<width>17</width>
+</LineStyle>
+<PolyStyle>
+<color>800000ff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#RD'>
+<IconStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal2/icon1.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff00ff55</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ff00ff55</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#Chave_NA'>
+<IconStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff00ff55</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ff00ff55</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#Chave'>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#Chave1'>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ff0000ff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ff0000ff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#CFusivel'>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#CFusivel_NA'>
+<IconStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ff00ff55</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff00ff55</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ff00ff55</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#SE'>
+<IconStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/flag.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#SIGFI'>
+<IconStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon41.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>15</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<Style id='#Postes'>
+<IconStyle>
+<color>ffffffff</color>
+<scale>0.5</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon57.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<color>ffffffff</color>
+<scale>0.1</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>10</width>
+</LineStyle>
+<PolyStyle>
+<color>ffffffff</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<name>CGB12</name>
+<Folder><name>chave_faca</name><visibility>1</visibility>
+<Placemark><name>CF(93188389)</name><description>Cod_SGM: LCFA002734
+Ref: 
+Fases: TRI
+Estado Normal: NF
+Trecho: T1
+Clientes: 0</description><visibility>0</visibility><styleUrl>##Chave</styleUrl>
+<Point><coordinates>-54.582114916948,-20.416293101162</coordinates></Point></Placemark></Folder>
+<Folder><name>postes</name><visibility>1</visibility>
+<Placemark><name>219781323</name><description>ID: 219781323
+Cod_SGM: POSTE103249
+Tipo: RC13/1500</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.582387201567,-20.416540787189</coordinates></Point></Placemark>
+<Placemark><name>219781326</name><description>ID: 219781326
+Cod_SGM: POSTE103220
+Tipo: DT13/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.581943050884,-20.416159776742</coordinates></Point></Placemark>
+<Placemark><name>219781340</name><description>ID: 219781340
+Cod_SGM: POSTE103219
+Tipo: DT13/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.582101128323,-20.416280538341</coordinates></Point></Placemark>
+<Placemark><name>219781409</name><description>ID: 219781409
+Cod_SGM: POSTE103228
+Tipo: DT13/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.582517540018,-20.41640768751</coordinates></Point></Placemark>
+<Placemark><name>219781413</name><description>ID: 219781413
+Cod_SGM: POSTE103226
+Tipo: DT13/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.582683930551,-20.416186412577</coordinates></Point></Placemark>
+<Placemark><name>219781416</name><description>ID: 219781416
+Cod_SGM: POSTE103225
+Tipo: DT13/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.582826872765,-20.415994520922</coordinates></Point></Placemark>
+<Placemark><name>219781435</name><description>ID: 219781435
+Cod_SGM: POSTE103224
+Tipo: DT13/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.582893198266,-20.415906043737</coordinates></Point></Placemark>
+<Placemark><name>219781448</name><description>ID: 219781448
+Cod_SGM: POSTE103248
+Tipo: RC13/1500</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.582441000283,-20.415604839461</coordinates></Point></Placemark>
+<Placemark><name>219781455</name><description>ID: 219781455
+Cod_SGM: POSTE103227
+Tipo: DT13/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.582667689155,-20.415754456606</coordinates></Point></Placemark>
+<Placemark><name>219797996</name><description>ID: 219797996
+Cod_SGM: POSTE103229
+Tipo: DT13/600</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.582253316608,-20.415460098326</coordinates></Point></Placemark>
+<Placemark><name>219798002</name><description>ID: 219798002
+Cod_SGM: POSTE103244
+Tipo: RC11/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.581836356827,-20.41523333887</coordinates></Point></Placemark>
+<Placemark><name>219798005</name><description>ID: 219798005
+Cod_SGM: POSTE103245
+Tipo: RC12/1000</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.581856143755,-20.415284995172</coordinates></Point></Placemark>
+<Placemark><name>219798019</name><description>ID: 219798019
+Cod_SGM: POSTE103209
+Tipo: DT11/300</description><visibility>0</visibility><styleUrl>##Postes</styleUrl>
+<Point><coordinates>-54.581929102034,-20.415054024852</coordinates></Point></Placemark></Folder>
+<Folder><name>subestacao</name><visibility>1</visibility>
+<Placemark><name>CGB</name><description>CGB</description><styleUrl>##SE</styleUrl>
+<Point><coordinates>-54.5816143121,-20.416086006</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>trecho</name><visibility>1</visibility>
+<Folder><name>T1</name><visibility>1</visibility>
+<Placemark><name>212238051</name><description>Condutor: CA 3#1859,5 Horizontal
+Comprimento: 0,017 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.581783215781,-20.416102472364,0 -54.581943050884,-20.416159776742,0</coordinates></LineString></Placemark>
+<Placemark><name>217243062</name><description>Condutor: CA 3#1859,5 Horizontal
+Comprimento: 0,021 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.581943050884,-20.416159776742,0 -54.582101128323,-20.416280538341,0</coordinates></LineString></Placemark>
+<Placemark><name>217243072</name><description>Condutor: CA 3#1859,5 Horizontal
+Comprimento: 0,002 m
+Fases: ABC
+Trecho: T1</description><Style><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<LineString><coordinates>-54.582101128323,-20.416280538341,0 -54.582114916948,-20.416293101162,0</coordinates></LineString></Placemark></Folder></Folder>
+</Document>
