@@ -1,0 +1,4594 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Energisa Circuitos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin: 20px;
+            color: #005a9c;
+            font-size: 2em; /* Ajuste de tamanho de fonte para caber melhor em telas pequenas */
+        }
+        .filter-container {
+            width: 80%;
+            margin: 10px 0;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box; /* Adiciona o box-sizing para garantir que o padding não afete a largura */
+        }
+        .table-container {
+            width: 80%;
+            margin-top: 20px;
+            max-height: 60vh;
+            overflow-y: auto;
+            overflow-x: auto;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px; /* Aumenta um pouco o tamanho da fonte para melhor legibilidade */
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px; /* Ajuste do padding para melhor interação em telas de toque */
+            text-align: left;
+        }
+        th {
+            background-color: #005a9c;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em; /* Ajusta o tamanho da fonte do cabeçalho em telas pequenas */
+            }
+            th, td {
+                padding: 10px; /* Ajuste do padding para telas pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Energisa Circuitos</h1>
+
+    <div class="filter-container">
+        <input type="text" id="se_nome" placeholder="Filtrar pelo Nome Completo da SE" list="se_nome_list" oninput="filterTable()">
+        <datalist id="se_nome_list">
+            <option value="SE ÁGUA CLARA">SE ÁGUA CLARA</option>
+<option value="SE CAMAPUÃ">SE CAMAPUÃ</option>
+<option value="SE MIMOSO">SE MIMOSO</option>
+<option value="SE MIMOSINHA">SE MIMOSINHA</option>
+<option value="SE RIBAS DO RIO PARDO">SE RIBAS DO RIO PARDO</option>
+<option value="SE BANDEIRANTES">SE BANDEIRANTES</option>
+<option value="SE CAMPO GRANDE CUIABÁ">SE CAMPO GRANDE CUIABÁ</option>
+<option value="SE CAMPO GRANDE CENTRO">SE CAMPO GRANDE CENTRO</option>
+<option value="SE CAMPO GRANDE JOSÉ ABRÃO">SE CAMPO GRANDE JOSÉ ABRÃO</option>
+<option value="SE CAMPO GRANDE MIGUEL COUTO">SE CAMPO GRANDE MIGUEL COUTO</option>
+<option value="SE CAMPO GRANDE PROGRESSO">SE CAMPO GRANDE PROGRESSO</option>
+<option value="SE CAMPO GRANDE ASSIS SCAFFA">SE CAMPO GRANDE ASSIS SCAFFA</option>
+<option value="SE CAMPO GRANDE TAMANDARÉ">SE CAMPO GRANDE TAMANDARÉ</option>
+<option value="SE ESTRELA">SE ESTRELA</option>
+<option value="SE JARAGUARI">SE JARAGUARI</option>
+<option value="SE ANHANDUÍ">SE ANHANDUÍ</option>
+<option value="SE CAMPO GRANDE ALMOXARIFADO">SE CAMPO GRANDE ALMOXARIFADO</option>
+<option value="SE CAMPO GRANDE INDUSTRIAL">SE CAMPO GRANDE INDUSTRIAL</option>
+<option value="SE CAMPO GRANDE LAGEADO">SE CAMPO GRANDE LAGEADO</option>
+<option value="SE CORGUINHO">SE CORGUINHO</option>
+<option value="SE JAMIC">SE JAMIC</option>
+<option value="SE PONTE DO GREGO">SE PONTE DO GREGO</option>
+<option value="SE ROCHEDO">SE ROCHEDO</option>
+<option value="SE SERROTE">SE SERROTE</option>
+<option value="SE SIDROLÂNDIA">SE SIDROLÂNDIA</option>
+<option value="SE SÃO PEDRO">SE SÃO PEDRO</option>
+<option value="SE TERENOS">SE TERENOS</option>
+<option value="SE ALCINÓPOLIS">SE ALCINÓPOLIS</option>
+<option value="SE BAÚS">SE BAÚS</option>
+<option value="SE BELA ALVORADA">SE BELA ALVORADA</option>
+<option value="SE COSTA RICA HIDRO">SE COSTA RICA HIDRO</option>
+<option value="SE COSTA RICA">SE COSTA RICA</option>
+<option value="SE CHAPADÃO DO SUL">SE CHAPADÃO DO SUL</option>
+<option value="SE FIGUEIRÃO">SE FIGUEIRÃO</option>
+<option value="SE APARECIDA DO TABOADO">SE APARECIDA DO TABOADO</option>
+<option value="SE CASSILÂNDIA">SE CASSILÂNDIA</option>
+<option value="SE INOCÊNCIA">SE INOCÊNCIA</option>
+<option value="SE MORANGAS">SE MORANGAS</option>
+<option value="SE PARANAÍBA">SE PARANAÍBA</option>
+<option value="SE ÁGUAS DO MIRANDA">SE ÁGUAS DO MIRANDA</option>
+<option value="SE AQUIDAUANA">SE AQUIDAUANA</option>
+<option value="SE BODOQUENA">SE BODOQUENA</option>
+<option value="SE CAMISÃO">SE CAMISÃO</option>
+<option value="SE DOIS IRMÃOS DO BURITI">SE DOIS IRMÃOS DO BURITI</option>
+<option value="SE MIRANDA">SE MIRANDA</option>
+<option value="SE CORUMBÁ">SE CORUMBÁ</option>
+<option value="SE COXIM">SE COXIM</option>
+<option value="SE PEDRO GOMES">SE PEDRO GOMES</option>
+<option value="SE RIO NEGRO">SE RIO NEGRO</option>
+<option value="SE RIO VERDE">SE RIO VERDE</option>
+<option value="SE SÃO GABRIEL DO OESTE">SE SÃO GABRIEL DO OESTE</option>
+<option value="SE SONORA">SE SONORA</option>
+<option value="SE SOZINHO">SE SOZINHO</option>
+<option value="SE ALTO CARACOL">SE ALTO CARACOL</option>
+<option value="SE BONITO">SE BONITO</option>
+<option value="SE BELA VISTA">SE BELA VISTA</option>
+<option value="SE CONCEIÇÃO">SE CONCEIÇÃO</option>
+<option value="SE JARDIM">SE JARDIM</option>
+<option value="SE NIOAQUE">SE NIOAQUE</option>
+<option value="SE PORTO MURTINHO">SE PORTO MURTINHO</option>
+<option value="SE ARAL MOREIRA">SE ARAL MOREIRA</option>
+<option value="SE BOCAJÁ">SE BOCAJÁ</option>
+<option value="SE CAARAPÓ">SE CAARAPÓ</option>
+<option value="SE DOURADOS ALVORADA">SE DOURADOS ALVORADA</option>
+<option value="SE DOURADOS DAS NAÇÕES">SE DOURADOS DAS NAÇÕES</option>
+<option value="SE DOURADOS INDUSTRIAL">SE DOURADOS INDUSTRIAL</option>
+<option value="SE DOURADOS MAXWELL">SE DOURADOS MAXWELL</option>
+<option value="SE ITAPORÃ">SE ITAPORÃ</option>
+<option value="SE NOVA AMÉRICA">SE NOVA AMÉRICA</option>
+<option value="SE POSTO OVÍDEO">SE POSTO OVÍDEO</option>
+<option value="SE CRUZALTINA">SE CRUZALTINA</option>
+<option value="SE FÁTIMA DO SUL">SE FÁTIMA DO SUL</option>
+<option value="SE MARACAJÚ">SE MARACAJÚ</option>
+<option value="SE RIO BRILHANTE">SE RIO BRILHANTE</option>
+<option value="SE SANTA TEREZINHA">SE SANTA TEREZINHA</option>
+<option value="SE VISTA ALEGRE">SE VISTA ALEGRE</option>
+<option value="SE VICENTINA">SE VICENTINA</option>
+<option value="SE BALSINHA">SE BALSINHA</option>
+<option value="SE BOA SORTE">SE BOA SORTE</option>
+<option value="SE ELDORADO">SE ELDORADO</option>
+<option value="SE IGUATEMI">SE IGUATEMI</option>
+<option value="SE ITAQUIRAÍ">SE ITAQUIRAÍ</option>
+<option value="SE MUNDO NOVO">SE MUNDO NOVO</option>
+<option value="SE NAVIRAÍ">SE NAVIRAÍ</option>
+<option value="SE SETE QUEDAS">SE SETE QUEDAS</option>
+<option value="SE TACURU">SE TACURU</option>
+<option value="ELDORADO">ELDORADO</option>
+<option value="SE ANGÉLICA">SE ANGÉLICA</option>
+<option value="SE BATAIPORÃ">SE BATAIPORÃ</option>
+<option value="SE BATAGUASSU">SE BATAGUASSU</option>
+<option value="SE DEODÁPOLIS">SE DEODÁPOLIS</option>
+<option value="SE GLÓRIA DE DOURADOS">SE GLÓRIA DE DOURADOS</option>
+<option value="SE IVINHEMA">SE IVINHEMA</option>
+<option value="SE NOVA ANDRADINA">SE NOVA ANDRADINA</option>
+<option value="SE NOVO HORIZONTE DO SUL">SE NOVO HORIZONTE DO SUL</option>
+<option value="SE PRESIDENTE EPITÁCIO">SE PRESIDENTE EPITÁCIO</option>
+<option value="SE SANTA LUZIA DOIS">SE SANTA LUZIA DOIS</option>
+<option value="SE TAQUARUSSU">SE TAQUARUSSU</option>
+<option value="SE ANTÔNIO JOÃO">SE ANTÔNIO JOÃO</option>
+<option value="SE AMAMBAI">SE AMAMBAI</option>
+<option value="SE CORONEL SAPUCAIA">SE CORONEL SAPUCAIA</option>
+<option value="SE FAZENDA ITAMARATI">SE FAZENDA ITAMARATI</option>
+<option value="SE PONTA PORÃ ESTORIL">SE PONTA PORÃ ESTORIL</option>
+<option value="SE SANGA PUITÃ">SE SANGA PUITÃ</option>
+        </datalist>
+    </div>
+
+    <div class="filter-container">
+        <input type="text" id="se_sigla" placeholder="Filtrar pela sigla da SE" list="se_sigla_list" oninput="filterTable()">
+        <datalist id="se_sigla_list">
+            <option value="ACL">ACL</option>
+<option value="CAM">CAM</option>
+<option value="MIM">MIM</option>
+<option value="MIS">MIS</option>
+<option value="RRP">RRP</option>
+<option value="BAN">BAN</option>
+<option value="CGB">CGB</option>
+<option value="CGC">CGC</option>
+<option value="CGJ">CGJ</option>
+<option value="CGM">CGM</option>
+<option value="CGP">CGP</option>
+<option value="CGS">CGS</option>
+<option value="CGT">CGT</option>
+<option value="EST">EST</option>
+<option value="JAG">JAG</option>
+<option value="ANH">ANH</option>
+<option value="CGA">CGA</option>
+<option value="CGD">CGD</option>
+<option value="CGL">CGL</option>
+<option value="COG">COG</option>
+<option value="JAM">JAM</option>
+<option value="PGR">PGR</option>
+<option value="ROC">ROC</option>
+<option value="SET">SET</option>
+<option value="SIA">SIA</option>
+<option value="SPE">SPE</option>
+<option value="TER">TER</option>
+<option value="ALC">ALC</option>
+<option value="BAU">BAU</option>
+<option value="BAV">BAV</option>
+<option value="CRH">CRH</option>
+<option value="CRI">CRI</option>
+<option value="CSU">CSU</option>
+<option value="FIG">FIG</option>
+<option value="ATA">ATA</option>
+<option value="CAS">CAS</option>
+<option value="INO">INO</option>
+<option value="MOG">MOG</option>
+<option value="PAR">PAR</option>
+<option value="AMI">AMI</option>
+<option value="AQU">AQU</option>
+<option value="BOD">BOD</option>
+<option value="CMS">CMS</option>
+<option value="DIB">DIB</option>
+<option value="MIR">MIR</option>
+<option value="COR">COR</option>
+<option value="COX">COX</option>
+<option value="PGO">PGO</option>
+<option value="RNE">RNE</option>
+<option value="RVE">RVE</option>
+<option value="SGO">SGO</option>
+<option value="SON">SON</option>
+<option value="SOZ">SOZ</option>
+<option value="ACA">ACA</option>
+<option value="BON">BON</option>
+<option value="BVI">BVI</option>
+<option value="CON">CON</option>
+<option value="JAR">JAR</option>
+<option value="NIO">NIO</option>
+<option value="PMU">PMU</option>
+<option value="AMO">AMO</option>
+<option value="BOC">BOC</option>
+<option value="CAA">CAA</option>
+<option value="DOA">DOA</option>
+<option value="DOD">DOD</option>
+<option value="DOI">DOI</option>
+<option value="DOM">DOM</option>
+<option value="ITA">ITA</option>
+<option value="NAM">NAM</option>
+<option value="POV">POV</option>
+<option value="CRU">CRU</option>
+<option value="FSU">FSU</option>
+<option value="MAR">MAR</option>
+<option value="RBR">RBR</option>
+<option value="STE">STE</option>
+<option value="VAG">VAG</option>
+<option value="VIC">VIC</option>
+<option value="BAL">BAL</option>
+<option value="BSO">BSO</option>
+<option value="ELD">ELD</option>
+<option value="IGU">IGU</option>
+<option value="ITQ">ITQ</option>
+<option value="MNO">MNO</option>
+<option value="NAV">NAV</option>
+<option value="SQU">SQU</option>
+<option value="TAC">TAC</option>
+<option value="ANG">ANG</option>
+<option value="BAP">BAP</option>
+<option value="BAT">BAT</option>
+<option value="DEO">DEO</option>
+<option value="GDO">GDO</option>
+<option value="IVI">IVI</option>
+<option value="NAN">NAN</option>
+<option value="NHS">NHS</option>
+<option value="PEP">PEP</option>
+<option value="SLD">SLD</option>
+<option value="TAQ">TAQ</option>
+<option value="AJO">AJO</option>
+<option value="AMA">AMA</option>
+<option value="CSA">CSA</option>
+<option value="FIT">FIT</option>
+<option value="PPE">PPE</option>
+<option value="SPU">SPU</option>
+        </datalist>
+    </div>
+
+    <div class="table-container">
+        <table class="dataframe dataframe" id="dataTable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>REGIONAL</th>
+      <th>SUPERVISAO</th>
+      <th>SE_NOME</th>
+      <th>SE_SIGLA</th>
+      <th>CIRCUITO</th>
+      <th>QTDE_CLIENTES</th>
+      <th>CIRCUITO_NOME</th>
+      <th>OBSERVAÇÕES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE INTERIOR</td>
+      <td>SE ÁGUA CLARA</td>
+      <td>ACL</td>
+      <td>ACL01</td>
+      <td>4.702</td>
+      <td>ACL-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE ÁGUA CLARA E PARTE DE CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE INTERIOR</td>
+      <td>SE ÁGUA CLARA</td>
+      <td>ACL</td>
+      <td>ACL02</td>
+      <td>3.727</td>
+      <td>ACL-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE ÁGUA CLARA E PARTE DE CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE INTERIOR</td>
+      <td>SE ÁGUA CLARA</td>
+      <td>ACL</td>
+      <td>ACL51</td>
+      <td>470</td>
+      <td>LD 34,5KV ACL/RUR</td>
+      <td>CARGAS RURAIS, SERVIÇO AUXILIAR DA UHE SÃO DOMINGOS  (ELETROSUL) E PCH VERDE 4 E 4A (BROOKFIELD)</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE INTERIOR</td>
+      <td>SE CAMAPUÃ</td>
+      <td>CAM</td>
+      <td>CAM01</td>
+      <td>3.776</td>
+      <td>CAM-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMAPUÃ E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE INTERIOR</td>
+      <td>SE CAMAPUÃ</td>
+      <td>CAM</td>
+      <td>CAM02</td>
+      <td>2.578</td>
+      <td>CAM-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMAPUÃ E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE INTERIOR</td>
+      <td>SE CAMAPUÃ</td>
+      <td>CAM</td>
+      <td>CAM51</td>
+      <td>322</td>
+      <td>LD 34,5KV CAM/PSP</td>
+      <td>DISTRITO DE BAIANOPOLIS, FALA VERDADE E POSTO SÃO PEDRO. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE INTERIOR</td>
+      <td>SE CAMAPUÃ</td>
+      <td>CAM</td>
+      <td>CAM52</td>
+      <td>1.150</td>
+      <td>LD 34,5KV CAM/RUR</td>
+      <td>DISTRITO PONTINHA DO COXO E SANTA TEREZA. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE INTERIOR</td>
+      <td>SE MIMOSO</td>
+      <td>MIM</td>
+      <td>MIM01</td>
+      <td>237</td>
+      <td>MIM-01</td>
+      <td>USINA DE MIMOSO. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE INTERIOR</td>
+      <td>SE MIMOSO</td>
+      <td>MIM</td>
+      <td>MIM51</td>
+      <td>41</td>
+      <td>LD 34,5KV MIM/RRP</td>
+      <td>SUBSESTAÇÃO RIBAS DO RIO PARDO. CARGAS URBANAS E RURAIS DA CIDADE DE RIBAS DO RIO PARDO.</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE INTERIOR</td>
+      <td>SE MIMOSO</td>
+      <td>MIM</td>
+      <td>MIM52</td>
+      <td>8</td>
+      <td>LD 34,5KV FMO/MIM</td>
+      <td>CARGAS DA FAZENDA MODELO E GRANOL</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE INTERIOR</td>
+      <td>SE MIMOSINHA</td>
+      <td>MIS</td>
+      <td>MIS01</td>
+      <td>163</td>
+      <td>MIS-01</td>
+      <td>CARGAS RURAIS DA REGIÃO DE MIMOSO</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE INTERIOR</td>
+      <td>SE RIBAS DO RIO PARDO</td>
+      <td>RRP</td>
+      <td>RRP01</td>
+      <td>4.909</td>
+      <td>RRP-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE RIBAS DO RIO PARDO</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE INTERIOR</td>
+      <td>SE RIBAS DO RIO PARDO</td>
+      <td>RRP</td>
+      <td>RRP02</td>
+      <td>4.906</td>
+      <td>RRP-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE RIBAS DO RIO PARDO</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE INTERIOR</td>
+      <td>SE RIBAS DO RIO PARDO</td>
+      <td>RRP</td>
+      <td>RRP51</td>
+      <td>161</td>
+      <td>LD 34,5KV RRP/MIM</td>
+      <td>CARGAS RURAIS DA REGIÃO DE RIBAS DO PARDO</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE INTERIOR</td>
+      <td>SE RIBAS DO RIO PARDO</td>
+      <td>RRP</td>
+      <td>RRP52</td>
+      <td>6</td>
+      <td>LD 34,5KV RRP/RUR</td>
+      <td>CARGAS RURAIS DA REGIÃO DE RIBAS DO PARDO</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE BANDEIRANTES</td>
+      <td>BAN</td>
+      <td>BAN01</td>
+      <td>3.208</td>
+      <td>BAN-01</td>
+      <td>CARGAS URBANAS DA CIDADE DE BANDEIRANTES E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE BANDEIRANTES</td>
+      <td>BAN</td>
+      <td>BAN51</td>
+      <td>151</td>
+      <td>LD 34,5KV BAN/JAG</td>
+      <td>CARGAS RURAIS DA REGIÃO DE BANDEIRANTES E JARAGUARI</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE BANDEIRANTES</td>
+      <td>BAN</td>
+      <td>BAN52</td>
+      <td>808</td>
+      <td>LD 34,5KV BAN/PSP</td>
+      <td>CARGAS RURAIS DA REGIÃO DE BANDEIRANTES E JARAGUARI E DISTRITO SÃO PEDRO</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CUIABÁ</td>
+      <td>CGB</td>
+      <td>CGB01</td>
+      <td>8.806</td>
+      <td>CGB-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CUIABÁ</td>
+      <td>CGB</td>
+      <td>CGB02</td>
+      <td>1.599</td>
+      <td>CGB-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CUIABÁ</td>
+      <td>CGB</td>
+      <td>CGB03</td>
+      <td>11.401</td>
+      <td>CGB-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CUIABÁ</td>
+      <td>CGB</td>
+      <td>CGB04</td>
+      <td>8.057</td>
+      <td>CGB-04</td>
+      <td>HOSPITAL SÃO JULIÃO. PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE CAMPO GRANDE.</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CUIABÁ</td>
+      <td>CGB</td>
+      <td>CGB05</td>
+      <td>2.699</td>
+      <td>CGB-05</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CUIABÁ</td>
+      <td>CGB</td>
+      <td>CGB06</td>
+      <td>4.429</td>
+      <td>CGB-06</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CUIABÁ</td>
+      <td>CGB</td>
+      <td>CGB07</td>
+      <td>7.187</td>
+      <td>CGB-07</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CUIABÁ</td>
+      <td>CGB</td>
+      <td>CGB08</td>
+      <td>6.268</td>
+      <td>CGB-08</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CUIABÁ</td>
+      <td>CGB</td>
+      <td>CGB09</td>
+      <td>4.234</td>
+      <td>CGB-09</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CUIABÁ</td>
+      <td>CGB</td>
+      <td>CGB10</td>
+      <td>81</td>
+      <td>CGB-10</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE E SHOPPING BOSQUE DOS IPÊS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CUIABÁ</td>
+      <td>CGB</td>
+      <td>CGB11</td>
+      <td>8.271</td>
+      <td>CGB-11</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CUIABÁ</td>
+      <td>CGB</td>
+      <td>CGB12</td>
+      <td>1.068</td>
+      <td>CGB-12</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CUIABÁ</td>
+      <td>CGB</td>
+      <td>CGB51</td>
+      <td>137</td>
+      <td>LD 34,5KV CGB/JAG</td>
+      <td>SUBESTAÇÕES ESTRELA, JARAGUARI E BANDEIRANTES. DISTRITO BONFIM E JARAGUARI VELHO. CARGAS URBANAS E RURAIS DAS CIDADES DE BANDEIRANTES E JARAGUARI. USINA CIDADE SOLAR, CENTRAIS ELÉTRICAS MAIA E SANTA IZABEL, BASE AERONÁUTICA CINDACTA</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC01</td>
+      <td>741</td>
+      <td>CGC-01</td>
+      <td>PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE. COMÉRCIOS E EMPRESAS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC02</td>
+      <td>1.885</td>
+      <td>CGC-02</td>
+      <td>PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE. COMÉRCIOS E EMPRESAS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC03</td>
+      <td>1.606</td>
+      <td>CGC-03</td>
+      <td>PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE. COMÉRCIOS E EMPRESAS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC04</td>
+      <td>1.474</td>
+      <td>CGC-04</td>
+      <td>PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE. COMÉRCIOS E EMPRESAS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC05</td>
+      <td>1.759</td>
+      <td>CGC-05</td>
+      <td>PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE. COMÉRCIOS E EMPRESAS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC06</td>
+      <td>702</td>
+      <td>CGC-06</td>
+      <td>PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE. COMÉRCIOS E EMPRESAS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC07</td>
+      <td>695</td>
+      <td>CGC-07</td>
+      <td>PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE. COMÉRCIOS E EMPRESAS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC08</td>
+      <td>826</td>
+      <td>CGC-08</td>
+      <td>PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE. COMÉRCIOS E EMPRESAS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC09</td>
+      <td>2.134</td>
+      <td>CGC-09</td>
+      <td>PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE. COMÉRCIOS E EMPRESAS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC10</td>
+      <td>878</td>
+      <td>CGC-10</td>
+      <td>PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE. COMÉRCIOS E EMPRESAS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC11</td>
+      <td>314</td>
+      <td>CGC-11</td>
+      <td>PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE. COMÉRCIOS E EMPRESAS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC12</td>
+      <td>214</td>
+      <td>CGC-12</td>
+      <td>PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE. COMÉRCIOS E EMPRESAS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC13</td>
+      <td>2.098</td>
+      <td>CGC-13</td>
+      <td>PRONCOR DA MARACAJÚ, CLÍNICA CAMPO GRANDE. PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC14</td>
+      <td>1.997</td>
+      <td>CGC-14</td>
+      <td>SANTA CASA DE MISERICÓRDIA. PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC15</td>
+      <td>3.763</td>
+      <td>CGC-15</td>
+      <td>SANTA CASA DE MISERICÓRDIA. PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE CENTRO</td>
+      <td>CGC</td>
+      <td>CGC16</td>
+      <td>1.874</td>
+      <td>CGC-16</td>
+      <td>PARTE DAS CARGAS URBANAS CENTRAIS DA CIDADE DE CAMPO GRANDE. COMÉRCIOS E EMPRESAS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE JOSÉ ABRÃO</td>
+      <td>CGJ</td>
+      <td>CGJ01</td>
+      <td>7.844</td>
+      <td>CGJ-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE JOSÉ ABRÃO</td>
+      <td>CGJ</td>
+      <td>CGJ02</td>
+      <td>5.062</td>
+      <td>CGJ-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE JOSÉ ABRÃO</td>
+      <td>CGJ</td>
+      <td>CGJ03</td>
+      <td>6.439</td>
+      <td>CGJ-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE JOSÉ ABRÃO</td>
+      <td>CGJ</td>
+      <td>CGJ04</td>
+      <td>4.145</td>
+      <td>CGJ-04</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE JOSÉ ABRÃO</td>
+      <td>CGJ</td>
+      <td>CGJ05</td>
+      <td>7.045</td>
+      <td>CGJ-05</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE JOSÉ ABRÃO</td>
+      <td>CGJ</td>
+      <td>CGJ06</td>
+      <td>5.799</td>
+      <td>CGJ-06</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM01</td>
+      <td>2.038</td>
+      <td>CGM-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM02</td>
+      <td>3.611</td>
+      <td>CGM-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM03</td>
+      <td>5.885</td>
+      <td>CGM-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM04</td>
+      <td>1.640</td>
+      <td>CGM-04</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM05</td>
+      <td>1.552</td>
+      <td>CGM-05</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM06</td>
+      <td>872</td>
+      <td>CGM-06</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM07</td>
+      <td>2.050</td>
+      <td>CGM-07</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM08</td>
+      <td>1.908</td>
+      <td>CGM-08</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM09</td>
+      <td>723</td>
+      <td>CGM-09</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM10</td>
+      <td>1.449</td>
+      <td>CGM-10</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM11</td>
+      <td>7.829</td>
+      <td>CGM-11</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM12</td>
+      <td>6.840</td>
+      <td>CGM-12</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM13</td>
+      <td>2.644</td>
+      <td>CGM-13</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM14</td>
+      <td>3.524</td>
+      <td>CGM-14</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM15</td>
+      <td>919</td>
+      <td>CGM-15</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM16</td>
+      <td>7.786</td>
+      <td>CGM-16</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE MIGUEL COUTO</td>
+      <td>CGM</td>
+      <td>CGM17</td>
+      <td>2.669</td>
+      <td>CGM-17</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE PROGRESSO</td>
+      <td>CGP</td>
+      <td>CGP01</td>
+      <td>4.249</td>
+      <td>CGP-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE PROGRESSO</td>
+      <td>CGP</td>
+      <td>CGP02</td>
+      <td>3.816</td>
+      <td>CGP-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE PROGRESSO</td>
+      <td>CGP</td>
+      <td>CGP03</td>
+      <td>2.642</td>
+      <td>CGP-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE PROGRESSO</td>
+      <td>CGP</td>
+      <td>CGP04</td>
+      <td>2.566</td>
+      <td>CGP-04</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE PROGRESSO</td>
+      <td>CGP</td>
+      <td>CGP05</td>
+      <td>3.296</td>
+      <td>CGP-05</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE PROGRESSO</td>
+      <td>CGP</td>
+      <td>CGP08</td>
+      <td>4.039</td>
+      <td>CGP-06</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE PROGRESSO</td>
+      <td>CGP</td>
+      <td>CGP09</td>
+      <td>3.277</td>
+      <td>CGP-07</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE PROGRESSO</td>
+      <td>CGP</td>
+      <td>CGP10</td>
+      <td>4.827</td>
+      <td>CGP-08</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE PROGRESSO</td>
+      <td>CGP</td>
+      <td>CGP11</td>
+      <td>3.548</td>
+      <td>CGP-09</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE PROGRESSO</td>
+      <td>CGP</td>
+      <td>CGP12</td>
+      <td>7.624</td>
+      <td>CGP-10</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE ASSIS SCAFFA</td>
+      <td>CGS</td>
+      <td>CGS01</td>
+      <td>2.810</td>
+      <td>CGS-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE ASSIS SCAFFA</td>
+      <td>CGS</td>
+      <td>CGS02</td>
+      <td>3.912</td>
+      <td>CGS-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE ASSIS SCAFFA</td>
+      <td>CGS</td>
+      <td>CGS03</td>
+      <td>4.040</td>
+      <td>CGS-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE ASSIS SCAFFA</td>
+      <td>CGS</td>
+      <td>CGS04</td>
+      <td>7.595</td>
+      <td>CGS-04</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE ASSIS SCAFFA</td>
+      <td>CGS</td>
+      <td>CGS05</td>
+      <td>12.723</td>
+      <td>CGS-05</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE ASSIS SCAFFA</td>
+      <td>CGS</td>
+      <td>CGS06</td>
+      <td>6.608</td>
+      <td>CGS-06</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE ASSIS SCAFFA</td>
+      <td>CGS</td>
+      <td>CGS07</td>
+      <td>3.087</td>
+      <td>CGS-07</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE ASSIS SCAFFA</td>
+      <td>CGS</td>
+      <td>CGS08</td>
+      <td>8.505</td>
+      <td>CGS-08</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE ASSIS SCAFFA</td>
+      <td>CGS</td>
+      <td>CGS09</td>
+      <td>7.206</td>
+      <td>CGS-09</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE ASSIS SCAFFA</td>
+      <td>CGS</td>
+      <td>CGS10</td>
+      <td>3.190</td>
+      <td>CGS-10</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE TAMANDARÉ</td>
+      <td>CGT</td>
+      <td>CGT01</td>
+      <td>2.951</td>
+      <td>CGT-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE TAMANDARÉ</td>
+      <td>CGT</td>
+      <td>CGT02</td>
+      <td>4.326</td>
+      <td>CGT-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE TAMANDARÉ</td>
+      <td>CGT</td>
+      <td>CGT03</td>
+      <td>8.623</td>
+      <td>CGT-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE. DISTRITO ROCHEDINHO. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE TAMANDARÉ</td>
+      <td>CGT</td>
+      <td>CGT04</td>
+      <td>6.603</td>
+      <td>CGT-04</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE TAMANDARÉ</td>
+      <td>CGT</td>
+      <td>CGT05</td>
+      <td>6.984</td>
+      <td>CGT-05</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE CAMPO GRANDE TAMANDARÉ</td>
+      <td>CGT</td>
+      <td>CGT06</td>
+      <td>5.010</td>
+      <td>CGT-06</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE ESTRELA</td>
+      <td>EST</td>
+      <td>EST01</td>
+      <td>469</td>
+      <td>EST-01</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE ESTRELA</td>
+      <td>EST</td>
+      <td>EST02</td>
+      <td>109</td>
+      <td>EST-02</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE LESTE</td>
+      <td>SE JARAGUARI</td>
+      <td>JAG</td>
+      <td>JAG01</td>
+      <td>2.498</td>
+      <td>JAG-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE JARAGUARI. DISTRITO JARAGUARI VELHO E BONFIM</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE ANHANDUÍ</td>
+      <td>ANH</td>
+      <td>ANH01</td>
+      <td>1.473</td>
+      <td>ANH-01</td>
+      <td>DISTRITO ANHANDUÍ E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE BANDEIRANTES</td>
+      <td>BAN</td>
+      <td>BAN53</td>
+      <td>1.832</td>
+      <td>LD 34,5KV BAN/COG</td>
+      <td>CIDADES DE CORGUINHO E ROCHEDO E CARGAS RURAIS DA REGIÃO DE BANDEIRANTES</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE ALMOXARIFADO</td>
+      <td>CGA</td>
+      <td>CGA01</td>
+      <td>10.061</td>
+      <td>CGA-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE ALMOXARIFADO</td>
+      <td>CGA</td>
+      <td>CGA02</td>
+      <td>985</td>
+      <td>CGA-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE ALMOXARIFADO</td>
+      <td>CGA</td>
+      <td>CGA03</td>
+      <td>8.645</td>
+      <td>CGA-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE ALMOXARIFADO</td>
+      <td>CGA</td>
+      <td>CGA04</td>
+      <td>10.501</td>
+      <td>CGA-04</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE ALMOXARIFADO</td>
+      <td>CGA</td>
+      <td>CGA05</td>
+      <td>4.683</td>
+      <td>CGA-05</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE ALMOXARIFADO</td>
+      <td>CGA</td>
+      <td>CGA07</td>
+      <td>2.451</td>
+      <td>CGA-07</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE ALMOXARIFADO</td>
+      <td>CGA</td>
+      <td>CGA08</td>
+      <td>7.655</td>
+      <td>CGA-08</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE ALMOXARIFADO</td>
+      <td>CGA</td>
+      <td>CGA09</td>
+      <td>5.577</td>
+      <td>CGA-09</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE ALMOXARIFADO</td>
+      <td>CGA</td>
+      <td>CGA10</td>
+      <td>2.981</td>
+      <td>CGA-10</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE ALMOXARIFADO</td>
+      <td>CGA</td>
+      <td>CGA11</td>
+      <td>3.477</td>
+      <td>CGA-11</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE ALMOXARIFADO</td>
+      <td>CGA</td>
+      <td>CGA12</td>
+      <td>3.681</td>
+      <td>CGA-12</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE, AEROPORTO INTERNACIONAL</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE ALMOXARIFADO</td>
+      <td>CGA</td>
+      <td>CGA13</td>
+      <td>1.229</td>
+      <td>CGA-13</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE ALMOXARIFADO</td>
+      <td>CGA</td>
+      <td>CGA51</td>
+      <td>822</td>
+      <td>LD 34,5KV ANH/CGA</td>
+      <td>CARGAS URBANAS E RURAIS DO DISTRITO ANHANDUÍ, CARGAS DA CONCESSIONÁRIA CERCAMPO</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE INDUSTRIAL</td>
+      <td>CGD</td>
+      <td>CGD01</td>
+      <td>2.512</td>
+      <td>CGD-01</td>
+      <td>NÚCLEO INDUSTRIAL DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE INDUSTRIAL</td>
+      <td>CGD</td>
+      <td>CGD02</td>
+      <td>8.184</td>
+      <td>CGD-02</td>
+      <td>NÚCLEO INDUSTRIAL DE CAMPO GRANDE, PARTE DE CARGAS URBANAS E RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE INDUSTRIAL</td>
+      <td>CGD</td>
+      <td>CGD03</td>
+      <td>2.999</td>
+      <td>CGD-03</td>
+      <td>NÚCLEO INDUSTRIAL DE CAMPO GRANDE E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE INDUSTRIAL</td>
+      <td>CGD</td>
+      <td>CGD51</td>
+      <td>97</td>
+      <td>LD 34,5KV CGD/RUR</td>
+      <td>CARGAS RURAIS E SERVIÇO AUXILIAR DA SUBESTAÇÃO CAMPO GRANDE IMBIRUSSU</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE INDUSTRIAL</td>
+      <td>CGD</td>
+      <td>CGD52</td>
+      <td>150</td>
+      <td>LD 34,5KV CGD/TER</td>
+      <td>SUBESTAÇÕES TERENOS, PONTE DO GREGO, JAMIC. DISTRITO NUARA, DISTRITO PLANALTO VERDE. CARGAS RURAIS DA CIDADE DE CAMPO GRANDE, CARGAS URBANAS E RURAIS DA CIDADE DE TERENOS.</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE INDUSTRIAL</td>
+      <td>CGD</td>
+      <td>CGD53</td>
+      <td>1.372</td>
+      <td>LD 34,5KV CGD/ROC</td>
+      <td>SUBESTAÇÕES ROCHEDO, CORGUINHO, DISTRITO TABOCO. CARGAS URBANAS E RURAIS DAS CIDADES DE CORGUINHO E ROCHEDO. CARGAS RURAIS E ASSENTAMENTOS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE JOSÉ ABRÃO</td>
+      <td>CGJ</td>
+      <td>CGJ07</td>
+      <td>7.481</td>
+      <td>CGJ-07</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE LAGEADO</td>
+      <td>CGL</td>
+      <td>CGL01</td>
+      <td>9.386</td>
+      <td>CGL-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE LAGEADO</td>
+      <td>CGL</td>
+      <td>CGL02</td>
+      <td>6.487</td>
+      <td>CGL-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE LAGEADO</td>
+      <td>CGL</td>
+      <td>CGL03</td>
+      <td>8.120</td>
+      <td>CGL-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE LAGEADO</td>
+      <td>CGL</td>
+      <td>CGL04</td>
+      <td>8.161</td>
+      <td>CGL-04</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE LAGEADO</td>
+      <td>CGL</td>
+      <td>CGL06</td>
+      <td>7.752</td>
+      <td>CGL-06</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE LAGEADO</td>
+      <td>CGL</td>
+      <td>CGL07</td>
+      <td>8.639</td>
+      <td>CGL-07</td>
+      <td>PRESÍDIO FEDERAL E SEMI-ABERTO. PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE LAGEADO</td>
+      <td>CGL</td>
+      <td>CGL08</td>
+      <td>13.416</td>
+      <td>CGL-08</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CAMPO GRANDE LAGEADO</td>
+      <td>CGL</td>
+      <td>CGL09</td>
+      <td>4.022</td>
+      <td>CGL-09</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAMPO GRANDE</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE CORGUINHO</td>
+      <td>COG</td>
+      <td>COG01</td>
+      <td>1.639</td>
+      <td>COG-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE CORGUINHO</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE JAMIC</td>
+      <td>JAM</td>
+      <td>JAM01</td>
+      <td>1.157</td>
+      <td>JAM-01</td>
+      <td>DISTRITO DE ALCILÂNDIA E COLONIA JAMIC. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE JAMIC</td>
+      <td>JAM</td>
+      <td>JAM51</td>
+      <td>8</td>
+      <td>LD 34,5KV FSC/JAM</td>
+      <td>CARGAS DA FAZENDA SANTA CLARA</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE PONTE DO GREGO</td>
+      <td>PGR</td>
+      <td>PGR01</td>
+      <td>408</td>
+      <td>PGR-01</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE PONTE DO GREGO</td>
+      <td>PGR</td>
+      <td>PGR02</td>
+      <td>826</td>
+      <td>PGR-02</td>
+      <td>DISTRITO NUARA E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE ROCHEDO</td>
+      <td>ROC</td>
+      <td>ROC01</td>
+      <td>2.680</td>
+      <td>ROC-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE ROCHEDO</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE SERROTE</td>
+      <td>SET</td>
+      <td>SET01</td>
+      <td>99</td>
+      <td>SET-01</td>
+      <td>CARGAS RURAIS E ASSENTAMENTOS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE SERROTE</td>
+      <td>SET</td>
+      <td>SET02</td>
+      <td>125</td>
+      <td>SET-02</td>
+      <td>CARGAS RURAIS E ASSENTAMENTOS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE SIDROLÂNDIA</td>
+      <td>SIA</td>
+      <td>SIA01</td>
+      <td>5.446</td>
+      <td>SIA-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE SIDROLÂNDIA E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE SIDROLÂNDIA</td>
+      <td>SIA</td>
+      <td>SIA02</td>
+      <td>3.742</td>
+      <td>SIA-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE SIDROLÂNDIA E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE SIDROLÂNDIA</td>
+      <td>SIA</td>
+      <td>SIA03</td>
+      <td>5.848</td>
+      <td>SIA-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE SIDROLÂNDIA E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE SIDROLÂNDIA</td>
+      <td>SIA</td>
+      <td>SIA51</td>
+      <td>2.868</td>
+      <td>LD 34,5KV SIA/SPE</td>
+      <td>SUBESTAÇÕES SERROTE E SÃO PEDRO, CARGAS RURAIS DE SIDROLÂNDIA, SERROTE E SÃO PEDRO</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE SIDROLÂNDIA</td>
+      <td>SIA</td>
+      <td>SIA52</td>
+      <td>2.369</td>
+      <td>LD 34,5KV QCO/SIA</td>
+      <td>DISTRITO QUEBRA COCO E CARGAS RURAIS DE SIDROLÂNDIA</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE SIDROLÂNDIA</td>
+      <td>SIA</td>
+      <td>SIA53</td>
+      <td>601</td>
+      <td>LD 34,5KV SEA/SIA</td>
+      <td>CARGAS RURAIS E SERVIÇO AUXILIAR DA SUBESTAÇÃO SIDROLÂNDIA 2 (CELEO REDES)</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE SÃO PEDRO</td>
+      <td>SPE</td>
+      <td>SPE01</td>
+      <td>645</td>
+      <td>SPE-01</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE SÃO PEDRO</td>
+      <td>SPE</td>
+      <td>SPE02</td>
+      <td>891</td>
+      <td>SPE-02</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE TERENOS</td>
+      <td>TER</td>
+      <td>TER01</td>
+      <td>1.885</td>
+      <td>TER-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE TERENOS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE TERENOS</td>
+      <td>TER</td>
+      <td>TER02</td>
+      <td>3.332</td>
+      <td>TER-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE TERENOS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE TERENOS</td>
+      <td>TER</td>
+      <td>TER51</td>
+      <td>58</td>
+      <td>LD 34,5KV JAM/TER</td>
+      <td>SUBESTAÇÃO JAMIC. CARGAS RURAIS DE JAMIC E FAZENDA SANTA CLARA</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>CAMPO GRANDE OESTE</td>
+      <td>SE TERENOS</td>
+      <td>TER</td>
+      <td>TER52</td>
+      <td>105</td>
+      <td>LD 34,5KV PGR/TER</td>
+      <td>SUBESTAÇÃO PONTE DO GREGO. CARGAS RURAIS TERENOS DE PONTE DO GREGO</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>COSTA RICA</td>
+      <td>SE ALCINÓPOLIS</td>
+      <td>ALC</td>
+      <td>ALC01</td>
+      <td>2.200</td>
+      <td>ALC-01</td>
+      <td>CARGAS URBANAS DA CIDADE DE ALCINÓPOLIS E PARTE DAS CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>COSTA RICA</td>
+      <td>SE BAÚS</td>
+      <td>BAU</td>
+      <td>BAU01</td>
+      <td>35</td>
+      <td>BAU-01</td>
+      <td>CARGAS RURAIS DA REGIÃO DE BAÚS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>COSTA RICA</td>
+      <td>SE BELA ALVORADA</td>
+      <td>BAV</td>
+      <td>BAV51</td>
+      <td>2.074</td>
+      <td>LD 34,5KV BAV/CSU</td>
+      <td>CIDADE DE PARAÍSO DAS ÁGUAS E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>COSTA RICA</td>
+      <td>SE BELA ALVORADA</td>
+      <td>BAV</td>
+      <td>BAV52</td>
+      <td>344</td>
+      <td>LD 34,5KV BAV/CAM</td>
+      <td>CARGAS RURAIS DA REGIÃO DE PARAÍSO DAS ÁGUAS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>COSTA RICA</td>
+      <td>SE COSTA RICA HIDRO</td>
+      <td>CRH</td>
+      <td>CRH51</td>
+      <td>350</td>
+      <td>LD 34,5KV ALC/CRH</td>
+      <td>SUBESTAÇÃO DE ALCINOPOLIS, BAUS E FIGUERÃO. CARGAS URBANAS E RURAIS DA CIDADE DE FIGUERÃO E ALCINOPOLIS. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>COSTA RICA</td>
+      <td>SE COSTA RICA HIDRO</td>
+      <td>CRH</td>
+      <td>CRH52</td>
+      <td>9</td>
+      <td>LD 34,5KV CRH/CRI</td>
+      <td>SUBESTAÇÃO COSTA RICA. CARGAS URBANAS E RURAIS DA CIDADE DE COSTA RICA</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>COSTA RICA</td>
+      <td>SE COSTA RICA</td>
+      <td>CRI</td>
+      <td>CRI01</td>
+      <td>7.416</td>
+      <td>CRI-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE COSTA RICA. DISTRITO CAPELA</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>COSTA RICA</td>
+      <td>SE COSTA RICA</td>
+      <td>CRI</td>
+      <td>CRI02</td>
+      <td>5.135</td>
+      <td>CRI-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE COSTA RICA</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>COSTA RICA</td>
+      <td>SE CHAPADÃO DO SUL</td>
+      <td>CSU</td>
+      <td>CSU01</td>
+      <td>8.513</td>
+      <td>CSU-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE CHAPADÃO DO SUL</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>COSTA RICA</td>
+      <td>SE CHAPADÃO DO SUL</td>
+      <td>CSU</td>
+      <td>CSU02</td>
+      <td>6.493</td>
+      <td>CSU-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE CHAPADÃO DO SUL</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>COSTA RICA</td>
+      <td>SE CHAPADÃO DO SUL</td>
+      <td>CSU</td>
+      <td>CSU51</td>
+      <td>411</td>
+      <td>LD 34,5KV CSU/ISU</td>
+      <td>DISTRITO INDAIA DO SUL. SERVIÇO AUXILIAR DA SUBESTAÇÃO CHAPADÃO (ITATIM). CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>COSTA RICA</td>
+      <td>SE CHAPADÃO DO SUL</td>
+      <td>CSU</td>
+      <td>CSU52</td>
+      <td>695</td>
+      <td>LD 34,5KV CSU/PAS</td>
+      <td>CARGAS URBANAS DA CIDADE DE PARAISO DAS ÁGUAS. DISTRITO ALTO SUCURIÚ E BELA ALVORADA. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>COSTA RICA</td>
+      <td>SE CHAPADÃO DO SUL</td>
+      <td>CSU</td>
+      <td>CSU53</td>
+      <td>255</td>
+      <td>LD 34,5KV CRH/CSU</td>
+      <td>CENTRAL ELÉTRICA APORÉ. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>COSTA RICA</td>
+      <td>SE FIGUEIRÃO</td>
+      <td>FIG</td>
+      <td>FIG01</td>
+      <td>1.417</td>
+      <td>FIG-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE FIGUERÃO</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE APARECIDA DO TABOADO</td>
+      <td>ATA</td>
+      <td>ATA01</td>
+      <td>1.726</td>
+      <td>ATA-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE APARECIDA DO TABOADO, DISTRITO INDUSTRIAL E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE APARECIDA DO TABOADO</td>
+      <td>ATA</td>
+      <td>ATA02</td>
+      <td>6.024</td>
+      <td>ATA-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE APARECIDA DO TABOADO, DISTRITO INDUSTRIAL E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE APARECIDA DO TABOADO</td>
+      <td>ATA</td>
+      <td>ATA03</td>
+      <td>3.434</td>
+      <td>ATA-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE APARECIDA DO TABOADO E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE APARECIDA DO TABOADO</td>
+      <td>ATA</td>
+      <td>ATA04</td>
+      <td>2.176</td>
+      <td>ATA-04</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE APARECIDA DO TABOADO E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE APARECIDA DO TABOADO</td>
+      <td>ATA</td>
+      <td>ATA05</td>
+      <td>846</td>
+      <td>ATA-05</td>
+      <td>PARTE DAS CARGAS URBANAS DE APARECIDA DO TABOADO E O CLIENTE ALLES</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE APARECIDA DO TABOADO</td>
+      <td>ATA</td>
+      <td>ATA51</td>
+      <td>363</td>
+      <td>LD 34,5KV ATA/SEL</td>
+      <td>SUBESTAÇÃO DE SELVÍRIA. DISTRITO SESSENTA DIAS APAIXONADO E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE APARECIDA DO TABOADO</td>
+      <td>ATA</td>
+      <td>ATA52</td>
+      <td>216</td>
+      <td>LD 34,5KV ATA/RUR</td>
+      <td>DISTRITO INDUSTRIAL E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE CASSILÂNDIA</td>
+      <td>CAS</td>
+      <td>CAS01</td>
+      <td>2.650</td>
+      <td>CAS-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CASSILÂNDIA E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE CASSILÂNDIA</td>
+      <td>CAS</td>
+      <td>CAS02</td>
+      <td>4.978</td>
+      <td>CAS-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CASSILÂNDIA. DISTRITO SANTA RITA DE CÁSSIA E SÃO JOÃO DO APORÉ. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE CASSILÂNDIA</td>
+      <td>CAS</td>
+      <td>CAS03</td>
+      <td>4.032</td>
+      <td>CAS-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CASSILÂNDIA E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE CASSILÂNDIA</td>
+      <td>CAS</td>
+      <td>CAS51</td>
+      <td>1</td>
+      <td>LD 34,5KV CAS/ITJ</td>
+      <td>CARGAS PERTENCENTES A CONCESSIONÁRIA ENEL GOIÁS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE CASSILÂNDIA</td>
+      <td>CAS</td>
+      <td>CAS52</td>
+      <td>20</td>
+      <td>LD 34,5KV CAS/MOG</td>
+      <td>SUBESTAÇÃO DE MORANGAS E INOCÊNCIA. DISTRITO DE SÃO PEDRO. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE INOCÊNCIA</td>
+      <td>INO</td>
+      <td>INO01</td>
+      <td>650</td>
+      <td>INO-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE INOCÊNCIA. DISTRITO SÃO PEDRO</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE INOCÊNCIA</td>
+      <td>INO</td>
+      <td>INO02</td>
+      <td>3.143</td>
+      <td>INO-02</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE INOCÊNCIA</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE MORANGAS</td>
+      <td>MOG</td>
+      <td>MOG01</td>
+      <td>140</td>
+      <td>MOG-01</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE MORANGAS</td>
+      <td>MOG</td>
+      <td>MOG02</td>
+      <td>116</td>
+      <td>MOG-02</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE PARANAÍBA</td>
+      <td>PAR</td>
+      <td>PAR01</td>
+      <td>3.921</td>
+      <td>PAR-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE PARANAÍBA</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE PARANAÍBA</td>
+      <td>PAR</td>
+      <td>PAR02</td>
+      <td>8.917</td>
+      <td>PAR-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE PARANAÍBA. DISTRITO LAGOA DO ARERÉ. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE PARANAÍBA</td>
+      <td>PAR</td>
+      <td>PAR03</td>
+      <td>4.978</td>
+      <td>PAR-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE PARANAÍBA</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE PARANAÍBA</td>
+      <td>PAR</td>
+      <td>PAR04</td>
+      <td>1.632</td>
+      <td>PAR-04</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE PARANAÍBA. DISTRITO SANTA IZABEL E VILA DO RAMUNDO</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE PARANAÍBA</td>
+      <td>PAR</td>
+      <td>PAR05</td>
+      <td>2.506</td>
+      <td>PAR-05</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE PARANAÍBA</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE PARANAÍBA</td>
+      <td>PAR</td>
+      <td>PAR51</td>
+      <td>1.565</td>
+      <td>LD 34,5KV INO/PAR</td>
+      <td>DISTRITO ALTO SANTANA E ALTO TAMANDARÉ. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE PARANAÍBA</td>
+      <td>PAR</td>
+      <td>PAR52</td>
+      <td>136</td>
+      <td>LD 34,5KV PAR/RUR</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>PARANAIBA</td>
+      <td>SE PARANAÍBA</td>
+      <td>PAR</td>
+      <td>PAR53</td>
+      <td>3</td>
+      <td>LD 34,5KV ABC/PAR</td>
+      <td>CARGAS DO CLIENTE ABC</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE ÁGUAS DO MIRANDA</td>
+      <td>AMI</td>
+      <td>AMI01</td>
+      <td>742</td>
+      <td>AMI-01</td>
+      <td>DISTRITO JABUTÍ E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE ÁGUAS DO MIRANDA</td>
+      <td>AMI</td>
+      <td>AMI02</td>
+      <td>139</td>
+      <td>AMI-02</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE AQUIDAUANA</td>
+      <td>AQU</td>
+      <td>AQU01</td>
+      <td>4.093</td>
+      <td>AQU-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE AQUIDAUANA E ANASTÁCIO</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE AQUIDAUANA</td>
+      <td>AQU</td>
+      <td>AQU02</td>
+      <td>3.570</td>
+      <td>AQU-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE AQUIDAUANA E ANASTÁCIO E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE AQUIDAUANA</td>
+      <td>AQU</td>
+      <td>AQU03</td>
+      <td>4.120</td>
+      <td>AQU-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE AQUIDAUANA E ANASTÁCIO E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE AQUIDAUANA</td>
+      <td>AQU</td>
+      <td>AQU04</td>
+      <td>5.370</td>
+      <td>AQU-04</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE ANASTÁCIO E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE AQUIDAUANA</td>
+      <td>AQU</td>
+      <td>AQU05</td>
+      <td>8.493</td>
+      <td>AQU-05</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE AQUIDAUANA E ANASTÁCIO, DISTRITO DE CIPOLÂNDIA E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE AQUIDAUANA</td>
+      <td>AQU</td>
+      <td>AQU06</td>
+      <td>4.278</td>
+      <td>AQU-06</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE AQUIDAUANA E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE AQUIDAUANA</td>
+      <td>AQU</td>
+      <td>AQU51</td>
+      <td>1.031</td>
+      <td>LD 34,5KV AQU/DIB</td>
+      <td>SUBESTAÇÃO CAMISÃO E DOIS IRMÃOS DO BURITI. DISTRITO PALMEIRAS E PIRAPUTANGA. CARGAS URBANAS E RURAIS DA CIDADE DE DOIS IRMÃOS DO BURITI, CAMISÃO, PALMEIRAS E PIRAPUTANGA.</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE BODOQUENA</td>
+      <td>BOD</td>
+      <td>BOD01</td>
+      <td>3.365</td>
+      <td>BOD-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE BODOQUENA</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE BODOQUENA</td>
+      <td>BOD</td>
+      <td>BOD51</td>
+      <td>696</td>
+      <td>LD 34,5KV BOD/MOR</td>
+      <td>DISTRITO MORRARIA DO SUL E MINERADORAS. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE CAMISÃO</td>
+      <td>CMS</td>
+      <td>CMS01</td>
+      <td>303</td>
+      <td>CMS-01</td>
+      <td>DISTRITO DE CAMISÃO</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE DOIS IRMÃOS DO BURITI</td>
+      <td>DIB</td>
+      <td>DIB01</td>
+      <td>2.694</td>
+      <td>DIB-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE DOIS IRMÃOS DO BURITI</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE MIRANDA</td>
+      <td>MIR</td>
+      <td>MIR01</td>
+      <td>4.455</td>
+      <td>MIR-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE MIRANDA. DISTRITO DUQUE ESTRADA.</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE MIRANDA</td>
+      <td>MIR</td>
+      <td>MIR02</td>
+      <td>4.590</td>
+      <td>MIR-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE MIRANDA.</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE MIRANDA</td>
+      <td>MIR</td>
+      <td>MIR51</td>
+      <td>2.125</td>
+      <td>LD 34,5KV DES/MIR</td>
+      <td>DISTRITO AGACHI, TAUNAY E SALOBRA. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>AQUIDAUANA</td>
+      <td>SE MIRANDA</td>
+      <td>MIR</td>
+      <td>MIR52</td>
+      <td>273</td>
+      <td>LD 34,5KV BOD/MIR</td>
+      <td>SUBESTAÇÃO BODOQUENA. CARGAS URBANAS DA CIDADE DE BODOQUENA. DISTRITO MORRARIA DO SUL. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>CORUMBA</td>
+      <td>SE CORUMBÁ</td>
+      <td>COR</td>
+      <td>COR01</td>
+      <td>3.239</td>
+      <td>COR-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE CORUMBÁ</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>CORUMBA</td>
+      <td>SE CORUMBÁ</td>
+      <td>COR</td>
+      <td>COR02</td>
+      <td>3.304</td>
+      <td>COR-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CORUMBÁ</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>CORUMBA</td>
+      <td>SE CORUMBÁ</td>
+      <td>COR</td>
+      <td>COR03</td>
+      <td>7.643</td>
+      <td>COR-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CORUMBÁ. CARGAS URBANAS E RURAIS DA CIDADE DE LADÁRIO. QUARTEL DA MARINHA</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>CORUMBA</td>
+      <td>SE CORUMBÁ</td>
+      <td>COR</td>
+      <td>COR04</td>
+      <td>6.787</td>
+      <td>COR-04</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CORUMBÁ</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>CORUMBA</td>
+      <td>SE CORUMBÁ</td>
+      <td>COR</td>
+      <td>COR05</td>
+      <td>1.540</td>
+      <td>COR-05</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CORUMBÁ. HOSPITAL PRONTO SOCORRO DE CORUMBÁ</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>CORUMBA</td>
+      <td>SE CORUMBÁ</td>
+      <td>COR</td>
+      <td>COR06</td>
+      <td>2.137</td>
+      <td>COR-06</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CORUMBÁ</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>CORUMBA</td>
+      <td>SE CORUMBÁ</td>
+      <td>COR</td>
+      <td>COR07</td>
+      <td>4.237</td>
+      <td>COR-07</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CORUMBÁ</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>CORUMBA</td>
+      <td>SE CORUMBÁ</td>
+      <td>COR</td>
+      <td>COR08</td>
+      <td>4.650</td>
+      <td>COR-08</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CORUMBÁ</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>CORUMBA</td>
+      <td>SE CORUMBÁ</td>
+      <td>COR</td>
+      <td>COR09</td>
+      <td>5.198</td>
+      <td>COR-09</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CORUMBÁ</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>CORUMBA</td>
+      <td>SE CORUMBÁ</td>
+      <td>COR</td>
+      <td>COR10</td>
+      <td>3.656</td>
+      <td>COR-10</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE CORUMBA</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>CORUMBA</td>
+      <td>SE CORUMBÁ</td>
+      <td>COR</td>
+      <td>COR51</td>
+      <td>2</td>
+      <td>LD 34,5KV COR/VET</td>
+      <td>USINA TÉRMICA VETORIAL</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>CORUMBA</td>
+      <td>SE CORUMBÁ</td>
+      <td>COR</td>
+      <td>COR52</td>
+      <td>1.423</td>
+      <td>LD 34,5KV COR/URU</td>
+      <td>DISTRITO DE ALBUQUERQUE, MINERADORAS, BATALHÃO DA MARINHA E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE COXIM</td>
+      <td>COX</td>
+      <td>COX01</td>
+      <td>6.276</td>
+      <td>COX-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE COXIM</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE COXIM</td>
+      <td>COX</td>
+      <td>COX02</td>
+      <td>2.037</td>
+      <td>COX-02</td>
+      <td>DISTRITO VALE DO TAQUARI, SILVOLÂNDIA E JAURU. PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE COXIM</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE COXIM</td>
+      <td>COX</td>
+      <td>COX03</td>
+      <td>1.359</td>
+      <td>COX-03</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE COXIM</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE COXIM</td>
+      <td>COX</td>
+      <td>COX04</td>
+      <td>8.436</td>
+      <td>COX-04</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE COXIM</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE COXIM</td>
+      <td>COX</td>
+      <td>COX51</td>
+      <td>621</td>
+      <td>LD 34,5KV COX/PGO</td>
+      <td>SUBESTACAO DE PEDRO GOMES, DISTRITO DE OLHO D'ÁGUA. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE COXIM</td>
+      <td>COX</td>
+      <td>COX52</td>
+      <td>356</td>
+      <td>LD 34,5KV COX/RUR</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE COXIM</td>
+      <td>COX</td>
+      <td>COX53</td>
+      <td>906</td>
+      <td>LD 34,5KV ALC/COX</td>
+      <td>DISTRITO NOVO BELO HORIZONTE. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE PEDRO GOMES</td>
+      <td>PGO</td>
+      <td>PGO01</td>
+      <td>3.765</td>
+      <td>PGO-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE PEDRO GOMES.</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE RIO NEGRO</td>
+      <td>RNE</td>
+      <td>RNE01</td>
+      <td>2.494</td>
+      <td>RNE-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE RIO NEGRO</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE RIO VERDE</td>
+      <td>RVE</td>
+      <td>RVE01</td>
+      <td>5.860</td>
+      <td>RVE-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE RIO VERDE</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE RIO VERDE</td>
+      <td>RVE</td>
+      <td>RVE02</td>
+      <td>3.353</td>
+      <td>RVE-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE RIO VERDE</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE RIO VERDE</td>
+      <td>RVE</td>
+      <td>RVE51</td>
+      <td>944</td>
+      <td>LD 34,5KV RNE/RVE</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE RIO VERDE</td>
+      <td>RVE</td>
+      <td>RVE52</td>
+      <td>198</td>
+      <td>LD 34,5KV RUR/RVE</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE SÃO GABRIEL DO OESTE</td>
+      <td>SGO</td>
+      <td>SGO01</td>
+      <td>111</td>
+      <td>SGO-01</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE SÃO GABRIEL DO OESTE</td>
+      <td>SGO</td>
+      <td>SGO02</td>
+      <td>4.073</td>
+      <td>SGO-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE SÃO GABRIEL DO OESTE</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE SÃO GABRIEL DO OESTE</td>
+      <td>SGO</td>
+      <td>SGO03</td>
+      <td>5.784</td>
+      <td>SGO-03</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE SÃO GABRIEL DO OESTE</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE SÃO GABRIEL DO OESTE</td>
+      <td>SGO</td>
+      <td>SGO04</td>
+      <td>3.816</td>
+      <td>SGO-04</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE SÃO GABRIEL DO OESTE</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE SÃO GABRIEL DO OESTE</td>
+      <td>SGO</td>
+      <td>SGO51</td>
+      <td>535</td>
+      <td>LD 34,5KV PSP/SGO</td>
+      <td>CARGAS RURAIS E DISTRITO AREADO</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE SÃO GABRIEL DO OESTE</td>
+      <td>SGO</td>
+      <td>SGO52</td>
+      <td>671</td>
+      <td>LD 34,5KV RUR/SGO</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE SÃO GABRIEL DO OESTE</td>
+      <td>SGO</td>
+      <td>SGO53</td>
+      <td>1</td>
+      <td>LD 34,5KV AUR/SGO</td>
+      <td>FRIGORÍFICO AURORA ALIMENTOS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE SÃO GABRIEL DO OESTE</td>
+      <td>SGO</td>
+      <td>SGO55</td>
+      <td>19</td>
+      <td>LD 34,5KV RNE/SGO</td>
+      <td>SUBESTAÇÃO RIO NEGRO. CARGAS URBANAS E RURAIS DA CIDADE DE RIO NEGRO</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE SONORA</td>
+      <td>SON</td>
+      <td>SON01</td>
+      <td>3.807</td>
+      <td>SON-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE SONORA</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE SONORA</td>
+      <td>SON</td>
+      <td>SON02</td>
+      <td>2.771</td>
+      <td>SON-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE SONORA</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE SONORA</td>
+      <td>SON</td>
+      <td>SON52</td>
+      <td>1</td>
+      <td>LD 34,5KV SON/AQR</td>
+      <td>CLIENTE GERADOR AQUARIUS HIDRO</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>COXIM</td>
+      <td>SE SOZINHO</td>
+      <td>SOZ</td>
+      <td>SOZ51</td>
+      <td>7</td>
+      <td>LD 34,5KV SON/SOZ</td>
+      <td>SUBESTAÇÃO SONORA. CARGAS URBANAS E RURAIS DA CIDADE DE SONORA, PCH AQUÁRIUS E USINA TÉRMICA SONORA</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE ALTO CARACOL</td>
+      <td>ACA</td>
+      <td>ACA51</td>
+      <td>2.613</td>
+      <td>LD 34,5KV ACA/CAR</td>
+      <td>CIDADE DE CARACOL E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE ALTO CARACOL</td>
+      <td>ACA</td>
+      <td>ACA52</td>
+      <td>207</td>
+      <td>LD 34,5KV ACA/RUR</td>
+      <td>CARGAS RURAIS, POSTO TUPÃ E ASSENTAMENTOS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE ALTO CARACOL</td>
+      <td>ACA</td>
+      <td>ACA53</td>
+      <td>27</td>
+      <td>LD 34,5KV ACA/BVI</td>
+      <td>CARGAS RURAIS E MINEDORAS CALCÁRIO XERÉS E OROYTÊ.</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE BONITO</td>
+      <td>BON</td>
+      <td>BON01</td>
+      <td>6.223</td>
+      <td>BON-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE BONITO</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE BONITO</td>
+      <td>BON</td>
+      <td>BON02</td>
+      <td>4.998</td>
+      <td>BON-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE BONITO</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE BONITO</td>
+      <td>BON</td>
+      <td>BON51</td>
+      <td>630</td>
+      <td>LD 34,5KV BON/CED</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE BONITO</td>
+      <td>BON</td>
+      <td>BON52</td>
+      <td>348</td>
+      <td>LD 34,5KV BON/RUR</td>
+      <td>AEROPORTO DE BONITO E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE BONITO</td>
+      <td>BON</td>
+      <td>BON53</td>
+      <td>1</td>
+      <td>LD 34,5KV BON/COC</td>
+      <td>CARGAS DO CLIENTE CONCRELUZ</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE BELA VISTA</td>
+      <td>BVI</td>
+      <td>BVI01</td>
+      <td>3.092</td>
+      <td>BVI-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE BELA VISTA E CARGAS RURAIS. DISTRITO NOSSA SRA. FÁTIMA</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE BELA VISTA</td>
+      <td>BVI</td>
+      <td>BVI02</td>
+      <td>4.574</td>
+      <td>BVI-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE BELA VISTA E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE BELA VISTA</td>
+      <td>BVI</td>
+      <td>BVI51</td>
+      <td>1.169</td>
+      <td>LD 34,5KV BVI/CAR</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE CONCEIÇÃO</td>
+      <td>CON</td>
+      <td>CON01</td>
+      <td>1.698</td>
+      <td>CON-01</td>
+      <td>CARGAS RURAIS E ASSENTAMENTOS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE JARDIM</td>
+      <td>JAR</td>
+      <td>JAR01</td>
+      <td>6.140</td>
+      <td>JAR-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE JARDIM. DISTRITO  BOQUEIRÃO. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE JARDIM</td>
+      <td>JAR</td>
+      <td>JAR02</td>
+      <td>4.787</td>
+      <td>JAR-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE JARDIM</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE JARDIM</td>
+      <td>JAR</td>
+      <td>JAR03</td>
+      <td>3.624</td>
+      <td>JAR-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE JARDIM E GUIA LOPES DA LAGUNA. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE JARDIM</td>
+      <td>JAR</td>
+      <td>JAR04</td>
+      <td>3.298</td>
+      <td>JAR-04</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE JARDIM</td>
+      <td>JAR</td>
+      <td>JAR51</td>
+      <td>7.437</td>
+      <td>LD 34,5KV JAR/NIO</td>
+      <td>SUBSESTAÇÃO NIOAQUE E CONCEIÇÃO. CARGAS URBANAS DA CIDADE DE NIOAQUE. CARGAS RURAIS.</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE JARDIM</td>
+      <td>JAR</td>
+      <td>JAR52</td>
+      <td>226</td>
+      <td>LD 34,5KV JAR/MBO</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE JARDIM</td>
+      <td>JAR</td>
+      <td>JAR53</td>
+      <td>244</td>
+      <td>LD 34,5KV BVI/JAR</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE BELA VISTA E DISTRITO NOSSA SRA. FÁTIMA</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE JARDIM</td>
+      <td>JAR</td>
+      <td>JAR54</td>
+      <td>263</td>
+      <td>LD 34,5KV JAR/RUR</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE NIOAQUE</td>
+      <td>NIO</td>
+      <td>NIO01</td>
+      <td>549</td>
+      <td>NIO-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE NIOAQUE</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE NIOAQUE</td>
+      <td>NIO</td>
+      <td>NIO02</td>
+      <td>4.438</td>
+      <td>NIO-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE NIOAQUE</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE NIOAQUE</td>
+      <td>NIO</td>
+      <td>NIO51</td>
+      <td>608</td>
+      <td>LD 34,5KV CON/NIO</td>
+      <td>SUBESTAÇÃO CONCEIÇÃO. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE PORTO MURTINHO</td>
+      <td>PMU</td>
+      <td>PMU01</td>
+      <td>323</td>
+      <td>PMU-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE PORTO MURTINHO</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE PORTO MURTINHO</td>
+      <td>PMU</td>
+      <td>PMU02</td>
+      <td>4.151</td>
+      <td>PMU-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE PORTO MURTINHO</td>
+    </tr>
+    <tr>
+      <td>NORTE</td>
+      <td>JARDIM</td>
+      <td>SE PORTO MURTINHO</td>
+      <td>PMU</td>
+      <td>AMA53</td>
+      <td>32</td>
+      <td>LD 34,5KV AMA/AMO</td>
+      <td>SE ARAL MOREIRA, CARGAS URBANAS DA CIDADE DE ARAL MOREIRA</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE ARAL MOREIRA</td>
+      <td>AMO</td>
+      <td>AMO01</td>
+      <td>2.218</td>
+      <td>AMO-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE ARAL MOREIRA E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE ARAL MOREIRA</td>
+      <td>AMO</td>
+      <td>AMO02</td>
+      <td>544</td>
+      <td>AMO-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE ARAL MOREIRA E CARGAS RURAIS. DISTRITO VILA MARQUES</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE BOCAJÁ</td>
+      <td>BOC</td>
+      <td>BOC01</td>
+      <td>396</td>
+      <td>BOC-01</td>
+      <td>DISTRITO BOCAJÁ E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE CAARAPÓ</td>
+      <td>CAA</td>
+      <td>CAA01</td>
+      <td>4.101</td>
+      <td>CAA-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAARAPO E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE CAARAPÓ</td>
+      <td>CAA</td>
+      <td>CAA02</td>
+      <td>6.742</td>
+      <td>CAA-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE CAARAPO, DISTRITO INDUSTRIAL E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE CAARAPÓ</td>
+      <td>CAA</td>
+      <td>CAA51</td>
+      <td>3.296</td>
+      <td>LD 34,5KV CAA/JUT</td>
+      <td>CIDADE DE JUTI E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE CAARAPÓ</td>
+      <td>CAA</td>
+      <td>CAA52</td>
+      <td>105</td>
+      <td>LD 34,5KV CAA/RUR</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS ALVORADA</td>
+      <td>DOA</td>
+      <td>DOA01</td>
+      <td>8.249</td>
+      <td>DOA-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS ALVORADA</td>
+      <td>DOA</td>
+      <td>DOA02</td>
+      <td>2.795</td>
+      <td>DOA-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS ALVORADA</td>
+      <td>DOA</td>
+      <td>DOA03</td>
+      <td>9.197</td>
+      <td>DOA-03</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS ALVORADA</td>
+      <td>DOA</td>
+      <td>DOA04</td>
+      <td>2.819</td>
+      <td>DOA-04</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE DOURADOS. DISTRITO PICADINHA</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS ALVORADA</td>
+      <td>DOA</td>
+      <td>DOA05</td>
+      <td>7.649</td>
+      <td>DOA-05</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS ALVORADA</td>
+      <td>DOA</td>
+      <td>DOA06</td>
+      <td>2.692</td>
+      <td>DOA-06</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS ALVORADA</td>
+      <td>DOA</td>
+      <td>DOA07</td>
+      <td>6.214</td>
+      <td>DOA-07</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS DAS NAÇÕES</td>
+      <td>DOD</td>
+      <td>DOD01</td>
+      <td>4.193</td>
+      <td>DOD-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS DAS NAÇÕES</td>
+      <td>DOD</td>
+      <td>DOD02</td>
+      <td>2.399</td>
+      <td>DOD-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS DAS NAÇÕES</td>
+      <td>DOD</td>
+      <td>DOD03</td>
+      <td>4.322</td>
+      <td>DOD-03</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE DOURADOS. PENITENCIÁRIA DE SEGURANÇA MÁXIMA. DISTRITO INDUSTRIAL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS DAS NAÇÕES</td>
+      <td>DOD</td>
+      <td>DOD04</td>
+      <td>5.155</td>
+      <td>DOD-04</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS DAS NAÇÕES</td>
+      <td>DOD</td>
+      <td>DOD05</td>
+      <td>1.983</td>
+      <td>DOD-05</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS. DISTRITO SÃO PEDRO, INDÁPOLIS E PANAMBI. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS INDUSTRIAL</td>
+      <td>DOI</td>
+      <td>DOI01</td>
+      <td>1.415</td>
+      <td>DOI-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE DOURADOS. DISTRITO INDUSTRIAL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS INDUSTRIAL</td>
+      <td>DOI</td>
+      <td>DOI02</td>
+      <td>271</td>
+      <td>DOI-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE DOURADOS. DISTRITO INDUSTRIAL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS INDUSTRIAL</td>
+      <td>DOI</td>
+      <td>DOI03</td>
+      <td>6.250</td>
+      <td>DOI-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS INDUSTRIAL</td>
+      <td>DOI</td>
+      <td>DOI04</td>
+      <td>6.687</td>
+      <td>DOI-04</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS INDUSTRIAL</td>
+      <td>DOI</td>
+      <td>DOI05</td>
+      <td>3.344</td>
+      <td>DOI-05</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS INDUSTRIAL</td>
+      <td>DOI</td>
+      <td>DOI06</td>
+      <td>3.852</td>
+      <td>DOI06</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS MAXWELL</td>
+      <td>DOM</td>
+      <td>DOM01</td>
+      <td>3.459</td>
+      <td>DOM-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS MAXWELL</td>
+      <td>DOM</td>
+      <td>DOM02</td>
+      <td>6.931</td>
+      <td>DOM-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS MAXWELL</td>
+      <td>DOM</td>
+      <td>DOM03</td>
+      <td>2.584</td>
+      <td>DOM-03</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS MAXWELL</td>
+      <td>DOM</td>
+      <td>DOM04</td>
+      <td>3.354</td>
+      <td>DOM-04</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS MAXWELL</td>
+      <td>DOM</td>
+      <td>DOM05</td>
+      <td>3.659</td>
+      <td>DOM-05</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS MAXWELL</td>
+      <td>DOM</td>
+      <td>DOM06</td>
+      <td>1.430</td>
+      <td>DOM-06</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS MAXWELL</td>
+      <td>DOM</td>
+      <td>DOM07</td>
+      <td>9.310</td>
+      <td>DOM-07</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS MAXWELL</td>
+      <td>DOM</td>
+      <td>DOM08</td>
+      <td>3.368</td>
+      <td>DOM-08</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS MAXWELL</td>
+      <td>DOM</td>
+      <td>DOM09</td>
+      <td>7.197</td>
+      <td>DOM-09</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE DOURADOS. ALDEIRA BORORO E JAGUAPIRU. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS MAXWELL</td>
+      <td>DOM</td>
+      <td>DOM51</td>
+      <td>97</td>
+      <td>LD 34,5KV DOM/ITA</td>
+      <td>SUBESTAÇÃO ITAPORÃ. CARGAS URBANAS E RURAIS DA CIDADE DE ITAPORÃ. DISTRITO DE SANTA TEREZINHA E CARUMBÉ. CARGAS DA COOPERATIRA CERGRAND. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE DOURADOS MAXWELL</td>
+      <td>DOM</td>
+      <td>DOM52</td>
+      <td>55</td>
+      <td>LD 34,5KV DOM/PRO</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE ITAPORÃ</td>
+      <td>ITA</td>
+      <td>ITA01</td>
+      <td>6.372</td>
+      <td>ITA-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE ITAPORÃ</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE ITAPORÃ</td>
+      <td>ITA</td>
+      <td>ITA02</td>
+      <td>1</td>
+      <td>ITA-02</td>
+      <td>CARGAS DA COOPERATIVA CERGRAND</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE ITAPORÃ</td>
+      <td>ITA</td>
+      <td>ITA52</td>
+      <td>403</td>
+      <td>LD 34,5KV ITA/MAR</td>
+      <td>DISTRITO DE SANTA TEREZINHA E CARUMBÉ. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE NOVA AMÉRICA</td>
+      <td>NAM</td>
+      <td>NAM01</td>
+      <td>1.096</td>
+      <td>NAM-01</td>
+      <td>DISTRITO NOVA AMÉRICA. CARGAS RURAIS. ALDEIRA TEY CUE</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE NOVA AMÉRICA</td>
+      <td>NAM</td>
+      <td>NAM02</td>
+      <td>349</td>
+      <td>NAM-02</td>
+      <td>DISTRITO CRISTALINA. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE POSTO OVÍDEO</td>
+      <td>POV</td>
+      <td>POV51</td>
+      <td>41</td>
+      <td>LD 34,5KV GUB/POV</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE POSTO OVÍDEO</td>
+      <td>POV</td>
+      <td>POV52</td>
+      <td>1.152</td>
+      <td>LD 34,5KV ITH/POV</td>
+      <td>DISTRITO DE ITAHUM. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE POSTO OVÍDEO</td>
+      <td>POV</td>
+      <td>POV53</td>
+      <td>129</td>
+      <td>LD 34,5KV POR/POV</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE POSTO OVÍDEO</td>
+      <td>POV</td>
+      <td>POV54</td>
+      <td>1.936</td>
+      <td>LD 34,5KV AMO/POV</td>
+      <td>PARTE DAS CARGAS DA CIDADE DE LAGUNA CAARAPÃ. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS</td>
+      <td>SE POSTO OVÍDEO</td>
+      <td>POV</td>
+      <td>POV55</td>
+      <td>662</td>
+      <td>LD 34,5KV COA/POV</td>
+      <td>PARTE DAS CARGAS DA CIDADE DE LAGUNA CAARAPÃ. DISTRITO BOCAJA E RIO VERDE DO SUL. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE CRUZALTINA</td>
+      <td>CRU</td>
+      <td>CRU01</td>
+      <td>553</td>
+      <td>CRU-01</td>
+      <td>DISTRITO VILA FORMOSA E MACAÚBA. CARGAS DA COOPERATIVA CERGRAND. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE CRUZALTINA</td>
+      <td>CRU</td>
+      <td>CRU02</td>
+      <td>1.432</td>
+      <td>CRU-02</td>
+      <td>DISTRITO CRUZALTINA, VILA VARGAS E SAPÉ. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE CRUZALTINA</td>
+      <td>CRU</td>
+      <td>CRU03</td>
+      <td>1.706</td>
+      <td>CRU-03</td>
+      <td>DISTRITO BOCAJÁ, CRUZALTINA E DOURADINA. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE FÁTIMA DO SUL</td>
+      <td>FSU</td>
+      <td>FSU01</td>
+      <td>4.639</td>
+      <td>FSU-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE FÁTIMA DO SUL E VICENTINA.DISTRITO CULTURAMA , NOVO PLANALTO, POTRERITO, SÃO JOSÉ, VILA RICA, TRÊS IRMÃOS E SÃO JOÃO</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE FÁTIMA DO SUL</td>
+      <td>FSU</td>
+      <td>FSU02</td>
+      <td>4.665</td>
+      <td>FSU-02</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE FÁTIMA DO SUL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE MARACAJÚ</td>
+      <td>MAR</td>
+      <td>MAR01</td>
+      <td>5.495</td>
+      <td>MAR-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE MARACAJU. DISTRITO INDUSTRIAL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE MARACAJÚ</td>
+      <td>MAR</td>
+      <td>MAR02</td>
+      <td>4.799</td>
+      <td>MAR-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE MARACAJU</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE MARACAJÚ</td>
+      <td>MAR</td>
+      <td>MAR03</td>
+      <td>6.159</td>
+      <td>MAR-03</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE MARACAJU</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE MARACAJÚ</td>
+      <td>MAR</td>
+      <td>MAR51</td>
+      <td>327</td>
+      <td>LD 34,5KV MAR/UMR</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE MARACAJÚ</td>
+      <td>MAR</td>
+      <td>MAR52</td>
+      <td>366</td>
+      <td>LD 34,5KV MAR/VAL</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE MARACAJÚ</td>
+      <td>MAR</td>
+      <td>MAR53</td>
+      <td>275</td>
+      <td>LD 34,5KV MAR/RUR</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE RIO BRILHANTE</td>
+      <td>RBR</td>
+      <td>RBR01</td>
+      <td>5.537</td>
+      <td>RBR-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE RIO BRILHANTE</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE RIO BRILHANTE</td>
+      <td>RBR</td>
+      <td>RBR02</td>
+      <td>8.107</td>
+      <td>RBR-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE RIO BRILHANTE</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE RIO BRILHANTE</td>
+      <td>RBR</td>
+      <td>RBR51</td>
+      <td>1.303</td>
+      <td>LD 34,5KV ITA/RBR</td>
+      <td>N.A. ALTERNATIVA PARA LD 34,5KV RBR/ITA E LD 34,5KV ITA/RBR</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE RIO BRILHANTE</td>
+      <td>RBR</td>
+      <td>RBR52</td>
+      <td>4.941</td>
+      <td>LD 34,5KV NAS/RBR</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE NOVA ALVORADA DO SUL E CARGAS RURAIS DA CIDADE DE RIO BRILHANTE</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE RIO BRILHANTE</td>
+      <td>RBR</td>
+      <td>RBR53</td>
+      <td>5.899</td>
+      <td>LD 34,5KV RBR/RUR</td>
+      <td>DISTRITO DE PRUDÊNCIO THOMAZ E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE RIO BRILHANTE</td>
+      <td>RBR</td>
+      <td>RBR54</td>
+      <td>2</td>
+      <td>LD 34,5KV ELR/RBR</td>
+      <td>SERVIÇO AUXILIAR DA USINA TÉRMICA ELDORADO (BIOSEV RIO BRILHANTE)</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE RIO BRILHANTE</td>
+      <td>RBR</td>
+      <td>SLD52</td>
+      <td>448</td>
+      <td>LD 34,5KV SLD/NAS</td>
+      <td>ASSENTAMENTO PANA E CARGAS RURAIS DA REGIÃO</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE SANTA TEREZINHA</td>
+      <td>STE</td>
+      <td>STE01</td>
+      <td>1</td>
+      <td>STE-01</td>
+      <td>CARGAS DA CONCESSÁRIA CERGRANDE</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE VISTA ALEGRE</td>
+      <td>VAG</td>
+      <td>VAG51</td>
+      <td>33</td>
+      <td>LD 34,5KV MAR/VAG</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE VISTA ALEGRE</td>
+      <td>VAG</td>
+      <td>VAG52</td>
+      <td>1.047</td>
+      <td>LD 34,5KV DVA/VAG</td>
+      <td>DISTRITO VISTA ALEGRE E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE VISTA ALEGRE</td>
+      <td>VAG</td>
+      <td>VAG53</td>
+      <td>233</td>
+      <td>LD 34,5KV UMR/VAG</td>
+      <td>DESTILARIA UMR E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE VISTA ALEGRE</td>
+      <td>VAG</td>
+      <td>VAG54</td>
+      <td>170</td>
+      <td>LD 34,5KV RUR/VAG</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE VICENTINA</td>
+      <td>VIC</td>
+      <td>VIC01</td>
+      <td>1.024</td>
+      <td>VIC-01</td>
+      <td>CARGAS RURAIS DA CIDADE DE FÁTIMA DO SUL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>DOURADOS INTERIOR</td>
+      <td>SE VICENTINA</td>
+      <td>VIC</td>
+      <td>VIC02</td>
+      <td>2.976</td>
+      <td>VIC-02</td>
+      <td>CARGAS DO DISTRITO DE VICENTINA E RURAIS DA REGIÃO</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE BALSINHA</td>
+      <td>BAL</td>
+      <td>BAL01</td>
+      <td>51</td>
+      <td>BAL-01</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE BALSINHA</td>
+      <td>BAL</td>
+      <td>BAL02</td>
+      <td>79</td>
+      <td>BAL-02</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE BOA SORTE</td>
+      <td>BSO</td>
+      <td>BSO01</td>
+      <td>1.007</td>
+      <td>BSO-01</td>
+      <td>CARGAS RURAIS E ASSENTAMENTOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE BOA SORTE</td>
+      <td>BSO</td>
+      <td>BSO02</td>
+      <td>1.103</td>
+      <td>BSO-02</td>
+      <td>CARGAS RURAIS E ASSENTAMENTOS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE ELDORADO</td>
+      <td>ELD</td>
+      <td>ELD01</td>
+      <td>176</td>
+      <td>ELD-01</td>
+      <td>DISTRITO BARRO PRETO. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE ELDORADO</td>
+      <td>ELD</td>
+      <td>ELD02</td>
+      <td>4.616</td>
+      <td>ELD-02</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE ELDORADO.</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE ELDORADO</td>
+      <td>ELD</td>
+      <td>ELD03</td>
+      <td>309</td>
+      <td>ELD-03</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE ELDORADO.</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE ELDORADO</td>
+      <td>ELD</td>
+      <td>ELD52</td>
+      <td>138</td>
+      <td>LD 34,5KV ELD/MNO</td>
+      <td>SUBESTAÇÃO MUNDO NOVO. CARGAS URBANAS E RURAIS DA CIDADE DE MUNDO NOVO. DISTRITO JAPORÃ E JACAREÍ</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE ELDORADO</td>
+      <td>ELD</td>
+      <td>ELD53</td>
+      <td>453</td>
+      <td>LD 34,5KV ELD/ITQ</td>
+      <td>SUBESTAÇÃO BOA SORTE E ITAQUIRAÍ. CARGAS URBANAS E RURAIS DA CIDADE DE BOA SORTE E ITAQUIRAÍ.</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE IGUATEMI</td>
+      <td>IGU</td>
+      <td>IGU01</td>
+      <td>5.592</td>
+      <td>IGU-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE IGUATEMI</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE IGUATEMI</td>
+      <td>IGU</td>
+      <td>IGU51</td>
+      <td>1.271</td>
+      <td>LD 34,5KV IGU/SQU</td>
+      <td>SUBESTAÇÃO SETE QUEDAS E PARANHOS. CARGAS URBANAS E RURAIS DE SETE QUEDAS E PARANHOS. DISTRITO SANTA LUZIA, MIGUEL, CARIOCA, SULINA, SÃO JOSÉ JATOBÁ E TAQUAPERI. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE IGUATEMI</td>
+      <td>IGU</td>
+      <td>IGU52</td>
+      <td>3.391</td>
+      <td>LD 34,5KV IGU/TAC</td>
+      <td>SUBESTAÇÃO BALSINHA. CARGAS URBANAS DA CIDADE DE TACURU E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE IGUATEMI</td>
+      <td>IGU</td>
+      <td>IGU53</td>
+      <td>291</td>
+      <td>LD 34,5KV IGU/RUR</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE ITAQUIRAÍ</td>
+      <td>ITQ</td>
+      <td>ITQ01</td>
+      <td>4.257</td>
+      <td>ITQ-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE ITAQUIRAÍ</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE ITAQUIRAÍ</td>
+      <td>ITQ</td>
+      <td>ITQ02</td>
+      <td>2.044</td>
+      <td>ITQ-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE ITAQUIRAÍ</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE MUNDO NOVO</td>
+      <td>MNO</td>
+      <td>MNO01</td>
+      <td>4.464</td>
+      <td>MNO-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE MUNDO NOVO</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE MUNDO NOVO</td>
+      <td>MNO</td>
+      <td>MNO02</td>
+      <td>6.050</td>
+      <td>MNO-02</td>
+      <td>PARTE DAS CARGAS URBANAS  DA CIDADE DE JAPORÃ E MUNDO NOVO. DISTRITO JACAREÍ. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE NAVIRAÍ</td>
+      <td>NAV</td>
+      <td>NAV01</td>
+      <td>2.422</td>
+      <td>NAV-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE NAVIRAÍ. FRIGORÍFICO BERTIN</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE NAVIRAÍ</td>
+      <td>NAV</td>
+      <td>NAV02</td>
+      <td>2.808</td>
+      <td>NAV-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE NAVIRAÍ</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE NAVIRAÍ</td>
+      <td>NAV</td>
+      <td>NAV03</td>
+      <td>7.549</td>
+      <td>NAV-03</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE NAVIRAÍ</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE NAVIRAÍ</td>
+      <td>NAV</td>
+      <td>NAV04</td>
+      <td>5.940</td>
+      <td>NAV-04</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE NAVIRAÍ</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE NAVIRAÍ</td>
+      <td>NAV</td>
+      <td>NAV05</td>
+      <td>4.058</td>
+      <td>NAV-05</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE NAVIRAÍ. DISTRITO INDUSTRIAL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE NAVIRAÍ</td>
+      <td>NAV</td>
+      <td>NAV06</td>
+      <td>3.345</td>
+      <td>NAV-06</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE NAVIRAÍ. PENINTENCIÁRIA. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE SETE QUEDAS</td>
+      <td>SQU</td>
+      <td>SQU01</td>
+      <td>3.990</td>
+      <td>SQU-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE SETE QUEDAS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE SETE QUEDAS</td>
+      <td>SQU</td>
+      <td>SQU51</td>
+      <td>3.376</td>
+      <td>LD 34,5KV PAN/SQU</td>
+      <td>SUBESTAÇÃO PARANHOS, CARGAS URBANAS E RURAIS DA CIDADE DE PARANHOS E DISTRITO TAQUAPERI</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>SE TACURU</td>
+      <td>TAC</td>
+      <td>TAC01</td>
+      <td>120</td>
+      <td>TAC-01</td>
+      <td>CARGAS RURAIS DA CIDADE DE TACURU</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NAVIRAI</td>
+      <td>ELDORADO</td>
+      <td>ELD</td>
+      <td>ELD51</td>
+      <td>0</td>
+      <td>LD 34,5KV ELD/IGU (F.O.)</td>
+      <td>FORA DE OPERAÇÃO</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE ANGÉLICA</td>
+      <td>ANG</td>
+      <td>ANG01</td>
+      <td>3.841</td>
+      <td>ANG-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE ANGÉLICA E CARGAS RURAIS.</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE ANGÉLICA</td>
+      <td>ANG</td>
+      <td>ANG02</td>
+      <td>1.275</td>
+      <td>ANG-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE ANGÉLICA E CARGAS RURAIS.</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE ANGÉLICA</td>
+      <td>ANG</td>
+      <td>ANG51</td>
+      <td>1</td>
+      <td>LD 34,5KV ANG/COP</td>
+      <td>CARGAS DO CLIENTE COPASUL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE BATAIPORÃ</td>
+      <td>BAP</td>
+      <td>BAP01</td>
+      <td>1.821</td>
+      <td>BAP-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE BATAIPORA E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE BATAIPORÃ</td>
+      <td>BAP</td>
+      <td>BAP02</td>
+      <td>3.184</td>
+      <td>BAP-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE BATAIPORA E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE BATAIPORÃ</td>
+      <td>BAP</td>
+      <td>BAP51</td>
+      <td>9</td>
+      <td>LD 34,5KV BAP/TAQ</td>
+      <td>SUBESTAÇÃO TAQUARUSSU. CARGAS URBANAS E RURAIS DA CIDADE DE TAQUARUSSU. DISTRITO DE SÃO JOÃO. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE BATAGUASSU</td>
+      <td>BAT</td>
+      <td>BAT01</td>
+      <td>4.966</td>
+      <td>BAT-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE BATAGUASSU E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE BATAGUASSU</td>
+      <td>BAT</td>
+      <td>BAT02</td>
+      <td>5.860</td>
+      <td>BAT-02</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE BATAGUASSU E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE BATAGUASSU</td>
+      <td>BAT</td>
+      <td>BAT51</td>
+      <td>30</td>
+      <td>LD 34,5KV BAT/MAF</td>
+      <td>FRIGORIFICO MARFRIG</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE BATAGUASSU</td>
+      <td>BAT</td>
+      <td>BAT52</td>
+      <td>42</td>
+      <td>LD 34,5KV BAT/SPR</td>
+      <td>FRIGORIFICO SPERAFICO E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE DEODÁPOLIS</td>
+      <td>DEO</td>
+      <td>DEO01</td>
+      <td>2.358</td>
+      <td>DEO-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DE DEODEPOLIS.</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE DEODÁPOLIS</td>
+      <td>DEO</td>
+      <td>DEO03</td>
+      <td>5.418</td>
+      <td>DEO-03</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DE DEODEPOLIS. DISTRITO LAGOA BONITA, PRESIDENTE CASTELO, VILA UNIÃO, POSTO VILMA E IPEZAL. COOPERATIVAS CERGRAND</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE GLÓRIA DE DOURADOS</td>
+      <td>GDO</td>
+      <td>GDO01</td>
+      <td>2.035</td>
+      <td>GDO-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE GLÓRIA DE DOURADOS. DISTRITO DE NOVO PINHEIRO</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE GLÓRIA DE DOURADOS</td>
+      <td>GDO</td>
+      <td>GDO02</td>
+      <td>4.763</td>
+      <td>GDO-02</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE GLÓRIA DE DOURADOS E JATEÍ. DISTRITO DE GUAÇULANDIA E NOVA ESPERANÇA</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE IVINHEMA</td>
+      <td>IVI</td>
+      <td>IVI01</td>
+      <td>2.416</td>
+      <td>IVI-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE IVINHEMA. DISTRITO VILA CRUZALTINA</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE IVINHEMA</td>
+      <td>IVI</td>
+      <td>IVI02</td>
+      <td>5.174</td>
+      <td>IVI-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE IVINHEMA</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE IVINHEMA</td>
+      <td>IVI</td>
+      <td>IVI03</td>
+      <td>5.313</td>
+      <td>IVI-03</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE IVINHEMA</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE IVINHEMA</td>
+      <td>IVI</td>
+      <td>IVI51</td>
+      <td>4</td>
+      <td>LD 34,5KV ANG/IVI</td>
+      <td>SUBESTACAO ANGÉLICA. CARGAS URBANAS E RURAIS DA CIDADE DE ANGÉLICA.</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE IVINHEMA</td>
+      <td>IVI</td>
+      <td>IVI52</td>
+      <td>1.367</td>
+      <td>LD 34,5KV AMN/IVI</td>
+      <td>DISTRITO VILA ALICE E AMANDINA. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE IVINHEMA</td>
+      <td>IVI</td>
+      <td>IVI53</td>
+      <td>1</td>
+      <td>LD 34,5KV IVI/NHS</td>
+      <td>SUBESTAÇÃO NOVO HORIZONTE DO SUL. CARGAS URBANAS E RURAIS DA CIDADE DE NOVO HORIZONTE DO SUL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE NOVA ANDRADINA</td>
+      <td>NAN</td>
+      <td>NAN01</td>
+      <td>6.756</td>
+      <td>NAN-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE NOVA ANDRADINA.</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE NOVA ANDRADINA</td>
+      <td>NAN</td>
+      <td>NAN02</td>
+      <td>8.218</td>
+      <td>NAN-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE NOVA ANDRADINA.</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE NOVA ANDRADINA</td>
+      <td>NAN</td>
+      <td>NAN03</td>
+      <td>5.538</td>
+      <td>NAN-03</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE NOVA ANDRADINA.</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE NOVA ANDRADINA</td>
+      <td>NAN</td>
+      <td>NAN04</td>
+      <td>685</td>
+      <td>NAN-04</td>
+      <td>PARTE DAS CARGAS URBANAS DE NOVA ANDRADINA E O GRANDE CLIENTE VIPOSA</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE NOVA ANDRADINA</td>
+      <td>NAN</td>
+      <td>NAN51</td>
+      <td>3.467</td>
+      <td>LD 34,5KV CVE/NAN</td>
+      <td>DISTRITO NOVA CASA VERDE e PANÃ. CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE NOVA ANDRADINA</td>
+      <td>NAN</td>
+      <td>NAN52</td>
+      <td>367</td>
+      <td>LD 34,5KV NAN/RUR</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE NOVA ANDRADINA</td>
+      <td>NAN</td>
+      <td>NAN53</td>
+      <td>7.370</td>
+      <td>LD 34,5KV BAP/NAN</td>
+      <td>SUBESTAÇÃO DE BATAIPORÃ E TAQUARUSSU. CARGAS URBANAS DAS CIDADES DE BATAIPORÃ E TAQUARUSSU. DISTRITO DE SÃO JOÃO. CARGAS RURAIS.</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE NOVO HORIZONTE DO SUL</td>
+      <td>NHS</td>
+      <td>NHS01</td>
+      <td>2.620</td>
+      <td>NHS-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE NOVO HORIZONTE DO SUL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE PRESIDENTE EPITÁCIO</td>
+      <td>PEP</td>
+      <td>PEP51</td>
+      <td>1.251</td>
+      <td>LD 34,5KV BAT/PEP</td>
+      <td>SUBESTACAO BATAGUASSU, CARGAS URBANAS E RURAIS DE 13,8KV</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE PRESIDENTE EPITÁCIO</td>
+      <td>PEP</td>
+      <td>PEP52</td>
+      <td>1.230</td>
+      <td>LD 34,5KV BAT/PQN</td>
+      <td>SUBESTACAO BATAGUASSU, CARGAS DE 34,5KV (FRIGORIFICO SPERAFICO E MARFRIG)</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE SANTA LUZIA DOIS</td>
+      <td>SLD</td>
+      <td>SLD51</td>
+      <td>1.179</td>
+      <td>LD 34,5KV SLD/CVE</td>
+      <td>DISTRITO DE CASA VERDE E CARGAS RURAIS DA REGIÃO</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>NOVA ANDRADINA</td>
+      <td>SE TAQUARUSSU</td>
+      <td>TAQ</td>
+      <td>TAQ01</td>
+      <td>2.169</td>
+      <td>TAQ-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE TAQUARUSSU</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE ANTÔNIO JOÃO</td>
+      <td>AJO</td>
+      <td>AJO01</td>
+      <td>3.514</td>
+      <td>AJO-01</td>
+      <td>PARTE DAS CARGAS URBANAS DA CIDADE DE ANTÔNIO JOÃO E PARTE DE CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE ANTÔNIO JOÃO</td>
+      <td>AJO</td>
+      <td>AJO51</td>
+      <td>667</td>
+      <td>LD 34,5KV AJO/CAP</td>
+      <td>CARGAS DO DISTRITO CABECEIRA DO APA E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE ANTÔNIO JOÃO</td>
+      <td>AJO</td>
+      <td>AJO52</td>
+      <td>926</td>
+      <td>LD 34,5KV AJO/BVI</td>
+      <td>CARGAS DO DISTRITO CAMPESTRE E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE AMAMBAI</td>
+      <td>AMA</td>
+      <td>AMA01</td>
+      <td>3.668</td>
+      <td>AMA-01</td>
+      <td>CARGAS URBANAS DA CIDADE DE AMAMBAI E PARTE DAS CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE AMAMBAI</td>
+      <td>AMA</td>
+      <td>AMA02</td>
+      <td>6.176</td>
+      <td>AMA-02</td>
+      <td>CARGAS URBANAS DA CIDADE DE AMAMBAI E PARTE DAS CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE AMAMBAI</td>
+      <td>AMA</td>
+      <td>AMA03</td>
+      <td>5.409</td>
+      <td>AMA-03</td>
+      <td>CARGAS URBANAS DA CIDADE DE AMAMBAI E PARTE DAS CARGAS RURAIS.</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE AMAMBAI</td>
+      <td>AMA</td>
+      <td>AMA51</td>
+      <td>513</td>
+      <td>LD 34,5KV AMA/RUR</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE AMAMBAI</td>
+      <td>AMA</td>
+      <td>AMA52</td>
+      <td>652</td>
+      <td>LD 34,5KV AMA/CSA</td>
+      <td>SE CORONEL SAPUCAIA, CARGAS URBANAS DA CIDADE DE CORONEL SAPUCAIA</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE AMAMBAI</td>
+      <td>AMA</td>
+      <td>AMA54</td>
+      <td>1</td>
+      <td>LD 34,5KV AMA/ALT</td>
+      <td>CARGAS RURAIS DE AMAMBAI</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE CORONEL SAPUCAIA</td>
+      <td>CSA</td>
+      <td>CSA01</td>
+      <td>4.430</td>
+      <td>CSA-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE CORONEL SAPUCAIA</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE FAZENDA ITAMARATI</td>
+      <td>FIT</td>
+      <td>FIT51</td>
+      <td>465</td>
+      <td>LD 34,5KV FIT/FSG</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE FAZENDA ITAMARATI</td>
+      <td>FIT</td>
+      <td>FIT52</td>
+      <td>1.558</td>
+      <td>LD 34,5KV FIT/SED</td>
+      <td>DISTRITO DE ITAMARATI E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE FAZENDA ITAMARATI</td>
+      <td>FIT</td>
+      <td>FIT53</td>
+      <td>865</td>
+      <td>LD 34,5KV AER/FIT</td>
+      <td>DISTRITO DE ITAMARATI E CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE FAZENDA ITAMARATI</td>
+      <td>FIT</td>
+      <td>FIT54</td>
+      <td>1.362</td>
+      <td>LD 34,5KV FIT/FTA</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE FAZENDA ITAMARATI</td>
+      <td>FIT</td>
+      <td>FIT55</td>
+      <td>778</td>
+      <td>LD 34,5KV AMF/FIT</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE PONTA PORÃ ESTORIL</td>
+      <td>PPE</td>
+      <td>PPE01</td>
+      <td>7.416</td>
+      <td>PPE-01</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE PONTA PORÃ ESTORIL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE PONTA PORÃ ESTORIL</td>
+      <td>PPE</td>
+      <td>PPE02</td>
+      <td>7.786</td>
+      <td>PPE-02</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE PONTA PORÃ ESTORIL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE PONTA PORÃ ESTORIL</td>
+      <td>PPE</td>
+      <td>PPE03</td>
+      <td>6.909</td>
+      <td>PPE-03</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE PONTA PORÃ ESTORIL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE PONTA PORÃ ESTORIL</td>
+      <td>PPE</td>
+      <td>PPE04</td>
+      <td>4.949</td>
+      <td>PPE-04</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE PONTA PORÃ ESTORIL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE PONTA PORÃ ESTORIL</td>
+      <td>PPE</td>
+      <td>PPE05</td>
+      <td>4.007</td>
+      <td>PPE-05</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE PONTA PORÃ ESTORIL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE PONTA PORÃ ESTORIL</td>
+      <td>PPE</td>
+      <td>PPE06</td>
+      <td>3.656</td>
+      <td>PPE-06</td>
+      <td>PARTE DAS CARGAS URBANAS E RURAIS DA CIDADE DE PONTA PORÃ ESTORIL</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE PONTA PORÃ ESTORIL</td>
+      <td>PPE</td>
+      <td>PPE51</td>
+      <td>1</td>
+      <td>LD 34,5KV PPE/SPU</td>
+      <td>SUBESTAÇÃO SANGA PUITÃ. CARGAS URBANAS E RURAIS DA CIDADE DE SANGA PUITÃ</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE PONTA PORÃ ESTORIL</td>
+      <td>PPE</td>
+      <td>PPE52</td>
+      <td>8</td>
+      <td>LD 34,5KV PPE/RUR</td>
+      <td>CARGAS RURAIS</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE PONTA PORÃ ESTORIL</td>
+      <td>PPE</td>
+      <td>PPE54</td>
+      <td>174</td>
+      <td>LD 34,5KV AJO/PPE</td>
+      <td>SE ANTÔNIO JOÃO, CARGAS URBANAS DA CIDADE DE ANTÔNIO JOÃO, DISTRITO CAMPESTRE, DISTRITO CABECEIRA DO APA</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE PONTA PORÃ ESTORIL</td>
+      <td>PPE</td>
+      <td>PPE55</td>
+      <td>193</td>
+      <td>LD 22KV PPE/SJH</td>
+      <td>CARGAS RURAIS E CGH SÃO JOÃO HIDRO 1 E 2</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE SANGA PUITÃ</td>
+      <td>SPU</td>
+      <td>SPU01</td>
+      <td>979</td>
+      <td>SPU-01</td>
+      <td>CARGAS URBANAS E RURAIS DA CIDADE DE SANGA PUITÃ, DISTRITO SÃO LUIZ</td>
+    </tr>
+    <tr>
+      <td>SUL</td>
+      <td>PONTA PORA</td>
+      <td>SE SANGA PUITÃ</td>
+      <td>SPU</td>
+      <td>SPU02</td>
+      <td>1.202</td>
+      <td>SPU-02</td>
+      <td>CARGAS URBANAS E RURAIS DA DISTRITO DE SANGA PUITÃ, DISTRITO SÃO LUIZ</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+    <script>
+        function filterTable() {
+            const seNomeInput = document.getElementById('se_nome').value.toUpperCase();
+            const seSiglaInput = document.getElementById('se_sigla').value.toUpperCase();
+            const table = document.getElementById('dataTable');
+            const tr = table.getElementsByTagName('tr');
+
+            for (let i = 1; i < tr.length; i++) {
+                let tdSeNome = tr[i].getElementsByTagName('td')[2]; // Ajuste conforme a posição da coluna SE_NOME
+                let tdSeSigla = tr[i].getElementsByTagName('td')[3]; // Ajuste conforme a posição da coluna SE_SIGLA
+                if (tdSeNome && tdSeSigla) {
+                    let seNomeText = tdSeNome.textContent || tdSeNome.innerText;
+                    let seSiglaText = tdSeSigla.textContent || tdSeSigla.innerText;
+
+                    if (
+                        (seNomeInput === "" || seNomeText.toUpperCase().indexOf(seNomeInput) > -1) &&
+                        (seSiglaInput === "" || seSiglaText.toUpperCase().indexOf(seSiglaInput) > -1)
+                    ) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
